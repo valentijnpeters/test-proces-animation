@@ -82,6 +82,107 @@
             flex: 0 0 auto;
         }
 
+        .narration-control {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            padding: 8px;
+            border: 1px solid rgba(197, 206, 218, 0.2);
+            border-radius: 22px;
+            background:
+                linear-gradient(180deg, rgba(64, 74, 88, 0.36), rgba(17, 22, 30, 0.74)),
+                linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.08),
+                0 12px 22px rgba(0,0,0,0.2);
+        }
+
+        .autoplay-toggle {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            min-width: 78px;
+            min-height: 54px;
+            padding: 6px 9px 7px;
+            border: 1px solid rgba(197, 206, 218, 0.24);
+            border-radius: 18px;
+            cursor: pointer;
+            color: rgba(241, 244, 248, 0.94);
+            background:
+                linear-gradient(180deg, rgba(67, 76, 91, 0.92), rgba(21, 26, 35, 0.96)),
+                linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 7px 14px rgba(0,0,0,0.18);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        }
+
+        .autoplay-toggle:hover,
+        .autoplay-toggle:focus-visible {
+            transform: translateY(-1px);
+            border-color: rgba(222, 228, 236, 0.42);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.16),
+                0 10px 18px rgba(0,0,0,0.22),
+                0 0 14px rgba(199, 208, 220, 0.14);
+            outline: none;
+        }
+
+        .autoplay-toggle:active {
+            transform: translateY(2px);
+        }
+
+        .autoplay-toggle.is-active {
+            border-color: rgba(223, 229, 236, 0.46);
+            color: #ffffff;
+            background:
+                linear-gradient(180deg, rgba(101, 112, 127, 0.96), rgba(34, 41, 52, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0));
+        }
+
+        .autoplay-toggle-label {
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 0.52rem;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            line-height: 1;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .autoplay-toggle-track {
+            position: relative;
+            width: 30px;
+            height: 16px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(18, 23, 31, 0.98), rgba(57, 67, 82, 0.96));
+            box-shadow:
+                inset 0 1px 2px rgba(0,0,0,0.34),
+                inset 0 1px 0 rgba(255,255,255,0.06);
+        }
+
+        .autoplay-toggle-knob {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 12px;
+            height: 12px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, #f4f7fb, #aeb8c7);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.36),
+                0 2px 5px rgba(0,0,0,0.22);
+            transition: transform 0.18s ease, background 0.18s ease;
+        }
+
+        .autoplay-toggle.is-active .autoplay-toggle-knob {
+            transform: translateX(14px);
+            background: linear-gradient(180deg, #ffffff, #cfd7e3);
+        }
+
         .overview-title-wrap {
             min-width: 0;
         }
@@ -257,6 +358,16 @@
         .narration-button.is-playing {
             border-color: rgba(232, 237, 244, 0.58);
             color: #ffffff;
+        }
+
+        .narration-button.is-paused {
+            border-color: rgba(255, 228, 176, 0.52);
+            color: #fff6df;
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.22),
+                inset 0 -6px 12px rgba(0,0,0,0.18),
+                0 5px 0 rgba(2, 15, 36, 0.88),
+                0 14px 22px rgba(0,0,0,0.24);
         }
 
         .narration-button[disabled] {
@@ -652,6 +763,190 @@
             font-size: 0.92rem;
             line-height: 1.55;
             max-width: 30ch;
+        }
+
+        .knowledge-overlap-shell {
+            margin-top: clamp(52px, 9vw, 96px);
+        }
+
+        .knowledge-overlap-panel {
+            border-radius: 28px;
+            border: 1px solid rgba(184, 230, 255, 0.18);
+            background:
+                linear-gradient(180deg, rgba(8, 38, 79, 0.94), rgba(4, 22, 48, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.1),
+                0 18px 30px rgba(0,0,0,0.22);
+            overflow: hidden;
+        }
+
+        .knowledge-overlap-summary {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            min-height: 68px;
+            padding: 18px 22px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .knowledge-overlap-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .knowledge-overlap-summary-text {
+            display: grid;
+            gap: 5px;
+        }
+
+        .knowledge-overlap-summary-kicker {
+            color: rgba(167, 239, 255, 0.72);
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .knowledge-overlap-summary-title {
+            color: var(--gold-soft);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1.02rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            line-height: 1.08;
+            text-transform: uppercase;
+        }
+
+        .knowledge-overlap-summary-icon {
+            width: 32px;
+            height: 32px;
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            color: #f5fbff;
+            font-size: 1.18rem;
+            font-weight: 900;
+            background:
+                radial-gradient(circle at 30% 24%, rgba(255,255,255,0.2), transparent 28%),
+                linear-gradient(180deg, rgba(255, 221, 138, 0.9), rgba(137, 95, 24, 0.98));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.18),
+                0 8px 14px rgba(0,0,0,0.2);
+            transition: transform 0.18s ease;
+        }
+
+        .knowledge-overlap-panel[open] .knowledge-overlap-summary-icon {
+            transform: rotate(45deg);
+        }
+
+        .knowledge-overlap-body {
+            display: grid;
+            grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+            gap: 24px;
+            padding: 6px 22px 22px;
+            border-top: 1px solid rgba(184, 230, 255, 0.12);
+            background:
+                linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+        }
+
+        .knowledge-overlap-visual {
+            display: grid;
+            align-content: start;
+        }
+
+        .knowledge-overlap-diagram {
+            position: relative;
+            width: min(100%, 520px);
+            min-height: 320px;
+            aspect-ratio: 1.38 / 1;
+            margin: 0 auto;
+        }
+
+        .knowledge-overlap-ring {
+            position: absolute;
+            width: 44%;
+            aspect-ratio: 1 / 1;
+            border-radius: 999px;
+            border: 4px solid rgba(184, 230, 255, 0.48);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            background:
+                radial-gradient(circle at 28% 24%, rgba(255,255,255,0.12), rgba(255,255,255,0.02) 42%, rgba(255,255,255,0) 70%);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.08),
+                0 16px 24px rgba(0,0,0,0.16);
+        }
+
+        .knowledge-overlap-ring.is-domain {
+            top: 0;
+            left: 0;
+            border-color: rgba(255, 222, 145, 0.9);
+            color: #fff3cb;
+        }
+
+        .knowledge-overlap-ring.is-professional {
+            top: 0;
+            right: 0;
+            border-color: rgba(167, 239, 255, 0.9);
+            color: #e5faff;
+        }
+
+        .knowledge-overlap-ring.is-organizational {
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            border-color: rgba(162, 247, 222, 0.9);
+            color: #ebfff7;
+        }
+
+        .knowledge-overlap-ring-label {
+            display: grid;
+            gap: 3px;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(0.78rem, 1.35vw, 0.98rem);
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            line-height: 1.08;
+            text-transform: none;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.22);
+        }
+
+        .knowledge-overlap-copy {
+            display: grid;
+            gap: 12px;
+            align-content: start;
+        }
+
+        .knowledge-overlap-note {
+            margin: 0;
+            padding: 16px 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(184, 230, 255, 0.14);
+            color: rgba(236, 246, 255, 0.9);
+            font-size: 0.94rem;
+            line-height: 1.62;
+            background:
+                linear-gradient(180deg, rgba(11, 50, 101, 0.72), rgba(5, 25, 50, 0.9)),
+                linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.08),
+                0 12px 20px rgba(0,0,0,0.16);
+        }
+
+        .knowledge-overlap-note-term {
+            color: var(--gold-soft);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.04em;
         }
 
         .info-frame {
@@ -2107,6 +2402,24 @@
                 border-radius: 16px;
             }
 
+            .narration-control {
+                gap: 7px;
+                padding: 7px;
+                border-radius: 18px;
+            }
+
+            .autoplay-toggle {
+                min-width: 72px;
+                min-height: 48px;
+                padding: 6px 8px;
+                border-radius: 14px;
+            }
+
+            .autoplay-toggle-label {
+                font-size: 0.5rem;
+                letter-spacing: 0.1em;
+            }
+
             .edit-mode-toggle-label {
                 font-size: 0.74rem;
             }
@@ -2128,6 +2441,67 @@
 
             .choice-copy {
                 max-width: none;
+            }
+
+            .knowledge-overlap-shell {
+                margin-top: clamp(44px, 12vw, 72px);
+            }
+
+            .knowledge-overlap-panel {
+                border-radius: 22px;
+            }
+
+            .knowledge-overlap-summary {
+                min-height: 60px;
+                padding: 16px 16px;
+                gap: 14px;
+            }
+
+            .knowledge-overlap-summary-kicker {
+                font-size: 0.64rem;
+            }
+
+            .knowledge-overlap-summary-title {
+                font-size: 0.9rem;
+                line-height: 1.12;
+            }
+
+            .knowledge-overlap-summary-icon {
+                width: 28px;
+                height: 28px;
+                font-size: 1rem;
+            }
+
+            .knowledge-overlap-body {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                padding: 4px 16px 18px;
+            }
+
+            .knowledge-overlap-diagram {
+                width: min(100%, 272px);
+                min-height: 228px;
+            }
+
+            .knowledge-overlap-ring {
+                width: 45%;
+                padding: 14px;
+                border-width: 3px;
+            }
+
+            .knowledge-overlap-ring-label {
+                font-size: 0.68rem;
+                letter-spacing: 0.03em;
+            }
+
+            .knowledge-overlap-note {
+                padding: 14px 14px 15px;
+                border-radius: 18px;
+                font-size: 0.88rem;
+            }
+
+            .knowledge-overlap-note-term {
+                font-size: 0.94rem;
             }
 
             .structured-chaos-stage {
@@ -2466,12 +2840,20 @@
                             <span class="edit-mode-toggle-knob"></span>
                         </span>
                     </button>
-                    <button id="narrationButton" class="narration-button" type="button" aria-pressed="false" aria-label="Page narration unavailable" disabled>
-                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <path fill="currentColor" d="M4.5 9.3h3.2l4-3.1c.55-.42 1.33-.03 1.33.66v10.24c0 .69-.78 1.08-1.33.66l-4-3.08H4.5c-.47 0-.85-.38-.85-.85v-3.7c0-.47.38-.85.85-.85Z"/>
-                            <path fill="currentColor" d="M16.2 9.2c0-.66.73-1.06 1.3-.7l4.1 2.64a.83.83 0 0 1 0 1.4l-4.1 2.64a.83.83 0 0 1-1.3-.7V9.2Z"/>
-                        </svg>
-                    </button>
+                    <div class="narration-control">
+                        <button id="autoplayToggle" class="autoplay-toggle" type="button" aria-pressed="false" aria-label="Autoplay narration off">
+                            <span class="autoplay-toggle-label">Autoplay</span>
+                            <span class="autoplay-toggle-track" aria-hidden="true">
+                                <span class="autoplay-toggle-knob"></span>
+                            </span>
+                        </button>
+                        <button id="narrationButton" class="narration-button" type="button" aria-pressed="false" aria-label="Page narration unavailable" disabled>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path fill="currentColor" d="M4.5 9.3h3.2l4-3.1c.55-.42 1.33-.03 1.33.66v10.24c0 .69-.78 1.08-1.33.66l-4-3.08H4.5c-.47 0-.85-.38-.85-.85v-3.7c0-.47.38-.85.85-.85Z"/>
+                                <path fill="currentColor" d="M16.2 9.2c0-.66.73-1.06 1.3-.7l4.1 2.64a.83.83 0 0 1 0 1.4l-4.1 2.64a.83.83 0 0 1-1.3-.7V9.2Z"/>
+                            </svg>
+                        </button>
+                    </div>
                     <button id="backButton" class="back-button" type="button" hidden aria-label="Go back one level">
                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                             <path fill="currentColor" d="M14.72 5.47a.85.85 0 0 1 0 1.2L10.25 11.1h8.11a.85.85 0 1 1 0 1.7h-8.1l4.46 4.43a.85.85 0 1 1-1.2 1.2l-5.9-5.88a.85.85 0 0 1 0-1.2l5.9-5.88a.85.85 0 0 1 1.2 0Z"/>
@@ -2487,6 +2869,7 @@
         const backButton = document.getElementById('backButton');
         const editModeToggle = document.getElementById('editModeToggle');
         const editModeToggleLabel = document.getElementById('editModeToggleLabel');
+        const autoplayToggle = document.getElementById('autoplayToggle');
         const narrationButton = document.getElementById('narrationButton');
         const viewTitle = document.getElementById('viewTitle');
         const viewBreadcrumb = document.getElementById('viewBreadcrumb');
@@ -2495,6 +2878,7 @@
         const CUSTOM_OVERVIEW_STORAGE_KEY = 'testoverview-custom-overview-v1';
         const DTAP_THEME_STORAGE_KEY = 'testoverview-dtap-theme-v1';
         const DTAP_STAGE_STORAGE_KEY = 'testoverview-dtap-stage-v1';
+        const NARRATION_AUTOPLAY_STORAGE_KEY = 'testoverview-narration-autoplay-v1';
         const supportsSpeechSynthesis = typeof window !== 'undefined'
             && 'speechSynthesis' in window
             && typeof window.SpeechSynthesisUtterance === 'function';
@@ -2502,6 +2886,8 @@
         let activeNarrationText = '';
         let narrationVoicesPromise = null;
         let narrationPlaybackToken = 0;
+        let narrationState = 'idle';
+        let continueNarrationPlayback = null;
 
         const defaultPageTheme = {
             bgTop: '#081d3d',
@@ -2945,6 +3331,14 @@
             }
         }
 
+        function loadNarrationAutoplayState() {
+            try {
+                return window.localStorage.getItem(NARRATION_AUTOPLAY_STORAGE_KEY) === '1';
+            } catch (error) {
+                return false;
+            }
+        }
+
         function saveCustomOverviewState() {
             try {
                 window.localStorage.setItem(CUSTOM_OVERVIEW_STORAGE_KEY, JSON.stringify(customOverviewState));
@@ -2968,6 +3362,17 @@
         function saveDtapStageState() {
             try {
                 window.localStorage.setItem(DTAP_STAGE_STORAGE_KEY, String(currentDtapStage));
+            } catch (error) {
+                // Ignore storage failures to keep the page usable.
+            }
+        }
+
+        function saveNarrationAutoplayState() {
+            try {
+                window.localStorage.setItem(
+                    NARRATION_AUTOPLAY_STORAGE_KEY,
+                    isNarrationAutoplayEnabled ? '1' : '0'
+                );
             } catch (error) {
                 // Ignore storage failures to keep the page usable.
             }
@@ -3017,6 +3422,7 @@
         let isEditMode = loadEditModeState();
         let currentDtapThemeKey = loadDtapThemeState();
         let currentDtapStage = loadDtapStageState();
+        let isNarrationAutoplayEnabled = loadNarrationAutoplayState();
 
         function applyPageTheme(themeKey = '') {
             const theme = dtapThemes[themeKey] || defaultPageTheme;
@@ -3097,7 +3503,7 @@
                     title: category.label,
                     breadcrumb: 'Use the PRA risk matrix below. Every cell continues to the Checking / Testing split.',
                     speechText: category.slug === 'functional'
-                        ? "Not every requirement is evenly important, the requirement in the categorie that you just choose, how shall we rate that one? click a number to continue this flow."
+                        ? "Not every requirement is evenly important, the requirement in the categorie that you just chose, how shall we rate that one? click a number to continue this flow."
                         : '',
                     type: 'matrix',
                     requirementLabel: category.label,
@@ -3233,7 +3639,7 @@
                 },
                 titleSuffix: ' categories',
                 breadcrumb: 'Choose one of the 9 requirement categories to continue to the PRA matrix.',
-                speechText: 'Welcome to the test overview, this animation shows how software testing goes in general and is an Codex experiment. As you can see there are several categories of requirements from Business rule requirement tot Contraint requirement. This list is not official, there can be other categorie arrangements. select a requirement to start testing.',
+                speechText: 'Welcome to the test overview, this animation shows how software testing can go in general and is an Codex experiment. As you can see there are several categories of requirements from Business rule requirement to Constraint requirement. This list is not official, there can be other category arrangements. Select a requirement to start testing.',
                 type: 'menu',
                 layout: 'triple',
                 compact: true,
@@ -3295,7 +3701,7 @@
             dtap: {
                 title: 'DTAP',
                 breadcrumb: 'Choose the environment version and continue to the test overview.',
-                speechText: "many times in projects or company's the IT team works with several development environments.. Development, Test, Acceptance and Production. in development are the latest experiments, in test the new features are tested and so on... production is the lessed developed. The Requirement that you just choose, what shall we say on which environment we are going to test it? choose a submit button",
+                speechText: "many times in projects or company's, the IT team works with several development environments. Development, Test, Acceptance and Production. in development are the latest experiments, in test the new features are tested and so on... production is the lessed developed. The Requirement that you just chose, what shall we say on which environment we are going to test it? choose a submit button",
                 type: 'dtap'
             },
             ...buildCodeToolLoopViews(),
@@ -3414,7 +3820,7 @@
                 title: 'Structured chaos',
                 breadcrumb: 'How is your mindset during testing? choose',
                 breadcrumbHtml: 'How is your mindset during testing?<br>choose',
-                speechText: 'The purpose of this page is to demonstrate that a software tester always needs a companion, someone to brainstorm with, someone to discuss ideas and challenges with. The best tests are created through the synergy between people. Feel free to experiment with the sliders, and once you think you understand the principle, click Next.',
+                speechText: 'The purpose of this page is to demonstrate that a software tester always benefits from a companion, someone to brainstorm with, someone to discuss ideas and challenges with. The best tests are sometimes created through the synergy between people. Feel free to experiment with the sliders, and once you think you understand the principle, click Next.',
                 type: 'structured-chaos',
                 nextLabel: 'Next',
                 nextTarget: 'testing'
@@ -3424,6 +3830,29 @@
                 breadcrumb: 'Choose the knowledge branch you want to explore.',
                 type: 'menu',
                 layout: 'double',
+                expandableKnowledgeSection: {
+                    summary: 'Knowledge overlap',
+                    items: [
+                        {
+                            key: 'domain',
+                            term: 'Domain Knowledge',
+                            ringLines: ['Domain', 'Knowledge'],
+                            description: 'knowledge of the business domain or industry (e.g., insurance, healthcare, finance).'
+                        },
+                        {
+                            key: 'professional',
+                            term: 'Professional / Technical Knowledge',
+                            ringLines: ['Professional /', 'Technical', 'Knowledge'],
+                            description: 'knowledge of the profession itself (e.g., software testing, programming, accounting).'
+                        },
+                        {
+                            key: 'organizational',
+                            term: 'Organizational / Business Knowledge',
+                            ringLines: ['Organizational /', 'Business', 'Knowledge'],
+                            description: 'knowledge of the specific organization, its processes, systems, culture, and people.'
+                        }
+                    ]
+                },
                 items: [
                     {
                         label: 'Tacit knowledge',
@@ -3784,16 +4213,91 @@
             editModeToggleLabel.textContent = isEditMode ? 'Edit modus' : 'View modus';
         }
 
+        function updateAutoplayToggleUi() {
+            autoplayToggle.classList.toggle('is-active', isNarrationAutoplayEnabled);
+            autoplayToggle.setAttribute('aria-pressed', isNarrationAutoplayEnabled ? 'true' : 'false');
+            autoplayToggle.setAttribute(
+                'aria-label',
+                isNarrationAutoplayEnabled ? 'Autoplay narration on' : 'Autoplay narration off'
+            );
+        }
+
+        function applyNarrationButtonState() {
+            const isEnabled = supportsSpeechSynthesis && activeNarrationText.length > 0;
+            narrationButton.disabled = !isEnabled;
+            narrationButton.classList.toggle('is-playing', isEnabled && narrationState === 'playing');
+            narrationButton.classList.toggle('is-paused', isEnabled && narrationState === 'paused');
+            narrationButton.setAttribute(
+                'aria-pressed',
+                isEnabled && narrationState !== 'idle' ? 'true' : 'false'
+            );
+
+            if (!isEnabled) {
+                narrationButton.setAttribute('aria-label', 'Page narration unavailable');
+                return;
+            }
+
+            if (narrationState === 'playing') {
+                narrationButton.setAttribute('aria-label', 'Pause page narration');
+                return;
+            }
+
+            if (narrationState === 'paused') {
+                narrationButton.setAttribute('aria-label', 'Resume page narration');
+                return;
+            }
+
+            narrationButton.setAttribute('aria-label', 'Play page narration');
+        }
+
         function stopNarration() {
-            if (!supportsSpeechSynthesis) return;
-            narrationPlaybackToken += 1;
-            window.speechSynthesis.cancel();
-            narrationButton.classList.remove('is-playing');
-            narrationButton.setAttribute('aria-pressed', 'false');
+            continueNarrationPlayback = null;
+            narrationState = 'idle';
+
+            if (supportsSpeechSynthesis) {
+                narrationPlaybackToken += 1;
+                window.speechSynthesis.cancel();
+            }
+
+            applyNarrationButtonState();
+        }
+
+        function pauseNarration() {
+            if (!supportsSpeechSynthesis || narrationState !== 'playing') return;
+            narrationState = 'paused';
+
+            if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+                window.speechSynthesis.pause();
+            }
+
+            applyNarrationButtonState();
+        }
+
+        function resumeNarration() {
+            if (!supportsSpeechSynthesis || narrationState !== 'paused') return;
+            narrationState = 'playing';
+            applyNarrationButtonState();
+
+            if (window.speechSynthesis.paused) {
+                window.speechSynthesis.resume();
+                return;
+            }
+
+            if (typeof continueNarrationPlayback === 'function') {
+                window.setTimeout(() => {
+                    if (narrationState === 'playing' && typeof continueNarrationPlayback === 'function') {
+                        continueNarrationPlayback();
+                    }
+                }, 0);
+            }
         }
 
         function waitForNarrationVoices(timeoutMs = 2200) {
             if (!supportsSpeechSynthesis) {
+                return Promise.resolve([]);
+            }
+
+            if (typeof window.speechSynthesis.getVoices !== 'function') {
                 return Promise.resolve([]);
             }
 
@@ -3814,10 +4318,12 @@
                 };
 
                 const timer = window.setTimeout(finish, timeoutMs);
-                window.speechSynthesis.addEventListener('voiceschanged', () => {
-                    window.clearTimeout(timer);
-                    finish();
-                }, { once: true });
+                if (typeof window.speechSynthesis.addEventListener === 'function') {
+                    window.speechSynthesis.addEventListener('voiceschanged', () => {
+                        window.clearTimeout(timer);
+                        finish();
+                    }, { once: true });
+                }
 
                 window.speechSynthesis.getVoices();
             });
@@ -3887,15 +4393,9 @@
 
         function updateNarrationButton(view) {
             activeNarrationText = typeof view.speechText === 'string' ? view.speechText.trim() : '';
-            const isEnabled = supportsSpeechSynthesis && activeNarrationText.length > 0;
-
-            narrationButton.disabled = !isEnabled;
-            narrationButton.classList.toggle('is-playing', false);
-            narrationButton.setAttribute('aria-pressed', 'false');
-            narrationButton.setAttribute(
-                'aria-label',
-                isEnabled ? 'Play page narration' : 'Page narration unavailable'
-            );
+            narrationState = 'idle';
+            continueNarrationPlayback = null;
+            applyNarrationButtonState();
         }
 
         function splitNarrationText(text) {
@@ -3912,6 +4412,9 @@
             const playbackToken = narrationPlaybackToken + 1;
             narrationPlaybackToken = playbackToken;
 
+            narrationState = 'playing';
+            applyNarrationButtonState();
+
             const voices = await waitForNarrationVoices();
             if (playbackToken !== narrationPlaybackToken) {
                 return;
@@ -3920,15 +4423,15 @@
             const voice = getEnglishNarrationVoice(voices);
             const segments = splitNarrationText(text);
             if (!segments.length) {
+                continueNarrationPlayback = null;
+                narrationState = 'idle';
+                applyNarrationButtonState();
                 return;
             }
 
             const isNaturalVoice = Boolean(voice && /natural|online|neural/i.test(voice.name || ''));
             const playbackRate = isNaturalVoice ? 0.98 : 0.9;
             const playbackPitch = isNaturalVoice ? 1.03 : 1.08;
-
-            narrationButton.classList.add('is-playing');
-            narrationButton.setAttribute('aria-pressed', 'true');
 
             let segmentIndex = 0;
 
@@ -3937,9 +4440,16 @@
                     return;
                 }
 
+                continueNarrationPlayback = speakNextSegment;
+
+                if (narrationState === 'paused') {
+                    return;
+                }
+
                 if (segmentIndex >= segments.length) {
-                    narrationButton.classList.remove('is-playing');
-                    narrationButton.setAttribute('aria-pressed', 'false');
+                    continueNarrationPlayback = null;
+                    narrationState = 'idle';
+                    applyNarrationButtonState();
                     return;
                 }
 
@@ -3958,18 +4468,54 @@
                         return;
                     }
                     segmentIndex += 1;
-                    window.setTimeout(speakNextSegment, 110);
+                    window.setTimeout(() => {
+                        if (playbackToken !== narrationPlaybackToken) {
+                            return;
+                        }
+                        if (narrationState === 'paused') {
+                            continueNarrationPlayback = speakNextSegment;
+                            return;
+                        }
+                        speakNextSegment();
+                    }, 110);
                 };
 
                 utterance.onerror = () => {
-                    narrationButton.classList.remove('is-playing');
-                    narrationButton.setAttribute('aria-pressed', 'false');
+                    if (playbackToken !== narrationPlaybackToken) {
+                        return;
+                    }
+                    continueNarrationPlayback = null;
+                    narrationState = 'idle';
+                    applyNarrationButtonState();
                 };
 
                 window.speechSynthesis.speak(utterance);
             };
 
             speakNextSegment();
+        }
+
+        function maybeAutoplayNarration(view, viewKey) {
+            if (!isNarrationAutoplayEnabled || !supportsSpeechSynthesis || !activeNarrationText || narrationButton.disabled) {
+                return;
+            }
+
+            const expectedText = typeof view.speechText === 'string' ? view.speechText.trim() : '';
+            window.setTimeout(() => {
+                if (!isNarrationAutoplayEnabled) {
+                    return;
+                }
+                if (getCurrentViewKey() !== viewKey) {
+                    return;
+                }
+                if (!expectedText || activeNarrationText !== expectedText) {
+                    return;
+                }
+                if (narrationState !== 'idle') {
+                    return;
+                }
+                playNarration(expectedText);
+            }, 140);
         }
 
         function getOverviewAudioContext() {
@@ -4267,6 +4813,84 @@
                 grid.appendChild(createMenuButton(nextItem));
             });
             overviewContent.appendChild(grid);
+        }
+
+        function renderKnowledgeOverlapSection(config) {
+            if (!config || !Array.isArray(config.items) || !config.items.length) {
+                return;
+            }
+
+            const shell = document.createElement('div');
+            shell.className = 'knowledge-overlap-shell';
+
+            const panel = document.createElement('details');
+            panel.className = 'knowledge-overlap-panel';
+
+            const summary = document.createElement('summary');
+            summary.className = 'knowledge-overlap-summary';
+            summary.setAttribute('aria-label', 'Show knowledge overlap details');
+            summary.innerHTML = `
+                <span class="knowledge-overlap-summary-text">
+                    <span class="knowledge-overlap-summary-kicker">Expand</span>
+                    <span class="knowledge-overlap-summary-title">${config.summary || 'Knowledge overlap'}</span>
+                </span>
+                <span class="knowledge-overlap-summary-icon" aria-hidden="true">+</span>
+            `;
+            panel.appendChild(summary);
+
+            const body = document.createElement('div');
+            body.className = 'knowledge-overlap-body';
+
+            const visual = document.createElement('div');
+            visual.className = 'knowledge-overlap-visual';
+
+            const diagram = document.createElement('div');
+            diagram.className = 'knowledge-overlap-diagram';
+            diagram.setAttribute(
+                'aria-label',
+                'Three overlapping knowledge rings for domain knowledge, professional and technical knowledge, and organizational and business knowledge.'
+            );
+            diagram.setAttribute('role', 'img');
+
+            config.items.forEach((item) => {
+                const ring = document.createElement('div');
+                ring.className = `knowledge-overlap-ring is-${item.key || 'generic'}`;
+
+                const label = document.createElement('span');
+                label.className = 'knowledge-overlap-ring-label';
+                (item.ringLines || [item.term || '']).forEach((line) => {
+                    const lineSpan = document.createElement('span');
+                    lineSpan.textContent = line;
+                    label.appendChild(lineSpan);
+                });
+
+                ring.appendChild(label);
+                diagram.appendChild(ring);
+            });
+
+            visual.appendChild(diagram);
+            body.appendChild(visual);
+
+            const copy = document.createElement('div');
+            copy.className = 'knowledge-overlap-copy';
+
+            config.items.forEach((item) => {
+                const note = document.createElement('p');
+                note.className = 'knowledge-overlap-note';
+
+                const term = document.createElement('strong');
+                term.className = 'knowledge-overlap-note-term';
+                term.textContent = item.term || '';
+
+                note.appendChild(term);
+                note.appendChild(document.createTextNode(` - ${item.description || ''}`));
+                copy.appendChild(note);
+            });
+
+            body.appendChild(copy);
+            panel.appendChild(body);
+            shell.appendChild(panel);
+            overviewContent.appendChild(shell);
         }
 
         function renderInfoFrames(frames) {
@@ -4929,7 +5553,9 @@
 
             if (view.type === 'menu') {
                 renderMenu(view);
+                renderKnowledgeOverlapSection(view.expandableKnowledgeSection);
                 renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
                 return;
             }
 
@@ -4938,31 +5564,37 @@
                     renderInfoFrames([view.intro]);
                 }
                 renderMenu(view);
+                renderKnowledgeOverlapSection(view.expandableKnowledgeSection);
                 renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
                 return;
             }
 
             if (view.type === 'matrix') {
                 renderMatrix(view);
                 renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
                 return;
             }
 
             if (view.type === 'ai-types') {
                 renderAiTypes(view);
                 renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
                 return;
             }
 
             if (view.type === 'dtap') {
                 renderDtap(view);
                 renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
                 return;
             }
 
             if (view.type === 'structured-chaos') {
                 renderStructuredChaos(view);
                 renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
                 return;
             }
 
@@ -4971,6 +5603,7 @@
             }
 
             renderViewAddOns(currentKey, view);
+            maybeAutoplayNarration(view, currentKey);
         }
 
         backButton.addEventListener('click', () => {
@@ -4985,13 +5618,38 @@
                 return;
             }
 
-            if (narrationButton.classList.contains('is-playing')) {
-                stopNarration();
+            if (narrationState === 'playing') {
+                pauseNarration();
+                return;
+            }
+
+            if (narrationState === 'paused') {
+                resumeNarration();
                 return;
             }
 
             playOverviewButtonSound(`${getCurrentViewKey()}-narration`, 'forward');
             playNarration(activeNarrationText);
+        });
+
+        autoplayToggle.addEventListener('click', () => {
+            isNarrationAutoplayEnabled = !isNarrationAutoplayEnabled;
+            saveNarrationAutoplayState();
+            updateAutoplayToggleUi();
+
+            if (isNarrationAutoplayEnabled) {
+                playOverviewButtonSound(`${getCurrentViewKey()}-autoplay-on`, 'forward');
+                if (!narrationButton.disabled) {
+                    if (narrationState === 'paused') {
+                        resumeNarration();
+                    } else if (narrationState === 'idle' && activeNarrationText) {
+                        playNarration(activeNarrationText);
+                    }
+                }
+                return;
+            }
+
+            playOverviewButtonSound(`${getCurrentViewKey()}-autoplay-off`, 'back');
         });
 
         editModeToggle.addEventListener('click', () => {
@@ -5009,11 +5667,15 @@
         window.addEventListener('beforeunload', stopNarration);
         if (supportsSpeechSynthesis) {
             window.speechSynthesis.addEventListener?.('voiceschanged', () => {
+                if (narrationState !== 'idle') {
+                    return;
+                }
                 const currentView = getViewDefinition(getCurrentViewKey()) || overviewTree.root;
                 updateNarrationButton(currentView);
             });
         }
 
+        updateAutoplayToggleUi();
         applyPageTheme(currentDtapThemeKey);
         renderCurrentView();
     </script>
