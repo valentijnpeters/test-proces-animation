@@ -733,9 +733,27 @@
         .choice-button.is-tone-red .choice-label {
             color: #fff0f3;
         }
+        .choice-button.is-tone-slate {
+            background:
+                linear-gradient(180deg, rgba(96, 107, 122, 0.92), rgba(29, 35, 45, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0));
+            border-color: rgba(212, 220, 230, 0.22);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.18),
+                0 14px 24px rgba(0,0,0,0.2),
+                0 4px 0 rgba(16, 21, 28, 0.82);
+        }
+        .choice-button.is-tone-slate .choice-label {
+            color: #f6f9fd;
+        }
         .choice-button.is-compact {
             min-height: 118px;
             padding: 20px 18px;
+        }
+        .choice-button.is-small {
+            min-height: 76px;
+            padding: 14px 16px;
+            border-radius: 20px;
         }
         .choice-button.is-span-full {
             grid-column: 1 / -1;
@@ -743,6 +761,11 @@
         .choice-button.is-compact .choice-label {
             font-size: clamp(1rem, 1.45vw, 1.2rem);
             line-height: 1.12;
+        }
+        .choice-button.is-small .choice-label {
+            font-size: clamp(0.88rem, 1.15vw, 1rem);
+            line-height: 1.2;
+            letter-spacing: 0.05em;
         }
 
         .choice-label {
@@ -763,6 +786,40 @@
             font-size: 0.92rem;
             line-height: 1.55;
             max-width: 30ch;
+        }
+
+        .decision-layout {
+            display: grid;
+            gap: 18px;
+        }
+
+        .decision-status-row {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .decision-intent-shell {
+            border-radius: 28px;
+            border: 1px solid rgba(184, 230, 255, 0.18);
+            background:
+                linear-gradient(180deg, rgba(8, 38, 79, 0.94), rgba(4, 22, 48, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.1),
+                0 18px 30px rgba(0,0,0,0.22);
+            padding: 18px;
+        }
+
+        .decision-intent-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .decision-intent-column {
+            display: grid;
+            gap: 14px;
         }
 
         .knowledge-overlap-shell {
@@ -887,22 +944,22 @@
         }
 
         .knowledge-overlap-ring.is-domain {
-            top: 0;
-            left: 0;
+            top: 2%;
+            left: 7%;
             border-color: rgba(255, 222, 145, 0.9);
             color: #fff3cb;
         }
 
         .knowledge-overlap-ring.is-professional {
-            top: 0;
-            right: 0;
+            top: 2%;
+            right: 7%;
             border-color: rgba(167, 239, 255, 0.9);
             color: #e5faff;
         }
 
         .knowledge-overlap-ring.is-organizational {
             left: 50%;
-            bottom: 0;
+            top: 37%;
             transform: translateX(-50%);
             border-color: rgba(162, 247, 222, 0.9);
             color: #ebfff7;
@@ -947,6 +1004,100 @@
             font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
             font-size: 1rem;
             letter-spacing: 0.04em;
+        }
+
+        .expandable-action-shell {
+            margin-top: clamp(52px, 9vw, 96px);
+        }
+
+        .expandable-action-panel {
+            border-radius: 28px;
+            border: 1px solid rgba(184, 230, 255, 0.18);
+            background:
+                linear-gradient(180deg, rgba(8, 38, 79, 0.94), rgba(4, 22, 48, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.1),
+                0 18px 30px rgba(0,0,0,0.22);
+            overflow: hidden;
+        }
+
+        .expandable-action-summary {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            min-height: 68px;
+            padding: 18px 22px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .expandable-action-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .expandable-action-summary-text {
+            display: grid;
+            gap: 5px;
+        }
+
+        .expandable-action-summary-kicker {
+            color: rgba(167, 239, 255, 0.72);
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .expandable-action-summary-title {
+            color: var(--gold-soft);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1.02rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            line-height: 1.08;
+            text-transform: uppercase;
+        }
+
+        .expandable-action-summary-icon {
+            width: 32px;
+            height: 32px;
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            color: #f5fbff;
+            font-size: 1.18rem;
+            font-weight: 900;
+            background:
+                radial-gradient(circle at 30% 24%, rgba(255,255,255,0.2), transparent 28%),
+                linear-gradient(180deg, rgba(174, 184, 198, 0.94), rgba(67, 75, 88, 0.98));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.18),
+                0 8px 14px rgba(0,0,0,0.2);
+            transition: transform 0.18s ease;
+        }
+
+        .expandable-action-panel[open] .expandable-action-summary-icon {
+            transform: rotate(45deg);
+        }
+
+        .expandable-action-body {
+            display: grid;
+            gap: 18px;
+            padding: 6px 22px 22px;
+            border-top: 1px solid rgba(184, 230, 255, 0.12);
+            background:
+                linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+        }
+
+        .expandable-action-group {
+            display: grid;
+            gap: 10px;
         }
 
         .info-frame {
@@ -2429,6 +2580,16 @@
                 grid-template-columns: 1fr;
             }
 
+            .decision-status-row,
+            .decision-intent-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .decision-intent-shell {
+                padding: 14px;
+                border-radius: 22px;
+            }
+
             .choice-button {
                 min-height: 146px;
                 padding: 22px 18px;
@@ -2437,6 +2598,15 @@
             .choice-button.is-compact {
                 min-height: 92px;
                 padding: 16px 14px;
+            }
+            .choice-button.is-small {
+                min-height: 68px;
+                padding: 12px 14px;
+                border-radius: 18px;
+            }
+            .choice-button.is-small .choice-label {
+                font-size: 0.84rem;
+                line-height: 1.22;
             }
 
             .choice-copy {
@@ -2502,6 +2672,40 @@
 
             .knowledge-overlap-note-term {
                 font-size: 0.94rem;
+            }
+
+            .expandable-action-shell {
+                margin-top: clamp(44px, 12vw, 72px);
+            }
+
+            .expandable-action-panel {
+                border-radius: 22px;
+            }
+
+            .expandable-action-summary {
+                min-height: 60px;
+                padding: 16px 16px;
+                gap: 14px;
+            }
+
+            .expandable-action-summary-kicker {
+                font-size: 0.64rem;
+            }
+
+            .expandable-action-summary-title {
+                font-size: 0.9rem;
+                line-height: 1.12;
+            }
+
+            .expandable-action-summary-icon {
+                width: 28px;
+                height: 28px;
+                font-size: 1rem;
+            }
+
+            .expandable-action-body {
+                padding: 4px 16px 18px;
+                gap: 16px;
             }
 
             .structured-chaos-stage {
@@ -3034,11 +3238,11 @@
         ];
 
         const techniqueIntentOptions = [
-            { slug: 'okay', label: 'Okay', tone: 'green' },
-            { slug: 'proof-not-work', label: "Proof that it doesn't work (find bug)", tone: 'blue' },
-            { slug: 'find-out-work', label: "Find out that it works (you didn't expect it to)", tone: 'blue' },
-            { slug: 'proof-work', label: 'Proof that it works (validation and verification)', tone: 'blue' },
-            { slug: 'find-out-why-not-work', label: "Find out why it doesn't work (discover root cause)", tone: 'blue' }
+            { slug: 'okay', label: 'Okay', tone: 'green', decisionGroup: 'status' },
+            { slug: 'proof-not-work', label: "Proof that it doesn't work (find bug)", tone: 'blue', decisionGroup: 'proof' },
+            { slug: 'find-out-work', label: "Find out why it works (you didn't expect it to)", tone: 'slate', decisionGroup: 'discovery' },
+            { slug: 'proof-work', label: 'Proof that it works (validation and verification)', tone: 'blue', decisionGroup: 'proof' },
+            { slug: 'find-out-why-not-work', label: "Find out why it doesn't work (discover root cause)", tone: 'slate', decisionGroup: 'discovery' }
         ];
 
         const codeToolOptions = [
@@ -3524,12 +3728,14 @@
                 {
                     label: 'Okay',
                     target: `${targetPrefix}-okay`,
-                    tone: 'green'
+                    tone: 'green',
+                    decisionGroup: 'status'
                 },
                 {
                     label: 'Not okay',
                     target: 'requirement-origin-info',
-                    tone: 'red'
+                    tone: 'red',
+                    decisionGroup: 'status'
                 },
                 ...techniqueIntentOptions
                     .filter((intent) => intent.slug !== 'okay')
@@ -3537,7 +3743,8 @@
                         label: intent.label,
                         target: `${targetPrefix}-${intent.slug}`,
                         tone: intent.tone,
-                        fullRow: true
+                        fullRow: true,
+                        decisionGroup: intent.decisionGroup || 'discovery'
                     }))
             ];
         }
@@ -3654,6 +3861,60 @@
                 type: 'menu-with-intro',
                 layout: 'single',
                 compact: true,
+                expandableActionSection: {
+                    summary: 'Requirements, reasons for testing.',
+                    ariaLabel: 'Show requirement example buttons',
+                    groups: [
+                        {
+                            items: [
+                                {
+                                    label: '1 something that must be done (internal influences f.e. CEO)',
+                                    target: 'root',
+                                    tone: 'slate',
+                                    small: true
+                                },
+                                {
+                                    label: '2 something that must be done (external influences f.e. government)',
+                                    target: 'root',
+                                    tone: 'slate',
+                                    small: true
+                                }
+                            ]
+                        },
+                        {
+                            items: [
+                                {
+                                    label: '3 something that can be done (internal influences f.e. Business Analist)',
+                                    target: 'root',
+                                    tone: 'slate',
+                                    small: true
+                                },
+                                {
+                                    label: '4 something that can be done (external influences f.e. share holders)',
+                                    target: 'root',
+                                    tone: 'slate',
+                                    small: true
+                                }
+                            ]
+                        },
+                        {
+                            items: [
+                                {
+                                    label: '5 bug, internal influences (tester reported)',
+                                    target: 'root',
+                                    tone: 'slate',
+                                    small: true
+                                },
+                                {
+                                    label: '6 bug, external influences (customer reported)',
+                                    target: 'root',
+                                    tone: 'slate',
+                                    small: true
+                                }
+                            ]
+                        }
+                    ]
+                },
                 intro: {
                     title: 'Requirement',
                     copy: 'Choose the requirement question you want to inspect next.'
@@ -4690,11 +4951,16 @@
                 button.classList.add('is-tone-green');
             } else if (item.tone === 'blue') {
                 button.classList.add('is-tone-blue');
+            } else if (item.tone === 'slate') {
+                button.classList.add('is-tone-slate');
             } else if (item.tone === 'red') {
                 button.classList.add('is-tone-red');
             }
             if (item.fullRow) {
                 button.classList.add('is-span-full');
+            }
+            if (item.small) {
+                button.classList.add('is-small');
             }
             button.innerHTML = `<span class="choice-label">${item.label}</span>`;
             if (item.copy) {
@@ -4799,6 +5065,11 @@
         }
 
         function renderMenu(view) {
+            if (view.layout === 'decision') {
+                renderDecisionMenu(view);
+                return;
+            }
+
             const grid = document.createElement('div');
             const layoutClass = view.layout === 'triple'
                 ? 'choice-grid is-triple'
@@ -4813,6 +5084,56 @@
                 grid.appendChild(createMenuButton(nextItem));
             });
             overviewContent.appendChild(grid);
+        }
+
+        function renderDecisionMenu(view) {
+            const layout = document.createElement('div');
+            layout.className = 'decision-layout';
+
+            const statusRow = document.createElement('div');
+            statusRow.className = 'decision-status-row';
+
+            const intentShell = document.createElement('section');
+            intentShell.className = 'decision-intent-shell';
+
+            const intentGrid = document.createElement('div');
+            intentGrid.className = 'decision-intent-grid';
+
+            const proofColumn = document.createElement('div');
+            proofColumn.className = 'decision-intent-column is-proof';
+
+            const discoveryColumn = document.createElement('div');
+            discoveryColumn.className = 'decision-intent-column is-discovery';
+
+            (view.items || []).forEach((item) => {
+                const button = createMenuButton(view.compact ? { ...item, compact: true } : item);
+                if (item.decisionGroup === 'status') {
+                    statusRow.appendChild(button);
+                    return;
+                }
+                if (item.decisionGroup === 'proof') {
+                    proofColumn.appendChild(button);
+                    return;
+                }
+                discoveryColumn.appendChild(button);
+            });
+
+            if (statusRow.childElementCount) {
+                layout.appendChild(statusRow);
+            }
+
+            if (proofColumn.childElementCount || discoveryColumn.childElementCount) {
+                if (proofColumn.childElementCount) {
+                    intentGrid.appendChild(proofColumn);
+                }
+                if (discoveryColumn.childElementCount) {
+                    intentGrid.appendChild(discoveryColumn);
+                }
+                intentShell.appendChild(intentGrid);
+                layout.appendChild(intentShell);
+            }
+
+            overviewContent.appendChild(layout);
         }
 
         function renderKnowledgeOverlapSection(config) {
@@ -4888,6 +5209,46 @@
             });
 
             body.appendChild(copy);
+            panel.appendChild(body);
+            shell.appendChild(panel);
+            overviewContent.appendChild(shell);
+        }
+
+        function renderExpandableActionSection(config) {
+            if (!config || !Array.isArray(config.groups) || !config.groups.length) {
+                return;
+            }
+
+            const shell = document.createElement('div');
+            shell.className = 'expandable-action-shell';
+
+            const panel = document.createElement('details');
+            panel.className = 'expandable-action-panel';
+
+            const summary = document.createElement('summary');
+            summary.className = 'expandable-action-summary';
+            summary.setAttribute('aria-label', config.ariaLabel || 'Show extra requirement examples');
+            summary.innerHTML = `
+                <span class="expandable-action-summary-text">
+                    <span class="expandable-action-summary-kicker">Expand</span>
+                    <span class="expandable-action-summary-title">${config.summary || 'More examples'}</span>
+                </span>
+                <span class="expandable-action-summary-icon" aria-hidden="true">+</span>
+            `;
+            panel.appendChild(summary);
+
+            const body = document.createElement('div');
+            body.className = 'expandable-action-body';
+
+            config.groups.forEach((group) => {
+                const wrap = document.createElement('div');
+                wrap.className = 'expandable-action-group';
+                (group.items || []).forEach((item) => {
+                    wrap.appendChild(createMenuButton(item));
+                });
+                body.appendChild(wrap);
+            });
+
             panel.appendChild(body);
             shell.appendChild(panel);
             overviewContent.appendChild(shell);
@@ -5554,6 +5915,7 @@
             if (view.type === 'menu') {
                 renderMenu(view);
                 renderKnowledgeOverlapSection(view.expandableKnowledgeSection);
+                renderExpandableActionSection(view.expandableActionSection);
                 renderViewAddOns(currentKey, view);
                 maybeAutoplayNarration(view, currentKey);
                 return;
@@ -5565,6 +5927,7 @@
                 }
                 renderMenu(view);
                 renderKnowledgeOverlapSection(view.expandableKnowledgeSection);
+                renderExpandableActionSection(view.expandableActionSection);
                 renderViewAddOns(currentKey, view);
                 maybeAutoplayNarration(view, currentKey);
                 return;
