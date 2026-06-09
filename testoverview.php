@@ -1100,6 +1100,441 @@
             gap: 10px;
         }
 
+        .reason-map-stage {
+            display: grid;
+            gap: 18px;
+        }
+
+        .reason-map-frame {
+            position: relative;
+            border-radius: 30px;
+            border: 1px solid rgba(184, 230, 255, 0.18);
+            background:
+                radial-gradient(circle at 16% 12%, rgba(255, 229, 162, 0.08), transparent 24%),
+                radial-gradient(circle at 84% 10%, rgba(167, 239, 255, 0.08), transparent 24%),
+                linear-gradient(180deg, rgba(9, 41, 84, 0.96), rgba(5, 24, 50, 0.98));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 18px 30px rgba(0,0,0,0.24);
+            padding: 24px 22px 22px;
+        }
+
+        .reason-map-plan {
+            width: min(420px, 100%);
+            margin: 0 auto 20px;
+            padding: 16px 22px;
+            border-radius: 24px;
+            border: 1px solid rgba(184, 230, 255, 0.16);
+            text-align: center;
+            color: var(--gold-soft);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background:
+                linear-gradient(180deg, rgba(13, 58, 115, 0.88), rgba(6, 30, 63, 0.96)),
+                linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 14px 24px rgba(0,0,0,0.2);
+        }
+
+        .reason-map-script-wrap {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .reason-map-script-wrap::after {
+            content: "";
+            position: absolute;
+            top: calc(100% + 2px);
+            left: 50%;
+            width: 2px;
+            height: 26px;
+            transform: translateX(-50%);
+            background: linear-gradient(180deg, rgba(184, 230, 255, 0.54), rgba(184, 230, 255, 0));
+        }
+
+        .reason-map-requirement {
+            position: relative;
+            width: min(340px, 100%);
+            margin: 0 auto 34px;
+            padding: 13px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 226, 145, 0.22);
+            color: #fff6d4;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(1.08rem, 1.65vw, 1.3rem);
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-align: center;
+            text-transform: uppercase;
+            background:
+                linear-gradient(180deg, rgba(52, 76, 105, 0.92), rgba(23, 36, 56, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 12px 20px rgba(0,0,0,0.18);
+        }
+
+        .reason-map-requirement::after {
+            content: "";
+            position: absolute;
+            top: calc(100% + 2px);
+            left: 50%;
+            width: 2px;
+            height: 28px;
+            transform: translateX(-50%);
+            background: linear-gradient(180deg, rgba(184, 230, 255, 0.54), rgba(184, 230, 255, 0));
+        }
+
+        .reason-map-node {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 999px;
+            border: 1px solid rgba(184, 230, 255, 0.16);
+            color: #f4fbff;
+            background:
+                linear-gradient(180deg, rgba(13, 59, 114, 0.9), rgba(6, 30, 61, 0.96)),
+                linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 12px 20px rgba(0,0,0,0.18);
+        }
+
+        .reason-map-node.is-script {
+            width: 160px;
+            height: 160px;
+            padding: 20px;
+            color: #fff4cc;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(1.08rem, 1.55vw, 1.28rem);
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .reason-map-branches {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .reason-map-branches::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 12.5%;
+            width: 75%;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(184, 230, 255, 0), rgba(184, 230, 255, 0.6) 18%, rgba(184, 230, 255, 0.6) 82%, rgba(184, 230, 255, 0));
+        }
+
+        .reason-map-branch {
+            position: relative;
+            display: grid;
+            justify-items: center;
+            gap: 14px;
+            padding-top: 24px;
+        }
+
+        .reason-map-branch::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 24px;
+            transform: translateX(-50%);
+            background: linear-gradient(180deg, rgba(184, 230, 255, 0.64), rgba(184, 230, 255, 0));
+        }
+
+        .reason-map-node.is-case {
+            width: min(100%, 176px);
+            height: 176px;
+            padding: 20px;
+            cursor: pointer;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(0.84rem, 1.05vw, 0.96rem);
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            line-height: 1.14;
+            text-transform: uppercase;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        }
+
+        .reason-map-node.is-case span {
+            max-width: 13ch;
+            overflow-wrap: anywhere;
+        }
+
+        .reason-map-node.is-case:hover,
+        .reason-map-node.is-case:focus-visible {
+            transform: translateY(-2px);
+            border-color: rgba(255, 226, 145, 0.34);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.14),
+                0 16px 24px rgba(0,0,0,0.2),
+                0 0 18px rgba(140, 232, 255, 0.14);
+            outline: none;
+        }
+
+        .reason-map-node.is-case.is-selected {
+            border-color: rgba(255, 226, 145, 0.42);
+            color: #fff8dd;
+        }
+
+        .reason-map-node.is-case.is-explicit {
+            background:
+                linear-gradient(180deg, rgba(15, 87, 141, 0.95), rgba(8, 42, 78, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0));
+        }
+
+        .reason-map-node.is-mindmap {
+            width: 120px;
+            height: 120px;
+            padding: 18px;
+            color: rgba(236, 246, 255, 0.9);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 0.82rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            line-height: 1.08;
+            text-transform: uppercase;
+        }
+
+        .reason-map-branch-tail {
+            display: grid;
+            justify-items: center;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .reason-map-layer-prompt {
+            margin: 0;
+            color: rgba(167, 239, 255, 0.78);
+            font-size: 0.68rem;
+            font-weight: 900;
+            letter-spacing: 0.12em;
+            line-height: 1.25;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .reason-map-layer-prompt[hidden],
+        .reason-map-layer-roller[hidden],
+        .reason-map-preview[hidden] {
+            display: none !important;
+        }
+
+        .reason-map-layer-roller {
+            position: relative;
+            display: grid;
+            place-items: center;
+            width: min(100%, 180px);
+            min-height: 58px;
+            padding: 7px;
+            border: 1px solid rgba(184, 230, 255, 0.18);
+            border-radius: 18px;
+            background:
+                linear-gradient(180deg, rgba(11, 19, 33, 0.94), rgba(4, 10, 20, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                inset 0 -10px 18px rgba(0,0,0,0.22),
+                0 10px 18px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .reason-map-layer-roller::before,
+        .reason-map-layer-roller::after {
+            content: "";
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            height: 1px;
+            background: rgba(255,255,255,0.14);
+            z-index: 1;
+        }
+
+        .reason-map-layer-roller::before {
+            top: 12px;
+        }
+
+        .reason-map-layer-roller::after {
+            bottom: 12px;
+        }
+
+        .reason-map-layer-value {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            place-items: center;
+            width: 100%;
+            min-height: 44px;
+            border: 1px solid rgba(212, 220, 230, 0.22);
+            border-radius: 14px;
+            color: #f6f9fd;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 0.82rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-align: center;
+            text-transform: uppercase;
+            background:
+                linear-gradient(180deg, rgba(96, 107, 122, 0.92), rgba(29, 35, 45, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.18),
+                0 4px 0 rgba(16, 21, 28, 0.82);
+            transition: transform 0.16s ease, opacity 0.16s ease, border-color 0.16s ease;
+        }
+
+        .reason-map-layer-roller.is-rolling .reason-map-layer-value {
+            animation: reason-map-slot-flash 0.22s steps(2, end) infinite;
+            border-color: rgba(167, 239, 255, 0.38);
+        }
+
+        .reason-map-layer-roller.is-settled .reason-map-layer-value {
+            border-color: rgba(255, 226, 145, 0.38);
+            color: #fff8df;
+            transform: translateY(-1px);
+        }
+
+        .reason-map-layer-roller.is-nothing {
+            border-color: rgba(184, 230, 255, 0.12);
+            background:
+                linear-gradient(180deg, rgba(20, 32, 49, 0.7), rgba(9, 15, 26, 0.88)),
+                linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+        }
+
+        .reason-map-layer-roller.is-nothing::before,
+        .reason-map-layer-roller.is-nothing::after {
+            opacity: 0.28;
+        }
+
+        .reason-map-layer-roller.is-nothing .reason-map-layer-value {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-color: rgba(184, 230, 255, 0.18);
+            color: rgba(232, 242, 249, 0.78);
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: none;
+            background:
+                linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.02));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.08);
+            transform: none;
+        }
+
+        .reason-map-layer-roller.is-nothing .reason-map-layer-value::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            margin-right: 7px;
+            border-radius: 999px;
+            background: rgba(184, 230, 255, 0.42);
+        }
+
+        @keyframes reason-map-slot-flash {
+            0% {
+                opacity: 0.52;
+                transform: translateY(-2px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(2px);
+            }
+        }
+
+        .reason-map-preview {
+            width: min(100%, 300px);
+            padding: 14px 16px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(184, 230, 255, 0.16);
+            background:
+                linear-gradient(180deg, rgba(11, 50, 101, 0.74), rgba(5, 25, 50, 0.92)),
+                linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.08),
+                0 12px 20px rgba(0,0,0,0.16);
+            text-align: center;
+        }
+
+        .reason-map-preview-label {
+            margin: 0;
+            color: rgba(167, 239, 255, 0.8);
+            font-size: 0.68rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .reason-map-preview-title {
+            margin: 0;
+            color: var(--gold-soft);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1.02rem;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .reason-map-preview-mode {
+            margin: 8px 0 0;
+            color: #f5fbff;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+        }
+
+        .reason-map-preview-reason {
+            display: flex;
+            align-items: center;
+            min-height: 76px;
+            margin: 12px 0 0;
+            padding: 14px 16px;
+            border: 1px solid rgba(212, 220, 230, 0.22);
+            border-radius: 20px;
+            color: #f6f9fd;
+            font-size: clamp(0.88rem, 1.15vw, 1rem);
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+            background:
+                linear-gradient(180deg, rgba(96, 107, 122, 0.92), rgba(29, 35, 45, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.18),
+                0 14px 24px rgba(0,0,0,0.2),
+                0 4px 0 rgba(16, 21, 28, 0.82);
+            text-align: left;
+            text-transform: none;
+        }
+
+        .reason-map-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 6px;
+        }
+
+        .reason-map-actions .choice-button {
+            width: min(260px, 100%);
+            min-height: auto;
+            padding: 18px 22px;
+            text-align: center;
+        }
+
         .info-frame {
             border-radius: 28px;
             border: 1px solid rgba(184, 230, 255, 0.18);
@@ -2708,6 +3143,124 @@
                 gap: 16px;
             }
 
+            .reason-map-frame {
+                padding: 18px 10px 18px;
+                border-radius: 22px;
+            }
+
+            .reason-map-plan {
+                padding: 14px 16px;
+                font-size: clamp(1.22rem, 5vw, 1.56rem);
+                border-radius: 20px;
+            }
+
+            .reason-map-script-wrap {
+                margin-bottom: 24px;
+            }
+
+            .reason-map-script-wrap::after {
+                height: 20px;
+            }
+
+            .reason-map-requirement {
+                width: min(260px, 100%);
+                margin-bottom: 28px;
+                padding: 11px 16px;
+                border-radius: 18px;
+                font-size: 0.94rem;
+            }
+
+            .reason-map-requirement::after {
+                height: 22px;
+            }
+
+            .reason-map-node.is-script {
+                width: 126px;
+                height: 126px;
+                font-size: 0.9rem;
+                padding: 16px;
+            }
+
+            .reason-map-branches {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+
+            .reason-map-branches::before {
+                left: 25%;
+                width: 50%;
+            }
+
+            .reason-map-branch {
+                gap: 10px;
+                padding-top: 18px;
+            }
+
+            .reason-map-branch::before {
+                height: 18px;
+            }
+
+            .reason-map-node.is-case {
+                width: min(100%, 126px);
+                height: 126px;
+                padding: 14px;
+                font-size: 0.58rem;
+                letter-spacing: 0.04em;
+                line-height: 1.16;
+            }
+
+            .reason-map-node.is-mindmap {
+                width: 86px;
+                height: 86px;
+                padding: 12px;
+                font-size: 0.64rem;
+            }
+
+            .reason-map-layer-prompt {
+                max-width: 150px;
+                font-size: 0.58rem;
+                letter-spacing: 0.08em;
+            }
+
+            .reason-map-layer-roller {
+                width: min(100%, 150px);
+                min-height: 42px;
+                border-radius: 14px;
+                padding: 6px;
+            }
+
+            .reason-map-layer-value {
+                min-height: 34px;
+                border-radius: 11px;
+                font-size: 0.72rem;
+            }
+
+            .reason-map-preview {
+                width: min(100%, 156px);
+                padding: 12px 10px 13px;
+                border-radius: 16px;
+            }
+
+            .reason-map-preview-label {
+                font-size: 0.58rem;
+            }
+
+            .reason-map-preview-title {
+                font-size: 0.82rem;
+            }
+
+            .reason-map-preview-mode {
+                font-size: 0.78rem;
+            }
+
+            .reason-map-preview-reason {
+                font-size: 0.68rem;
+                line-height: 1.35;
+                min-height: 64px;
+                padding: 12px 10px;
+                border-radius: 14px;
+            }
+
             .structured-chaos-stage {
                 padding: 18px 10px 18px;
                 border-radius: 22px;
@@ -3243,6 +3796,15 @@
             { slug: 'find-out-work', label: "Find out why it works (you didn't expect it to)", tone: 'slate', decisionGroup: 'discovery' },
             { slug: 'proof-work', label: 'Proof that it works (validation and verification)', tone: 'blue', decisionGroup: 'proof' },
             { slug: 'find-out-why-not-work', label: "Find out why it doesn't work (discover root cause)", tone: 'slate', decisionGroup: 'discovery' }
+        ];
+
+        const requirementReasonTestingOptions = [
+            { id: 'must-internal', label: '1 something that must be done (internal influences f.e. CEO)' },
+            { id: 'must-external', label: '2 something that must be done (external influences f.e. government)' },
+            { id: 'can-internal', label: '3 something that can be done (internal influences f.e. Business Analist)' },
+            { id: 'can-external', label: '4 something that can be done (external influences f.e. share holders)' },
+            { id: 'bug-internal', label: '5 bug, internal influences (tester reported)' },
+            { id: 'bug-external', label: '6 bug, external influences (customer reported)' }
         ];
 
         const codeToolOptions = [
@@ -3866,52 +4428,28 @@
                     ariaLabel: 'Show requirement example buttons',
                     groups: [
                         {
-                            items: [
-                                {
-                                    label: '1 something that must be done (internal influences f.e. CEO)',
-                                    target: 'root',
-                                    tone: 'slate',
-                                    small: true
-                                },
-                                {
-                                    label: '2 something that must be done (external influences f.e. government)',
-                                    target: 'root',
-                                    tone: 'slate',
-                                    small: true
-                                }
-                            ]
+                            items: requirementReasonTestingOptions.slice(0, 2).map((item) => ({
+                                label: item.label,
+                                target: 'requirement-reason-map',
+                                tone: 'slate',
+                                small: true
+                            }))
                         },
                         {
-                            items: [
-                                {
-                                    label: '3 something that can be done (internal influences f.e. Business Analist)',
-                                    target: 'root',
-                                    tone: 'slate',
-                                    small: true
-                                },
-                                {
-                                    label: '4 something that can be done (external influences f.e. share holders)',
-                                    target: 'root',
-                                    tone: 'slate',
-                                    small: true
-                                }
-                            ]
+                            items: requirementReasonTestingOptions.slice(2, 4).map((item) => ({
+                                label: item.label,
+                                target: 'requirement-reason-map',
+                                tone: 'slate',
+                                small: true
+                            }))
                         },
                         {
-                            items: [
-                                {
-                                    label: '5 bug, internal influences (tester reported)',
-                                    target: 'root',
-                                    tone: 'slate',
-                                    small: true
-                                },
-                                {
-                                    label: '6 bug, external influences (customer reported)',
-                                    target: 'root',
-                                    tone: 'slate',
-                                    small: true
-                                }
-                            ]
+                            items: requirementReasonTestingOptions.slice(4).map((item) => ({
+                                label: item.label,
+                                target: 'requirement-reason-map',
+                                tone: 'slate',
+                                small: true
+                            }))
                         }
                     ]
                 },
@@ -3936,6 +4474,13 @@
                         target: 'root'
                     }
                 ]
+            },
+            'requirement-reason-map': {
+                title: 'Reason for testing',
+                breadcrumb: 'Map the test-plan hierarchy, switch between tacit and explicit, then continue to the main page.',
+                type: 'requirement-reason-map',
+                speechText: 'Leonardo da Vinci already said it: everything connects to everything else.',
+                nextTarget: 'root'
             },
             'requirement-language-clarity': {
                 title: 'Requirement wording',
@@ -5258,6 +5803,254 @@
             (frames || []).forEach((frame) => overviewContent.appendChild(createInfoFrame(frame)));
         }
 
+        function renderRequirementReasonMap(view) {
+            const stage = document.createElement('section');
+            stage.className = 'reason-map-stage';
+
+            const frame = document.createElement('section');
+            frame.className = 'reason-map-frame';
+
+            const plan = document.createElement('div');
+            plan.className = 'reason-map-plan';
+            plan.textContent = 'Test plan';
+            frame.appendChild(plan);
+
+            const scriptWrap = document.createElement('div');
+            scriptWrap.className = 'reason-map-script-wrap';
+
+            const scriptNode = document.createElement('div');
+            scriptNode.className = 'reason-map-node is-script';
+            scriptNode.textContent = 'Test script';
+            scriptWrap.appendChild(scriptNode);
+            frame.appendChild(scriptWrap);
+
+            const requirementNode = document.createElement('div');
+            requirementNode.className = 'reason-map-requirement';
+            requirementNode.textContent = 'requirement 1';
+            frame.appendChild(requirementNode);
+
+            const branches = document.createElement('div');
+            branches.className = 'reason-map-branches';
+
+            const toggleModes = [
+                'Tacit knowledge based test',
+                'Explicit knowledge based test'
+            ];
+            const triggerOutcomes = [
+                { label: 'Front-end', type: 'layer', weight: 18 },
+                { label: 'Back-end', type: 'layer', weight: 18 },
+                { label: 'nothing', type: 'nothing', weight: 64 }
+            ];
+            const triggerRollLabels = triggerOutcomes.map((outcome) => outcome.label);
+            const pickTriggerOutcome = () => {
+                const totalWeight = triggerOutcomes.reduce((total, outcome) => total + outcome.weight, 0);
+                let cursor = Math.random() * totalWeight;
+                for (const outcome of triggerOutcomes) {
+                    cursor -= outcome.weight;
+                    if (cursor <= 0) {
+                        return outcome;
+                    }
+                }
+                return triggerOutcomes[triggerOutcomes.length - 1];
+            };
+            const reasonLabels = requirementReasonTestingOptions.map((item) => item.label);
+            const createRouletteQueue = (currentLabel) => {
+                const queue = [...reasonLabels];
+                for (let queueIndex = queue.length - 1; queueIndex > 0; queueIndex -= 1) {
+                    const swapIndex = Math.floor(Math.random() * (queueIndex + 1));
+                    [queue[queueIndex], queue[swapIndex]] = [queue[swapIndex], queue[queueIndex]];
+                }
+
+                if (queue.length > 1 && queue[0] === currentLabel) {
+                    const replacementIndex = queue.findIndex((label) => label !== currentLabel);
+                    [queue[0], queue[replacementIndex]] = [queue[replacementIndex], queue[0]];
+                }
+
+                return queue;
+            };
+            const drawRouletteReason = (branchState) => {
+                if (!branchState.reasonQueue.length) {
+                    branchState.reasonQueue = createRouletteQueue(branchState.reasonLabel);
+                }
+                branchState.reasonLabel = branchState.reasonQueue.shift() || '';
+            };
+            const branchStates = [
+                { label: 'Test case 1', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
+                { label: 'Test case 2', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
+                { label: 'Test case 3', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
+                { label: 'Test case 4', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] }
+            ];
+
+            branchStates.forEach((branchState, index) => {
+                const branch = document.createElement('div');
+                branch.className = 'reason-map-branch';
+
+                const caseNode = document.createElement('button');
+                caseNode.className = 'reason-map-node is-case';
+                caseNode.type = 'button';
+
+                const caseLabel = document.createElement('span');
+                caseNode.appendChild(caseLabel);
+                branch.appendChild(caseNode);
+
+                const mindmapNode = document.createElement('div');
+                mindmapNode.className = 'reason-map-node is-mindmap';
+                mindmapNode.textContent = 'Mindmap';
+                branch.appendChild(mindmapNode);
+
+                const branchTail = document.createElement('div');
+                branchTail.className = 'reason-map-branch-tail';
+
+                const layerPrompt = document.createElement('p');
+                layerPrompt.className = 'reason-map-layer-prompt';
+                layerPrompt.textContent = 'the test triggers a ...';
+                layerPrompt.hidden = true;
+
+                const layerRoller = document.createElement('div');
+                layerRoller.className = 'reason-map-layer-roller';
+                layerRoller.setAttribute('aria-live', 'polite');
+                layerRoller.hidden = true;
+
+                const layerRollerValue = document.createElement('span');
+                layerRollerValue.className = 'reason-map-layer-value';
+                layerRollerValue.textContent = 'Front-end';
+                layerRoller.appendChild(layerRollerValue);
+
+                const preview = document.createElement('article');
+                preview.className = 'reason-map-preview';
+                preview.hidden = true;
+                preview.innerHTML = `
+                    <p class="reason-map-preview-title"></p>
+                    <p class="reason-map-preview-mode"></p>
+                    <p class="reason-map-preview-reason"></p>
+                `;
+
+                const previewTitle = preview.querySelector('.reason-map-preview-title');
+                const previewMode = preview.querySelector('.reason-map-preview-mode');
+                const previewReason = preview.querySelector('.reason-map-preview-reason');
+
+                const updateBranchUi = () => {
+                    const modeLabel = branchState.modeIndex === null
+                        ? branchState.label
+                        : toggleModes[branchState.modeIndex];
+                    const nextModeLabel = branchState.modeIndex === null
+                        ? toggleModes[0]
+                        : toggleModes[(branchState.modeIndex + 1) % toggleModes.length];
+
+                    caseLabel.textContent = modeLabel;
+                    caseNode.classList.toggle('is-selected', branchState.modeIndex !== null);
+                    caseNode.classList.toggle('is-explicit', branchState.modeIndex === 1);
+                    caseNode.setAttribute(
+                        'aria-label',
+                        branchState.modeIndex === null
+                            ? `${branchState.label}, click to toggle to ${nextModeLabel}`
+                            : `${modeLabel}, click to switch to ${nextModeLabel}`
+                    );
+
+                    layerPrompt.hidden = branchState.modeIndex === null;
+                    layerRoller.hidden = branchState.modeIndex === null;
+                    layerRoller.classList.toggle('is-rolling', branchState.isRolling);
+                    layerRoller.classList.toggle('is-settled', !branchState.isRolling && Boolean(branchState.layer));
+                    layerRoller.classList.toggle('is-nothing', !branchState.isRolling && branchState.triggerType === 'nothing');
+                    layerRoller.setAttribute(
+                        'aria-label',
+                        branchState.isRolling
+                            ? 'Rolling between Front-end, Back-end, and nothing'
+                            : (branchState.layer ? `Result ${branchState.layer}` : 'Layer roller waiting')
+                    );
+
+                    const shouldShowPreview = branchState.modeIndex !== null
+                        && Boolean(branchState.layer)
+                        && !branchState.isRolling
+                        && branchState.triggerType === 'layer';
+                    preview.hidden = !shouldShowPreview;
+                    if (shouldShowPreview) {
+                        previewTitle.textContent = branchState.layer;
+                        previewMode.textContent = '...new thingy, namely';
+                        previewReason.textContent = branchState.reasonLabel;
+                    }
+                };
+
+                const finishLayerRoll = (token, finalOutcome) => {
+                    if (token !== branchState.rollToken) return;
+                    branchState.isRolling = false;
+                    branchState.layer = finalOutcome.label;
+                    branchState.triggerType = finalOutcome.type;
+                    branchState.rollTimer = null;
+                    layerRollerValue.textContent = finalOutcome.label;
+                    updateBranchUi();
+                };
+
+                const startLayerRoll = () => {
+                    branchState.rollToken += 1;
+                    if (branchState.rollTimer) {
+                        window.clearTimeout(branchState.rollTimer);
+                    }
+
+                    const token = branchState.rollToken;
+                    const finalOutcome = pickTriggerOutcome();
+                    const rollDuration = 4000 + Math.floor(Math.random() * 2001);
+                    const startedAt = window.performance.now();
+                    let rollIndex = Math.floor(Math.random() * triggerRollLabels.length);
+
+                    branchState.layer = '';
+                    branchState.triggerType = '';
+                    branchState.isRolling = true;
+                    layerRollerValue.textContent = triggerRollLabels[rollIndex];
+                    updateBranchUi();
+
+                    const tick = () => {
+                        if (token !== branchState.rollToken) return;
+
+                        const elapsed = window.performance.now() - startedAt;
+                        if (elapsed >= rollDuration) {
+                            finishLayerRoll(token, finalOutcome);
+                            return;
+                        }
+
+                        rollIndex += 1;
+                        layerRollerValue.textContent = triggerRollLabels[rollIndex % triggerRollLabels.length];
+
+                        const progress = Math.min(elapsed / rollDuration, 1);
+                        const nextDelay = 70 + Math.round(560 * progress * progress);
+                        branchState.rollTimer = window.setTimeout(tick, nextDelay);
+                    };
+
+                    branchState.rollTimer = window.setTimeout(tick, 70);
+                };
+
+                caseNode.addEventListener('click', () => {
+                    branchState.modeIndex = branchState.modeIndex === null
+                        ? 0
+                        : (branchState.modeIndex + 1) % toggleModes.length;
+                    drawRouletteReason(branchState);
+                    startLayerRoll();
+                });
+
+                updateBranchUi();
+
+                branchTail.appendChild(layerPrompt);
+                branchTail.appendChild(layerRoller);
+                branchTail.appendChild(preview);
+                branch.appendChild(branchTail);
+                branches.appendChild(branch);
+            });
+
+            frame.appendChild(branches);
+            stage.appendChild(frame);
+
+            const actions = document.createElement('div');
+            actions.className = 'reason-map-actions';
+            actions.appendChild(createMenuButton({
+                label: view.nextLabel || 'Next',
+                target: view.nextTarget || 'root',
+                compact: true
+            }));
+            stage.appendChild(actions);
+
+            overviewContent.appendChild(stage);
+        }
+
         function renderStructuredChaos(view) {
             const stage = document.createElement('section');
             stage.className = 'structured-chaos-stage';
@@ -5949,6 +6742,13 @@
 
             if (view.type === 'dtap') {
                 renderDtap(view);
+                renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
+                return;
+            }
+
+            if (view.type === 'requirement-reason-map') {
+                renderRequirementReasonMap(view);
                 renderViewAddOns(currentKey, view);
                 maybeAutoplayNarration(view, currentKey);
                 return;
