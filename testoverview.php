@@ -1408,10 +1408,15 @@
         }
 
         .reason-map-layer-roller.is-nothing {
-            border-color: rgba(184, 230, 255, 0.12);
+            border-color: rgba(171, 255, 211, 0.32);
             background:
-                linear-gradient(180deg, rgba(20, 32, 49, 0.7), rgba(9, 15, 26, 0.88)),
-                linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+                radial-gradient(circle at 50% 12%, rgba(171, 255, 211, 0.2), transparent 42%),
+                linear-gradient(180deg, rgba(20, 84, 55, 0.88), rgba(6, 45, 29, 0.96)),
+                linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.16),
+                0 0 22px rgba(86, 255, 173, 0.22),
+                0 10px 18px rgba(0,0,0,0.18);
         }
 
         .reason-map-layer-roller.is-nothing::before,
@@ -1423,27 +1428,40 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-color: rgba(184, 230, 255, 0.18);
-            color: rgba(232, 242, 249, 0.78);
+            border-color: rgba(171, 255, 211, 0.34);
+            color: #ecfff3;
             font-family: "Trebuchet MS", sans-serif;
-            font-size: 0.9rem;
-            font-weight: 700;
+            font-size: 0.96rem;
+            font-weight: 900;
             letter-spacing: 0.03em;
             text-transform: none;
             background:
-                linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.02));
+                linear-gradient(180deg, rgba(33, 135, 84, 0.96), rgba(13, 74, 48, 0.98)),
+                linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0));
             box-shadow:
-                inset 0 1px 0 rgba(255,255,255,0.08);
+                inset 0 1px 0 rgba(255,255,255,0.2),
+                0 4px 0 rgba(5, 40, 24, 0.72);
             transform: none;
         }
 
         .reason-map-layer-roller.is-nothing .reason-map-layer-value::before {
-            content: "";
-            width: 7px;
-            height: 7px;
+            content: "✓";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
             margin-right: 7px;
             border-radius: 999px;
-            background: rgba(184, 230, 255, 0.42);
+            color: #0b3e28;
+            font-size: 0.72rem;
+            font-weight: 900;
+            background: #ecfff3;
+            box-shadow: 0 0 12px rgba(236, 255, 243, 0.42);
+        }
+
+        .reason-map-layer-roller.is-nothing .reason-map-layer-value::before {
+            content: "\2713";
         }
 
         @keyframes reason-map-slot-flash {
@@ -5474,6 +5492,56 @@
             sparkleOscillator.stop(now + 0.25);
         }
 
+        function playRequirementReasonOutcomeSound(outcomeType) {
+            const audioContext = getOverviewAudioContext();
+            if (!audioContext) return;
+
+            const now = audioContext.currentTime + 0.005;
+            const masterGain = audioContext.createGain();
+            masterGain.gain.setValueAtTime(0.0001, now);
+            masterGain.gain.exponentialRampToValueAtTime(outcomeType === 'nothing' ? 0.16 : 0.14, now + 0.018);
+            masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.78);
+            masterGain.connect(audioContext.destination);
+
+            const notes = outcomeType === 'nothing'
+                ? [392, 523.25, 659.25, 783.99]
+                : [392, 311.13, 246.94];
+
+            notes.forEach((frequency, index) => {
+                const oscillator = audioContext.createOscillator();
+                const gain = audioContext.createGain();
+                const startAt = now + index * (outcomeType === 'nothing' ? 0.07 : 0.11);
+                oscillator.type = outcomeType === 'nothing' ? (index % 2 ? 'triangle' : 'sine') : 'sawtooth';
+                oscillator.frequency.setValueAtTime(frequency, startAt);
+                oscillator.frequency.exponentialRampToValueAtTime(
+                    outcomeType === 'nothing' ? frequency * 1.08 : frequency * 0.78,
+                    startAt + 0.18
+                );
+                gain.gain.setValueAtTime(0.0001, startAt);
+                gain.gain.exponentialRampToValueAtTime(outcomeType === 'nothing' ? 0.075 : 0.06, startAt + 0.028);
+                gain.gain.exponentialRampToValueAtTime(0.0001, startAt + (outcomeType === 'nothing' ? 0.25 : 0.32));
+                oscillator.connect(gain);
+                gain.connect(masterGain);
+                oscillator.start(startAt);
+                oscillator.stop(startAt + 0.36);
+            });
+
+            if (outcomeType === 'layer') {
+                const thudOscillator = audioContext.createOscillator();
+                const thudGain = audioContext.createGain();
+                thudOscillator.type = 'triangle';
+                thudOscillator.frequency.setValueAtTime(96, now + 0.38);
+                thudOscillator.frequency.exponentialRampToValueAtTime(54, now + 0.58);
+                thudGain.gain.setValueAtTime(0.0001, now + 0.36);
+                thudGain.gain.exponentialRampToValueAtTime(0.075, now + 0.4);
+                thudGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.68);
+                thudOscillator.connect(thudGain);
+                thudGain.connect(masterGain);
+                thudOscillator.start(now + 0.36);
+                thudOscillator.stop(now + 0.7);
+            }
+        }
+
         function navigateToView(target, sourceViewKey = getCurrentViewKey(), soundMode = 'forward') {
             if (!getViewDefinition(target)) return;
             if (soundMode === 'victory') {
@@ -5837,9 +5905,9 @@
                 'Explicit knowledge based test'
             ];
             const triggerOutcomes = [
-                { label: 'Front-end', type: 'layer', weight: 18 },
-                { label: 'Back-end', type: 'layer', weight: 18 },
-                { label: 'nothing', type: 'nothing', weight: 64 }
+                { label: 'Front-end', type: 'layer', weight: 14 },
+                { label: 'Back-end', type: 'layer', weight: 14 },
+                { label: 'nothing', type: 'nothing', weight: 72 }
             ];
             const triggerRollLabels = triggerOutcomes.map((outcome) => outcome.label);
             const pickTriggerOutcome = () => {
@@ -5947,7 +6015,8 @@
                             : `${modeLabel}, click to switch to ${nextModeLabel}`
                     );
 
-                    layerPrompt.hidden = branchState.modeIndex === null;
+                    layerPrompt.hidden = branchState.modeIndex === null
+                        || (!branchState.isRolling && branchState.triggerType === 'nothing');
                     layerRoller.hidden = branchState.modeIndex === null;
                     layerRoller.classList.toggle('is-rolling', branchState.isRolling);
                     layerRoller.classList.toggle('is-settled', !branchState.isRolling && Boolean(branchState.layer));
@@ -5979,6 +6048,7 @@
                     branchState.rollTimer = null;
                     layerRollerValue.textContent = finalOutcome.label;
                     updateBranchUi();
+                    playRequirementReasonOutcomeSound(finalOutcome.type);
                 };
 
                 const startLayerRoll = () => {
