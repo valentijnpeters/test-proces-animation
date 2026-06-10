@@ -1159,12 +1159,15 @@
         }
 
         .reason-map-requirement {
+            appearance: none;
             position: relative;
+            display: block;
             width: min(340px, 100%);
             margin: 0 auto 34px;
             padding: 13px 20px;
             border-radius: 20px;
             border: 1px solid rgba(255, 226, 145, 0.22);
+            cursor: pointer;
             color: #fff6d4;
             font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
             font-size: clamp(1.08rem, 1.65vw, 1.3rem);
@@ -1178,6 +1181,8 @@
             box-shadow:
                 inset 0 1px 0 rgba(255,255,255,0.12),
                 0 12px 20px rgba(0,0,0,0.18);
+            transform-style: preserve-3d;
+            transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
         }
 
         .reason-map-requirement::after {
@@ -1189,6 +1194,40 @@
             height: 28px;
             transform: translateX(-50%);
             background: linear-gradient(180deg, rgba(184, 230, 255, 0.54), rgba(184, 230, 255, 0));
+        }
+
+        .reason-map-requirement:hover,
+        .reason-map-requirement:focus-visible {
+            border-color: rgba(255, 226, 145, 0.38);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.16),
+                0 16px 24px rgba(0,0,0,0.2),
+                0 0 18px rgba(255, 226, 145, 0.12);
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .reason-map-requirement.is-code {
+            font-size: clamp(0.72rem, 1.08vw, 0.92rem);
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+            text-transform: none;
+        }
+
+        .reason-map-requirement.is-flipping {
+            animation: reason-map-requirement-flip 0.62s cubic-bezier(.28,.88,.26,1.05);
+        }
+
+        @keyframes reason-map-requirement-flip {
+            0% {
+                transform: rotateY(0deg) translateY(-1px);
+            }
+            48% {
+                transform: rotateY(92deg) translateY(-2px);
+            }
+            100% {
+                transform: rotateY(360deg) translateY(-1px);
+            }
         }
 
         .reason-map-node {
@@ -1538,6 +1577,158 @@
                 0 4px 0 rgba(16, 21, 28, 0.82);
             text-align: left;
             text-transform: none;
+        }
+
+        .reason-map-robot-panel {
+            width: min(720px, 100%);
+            margin: 28px auto 0;
+            padding: 18px;
+            border: 1px solid rgba(184, 230, 255, 0.18);
+            border-radius: 26px;
+            background:
+                radial-gradient(circle at 18% 18%, rgba(171, 255, 211, 0.12), transparent 30%),
+                radial-gradient(circle at 82% 10%, rgba(167, 239, 255, 0.12), transparent 30%),
+                linear-gradient(180deg, rgba(11, 50, 101, 0.76), rgba(5, 25, 50, 0.94));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.1),
+                0 16px 26px rgba(0,0,0,0.2);
+            animation: reason-map-robot-reveal 0.42s ease both;
+        }
+
+        .reason-map-robot-panel[hidden] {
+            display: none !important;
+        }
+
+        .reason-map-robot-head {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 14px;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .reason-map-robot-icon {
+            position: relative;
+            width: 68px;
+            height: 58px;
+            border: 2px solid rgba(171, 255, 211, 0.34);
+            border-radius: 22px 22px 18px 18px;
+            background:
+                linear-gradient(180deg, rgba(33, 135, 84, 0.82), rgba(13, 74, 48, 0.96)),
+                linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.18),
+                0 0 18px rgba(86, 255, 173, 0.2);
+        }
+
+        .reason-map-robot-icon::before {
+            content: "";
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            width: 2px;
+            height: 14px;
+            transform: translateX(-50%);
+            background: rgba(171, 255, 211, 0.72);
+            box-shadow: 0 -4px 0 2px rgba(171, 255, 211, 0.52);
+        }
+
+        .reason-map-robot-eye {
+            position: absolute;
+            top: 20px;
+            width: 11px;
+            height: 11px;
+            border-radius: 999px;
+            background: #ecfff3;
+            box-shadow: 0 0 10px rgba(236, 255, 243, 0.6);
+        }
+
+        .reason-map-robot-eye.is-left {
+            left: 18px;
+        }
+
+        .reason-map-robot-eye.is-right {
+            right: 18px;
+        }
+
+        .reason-map-robot-mouth {
+            position: absolute;
+            left: 22px;
+            right: 22px;
+            bottom: 14px;
+            height: 3px;
+            border-radius: 999px;
+            background: rgba(236, 255, 243, 0.72);
+        }
+
+        .reason-map-robot-kicker {
+            margin: 0;
+            color: rgba(167, 239, 255, 0.78);
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .reason-map-robot-title {
+            margin: 3px 0 0;
+            color: #f6f9fd;
+            font-size: clamp(1rem, 1.6vw, 1.24rem);
+            font-weight: 900;
+            letter-spacing: 0.04em;
+        }
+
+        .reason-map-robot-sliders {
+            display: grid;
+            gap: 12px;
+        }
+
+        .reason-map-robot-slider {
+            display: grid;
+            grid-template-columns: minmax(92px, 0.45fr) minmax(0, 1fr) 54px;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 14px;
+            border: 1px solid rgba(184, 230, 255, 0.14);
+            border-radius: 18px;
+            background: rgba(255,255,255,0.045);
+        }
+
+        .reason-map-robot-slider.is-disabled {
+            opacity: 0.54;
+            filter: blur(1.4px);
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .reason-map-robot-slider-label,
+        .reason-map-robot-value {
+            color: #f6f9fd;
+            font-size: 0.82rem;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .reason-map-robot-value {
+            color: var(--gold-soft);
+            text-align: right;
+        }
+
+        .reason-map-robot-range {
+            width: 100%;
+            accent-color: #8cffc0;
+        }
+
+        @keyframes reason-map-robot-reveal {
+            from {
+                opacity: 0;
+                transform: translateY(16px) scale(0.98);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
 
         .reason-map-actions {
@@ -3188,6 +3379,11 @@
                 font-size: 0.94rem;
             }
 
+            .reason-map-requirement.is-code {
+                font-size: 0.62rem;
+                letter-spacing: 0.03em;
+            }
+
             .reason-map-requirement::after {
                 height: 22px;
             }
@@ -3277,6 +3473,33 @@
                 min-height: 64px;
                 padding: 12px 10px;
                 border-radius: 14px;
+            }
+
+            .reason-map-robot-panel {
+                margin-top: 22px;
+                padding: 15px 12px;
+                border-radius: 20px;
+            }
+
+            .reason-map-robot-head {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+
+            .reason-map-robot-icon {
+                width: 60px;
+                height: 52px;
+            }
+
+            .reason-map-robot-slider {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                padding: 11px 12px;
+            }
+
+            .reason-map-robot-value {
+                text-align: left;
             }
 
             .structured-chaos-stage {
@@ -4497,7 +4720,7 @@
                 title: 'Reason for testing',
                 breadcrumb: 'Map the test-plan hierarchy, switch between tacit and explicit, then continue to the main page.',
                 type: 'requirement-reason-map',
-                speechText: 'Leonardo da Vinci already said it: everything connects to everything else.',
+                speechText: 'Leonardo da Vinci already said it: everything connects to everything else. Change a requirement, change a testcase. Change a database, change of data. Change the domain, change the knowledge level, and so on. Now click all Testcase circles and see what happens.',
                 nextTarget: 'root'
             },
             'requirement-language-clarity': {
@@ -5542,6 +5765,26 @@
             }
         }
 
+        function playRequirementReasonSlotTick(stepIndex = 0) {
+            const audioContext = getOverviewAudioContext();
+            if (!audioContext) return;
+
+            const now = audioContext.currentTime + 0.002;
+            const masterGain = audioContext.createGain();
+            masterGain.gain.setValueAtTime(0.0001, now);
+            masterGain.gain.exponentialRampToValueAtTime(0.055, now + 0.006);
+            masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.07);
+            masterGain.connect(audioContext.destination);
+
+            const oscillator = audioContext.createOscillator();
+            oscillator.type = stepIndex % 2 ? 'square' : 'triangle';
+            oscillator.frequency.setValueAtTime(620 + (stepIndex % 5) * 86, now);
+            oscillator.frequency.exponentialRampToValueAtTime(420 + (stepIndex % 3) * 54, now + 0.055);
+            oscillator.connect(masterGain);
+            oscillator.start(now);
+            oscillator.stop(now + 0.075);
+        }
+
         function navigateToView(target, sourceViewKey = getCurrentViewKey(), soundMode = 'forward') {
             if (!getViewDefinition(target)) return;
             if (soundMode === 'victory') {
@@ -5892,10 +6135,39 @@
             scriptWrap.appendChild(scriptNode);
             frame.appendChild(scriptWrap);
 
-            const requirementNode = document.createElement('div');
+            const requirementNode = document.createElement('button');
             requirementNode.className = 'reason-map-requirement';
-            requirementNode.textContent = 'requirement 1';
+            requirementNode.type = 'button';
+            requirementNode.setAttribute('aria-live', 'polite');
             frame.appendChild(requirementNode);
+
+            const requirementLabels = [
+                'requirement 1',
+                'f.e. [storynmbr-pra.prio-requirementcategory-number]',
+                '138363-25-FR-001'
+            ];
+            let requirementLabelIndex = 0;
+            let requirementFlipTimer = null;
+            const updateRequirementNode = () => {
+                requirementNode.textContent = requirementLabels[requirementLabelIndex];
+                requirementNode.classList.toggle('is-code', requirementLabelIndex > 0);
+                requirementNode.setAttribute('aria-label', `Requirement identifier: ${requirementLabels[requirementLabelIndex]}`);
+            };
+            requirementNode.addEventListener('click', () => {
+                if (requirementFlipTimer) {
+                    window.clearTimeout(requirementFlipTimer);
+                }
+                requirementLabelIndex = (requirementLabelIndex + 1) % requirementLabels.length;
+                requirementNode.classList.remove('is-flipping');
+                void requirementNode.offsetWidth;
+                requirementNode.classList.add('is-flipping');
+                playOverviewButtonSound(`${getCurrentViewKey()}-requirement-flip`, 'forward');
+                requirementFlipTimer = window.setTimeout(updateRequirementNode, 210);
+                window.setTimeout(() => {
+                    requirementNode.classList.remove('is-flipping');
+                }, 640);
+            });
+            updateRequirementNode();
 
             const branches = document.createElement('div');
             branches.className = 'reason-map-branches';
@@ -5943,11 +6215,71 @@
                 branchState.reasonLabel = branchState.reasonQueue.shift() || '';
             };
             const branchStates = [
-                { label: 'Test case 1', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
-                { label: 'Test case 2', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
-                { label: 'Test case 3', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
-                { label: 'Test case 4', modeIndex: null, layer: '', triggerType: '', isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] }
+                { label: 'Test case 1', modeIndex: null, layer: '', triggerType: '', hasSpun: false, isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
+                { label: 'Test case 2', modeIndex: null, layer: '', triggerType: '', hasSpun: false, isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
+                { label: 'Test case 3', modeIndex: null, layer: '', triggerType: '', hasSpun: false, isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] },
+                { label: 'Test case 4', modeIndex: null, layer: '', triggerType: '', hasSpun: false, isRolling: false, rollToken: 0, rollTimer: null, reasonLabel: '', reasonQueue: [] }
             ];
+
+            const robotPanel = document.createElement('section');
+            robotPanel.className = 'reason-map-robot-panel';
+            robotPanel.hidden = true;
+            robotPanel.innerHTML = `
+                <div class="reason-map-robot-head">
+                    <div class="reason-map-robot-icon" aria-hidden="true">
+                        <span class="reason-map-robot-eye is-left"></span>
+                        <span class="reason-map-robot-eye is-right"></span>
+                        <span class="reason-map-robot-mouth"></span>
+                    </div>
+                    <div>
+                        <p class="reason-map-robot-kicker">Automation temperament</p>
+                        <p class="reason-map-robot-title">Adjust the testing companion</p>
+                    </div>
+                </div>
+                <div class="reason-map-robot-sliders"></div>
+            `;
+
+            const robotSliders = robotPanel.querySelector('.reason-map-robot-sliders');
+            const robotSliderConfig = [
+                { label: 'Humor', min: 60, max: 75, value: 75 },
+                { label: 'Honesty', min: 90, max: 95, value: 90 },
+                { label: 'Discretion', min: 0, max: 100, value: 84, disabled: true }
+            ];
+
+            robotSliderConfig.forEach((config) => {
+                const row = document.createElement('label');
+                row.className = `reason-map-robot-slider${config.disabled ? ' is-disabled' : ''}`;
+
+                const label = document.createElement('span');
+                label.className = 'reason-map-robot-slider-label';
+                label.textContent = config.label;
+
+                const input = document.createElement('input');
+                input.className = 'reason-map-robot-range';
+                input.type = 'range';
+                input.min = String(config.min);
+                input.max = String(config.max);
+                input.value = String(config.value);
+                input.disabled = Boolean(config.disabled);
+
+                const value = document.createElement('span');
+                value.className = 'reason-map-robot-value';
+                const syncValue = () => {
+                    value.textContent = `${input.value}%`;
+                };
+                input.addEventListener('input', syncValue);
+                syncValue();
+
+                row.appendChild(label);
+                row.appendChild(input);
+                row.appendChild(value);
+                robotSliders.appendChild(row);
+            });
+
+            const updateRobotPanelVisibility = () => {
+                robotPanel.hidden = !branchStates.every((state) => state.hasSpun)
+                    || branchStates.some((state) => state.isRolling);
+            };
 
             branchStates.forEach((branchState, index) => {
                 const branch = document.createElement('div');
@@ -6045,9 +6377,11 @@
                     branchState.isRolling = false;
                     branchState.layer = finalOutcome.label;
                     branchState.triggerType = finalOutcome.type;
+                    branchState.hasSpun = true;
                     branchState.rollTimer = null;
                     layerRollerValue.textContent = finalOutcome.label;
                     updateBranchUi();
+                    updateRobotPanelVisibility();
                     playRequirementReasonOutcomeSound(finalOutcome.type);
                 };
 
@@ -6067,7 +6401,9 @@
                     branchState.triggerType = '';
                     branchState.isRolling = true;
                     layerRollerValue.textContent = triggerRollLabels[rollIndex];
+                    playRequirementReasonSlotTick(rollIndex);
                     updateBranchUi();
+                    updateRobotPanelVisibility();
 
                     const tick = () => {
                         if (token !== branchState.rollToken) return;
@@ -6080,6 +6416,7 @@
 
                         rollIndex += 1;
                         layerRollerValue.textContent = triggerRollLabels[rollIndex % triggerRollLabels.length];
+                        playRequirementReasonSlotTick(rollIndex);
 
                         const progress = Math.min(elapsed / rollDuration, 1);
                         const nextDelay = 70 + Math.round(560 * progress * progress);
@@ -6107,6 +6444,8 @@
             });
 
             frame.appendChild(branches);
+            frame.appendChild(robotPanel);
+            updateRobotPanelVisibility();
             stage.appendChild(frame);
 
             const actions = document.createElement('div');
