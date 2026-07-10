@@ -4,26 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Overview</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ7JFWBNXP"></script>
     <script>
-        (() => {
-            const measurementId = 'G-NQ7JFWBNXP';
-            window.dataLayer = window.dataLayer || [];
-            window.gtag = window.gtag || function () {
-                window.dataLayer.push(arguments);
-            };
-            window.testOverviewGa4MeasurementId = measurementId;
-            window.testOverviewGa4Enabled = /^(www\.)?testenvansoftware\.nl$/i.test(window.location.hostname);
-            if (!window.testOverviewGa4Enabled) {
-                return;
-            }
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            const googleTag = document.createElement('script');
-            googleTag.async = true;
-            googleTag.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
-            document.head.appendChild(googleTag);
-            window.gtag('js', new Date());
-            window.gtag('config', measurementId, { send_page_view: false });
-        })();
+        gtag('config', 'G-NQ7JFWBNXP');
+        window.testOverviewGa4MeasurementId = 'G-NQ7JFWBNXP';
+        window.testOverviewGa4Enabled = true;
     </script>
     <style>
         :root {
@@ -1079,6 +1069,65 @@
             text-transform: uppercase;
         }
 
+        .analytics-dashboard-ga4-link {
+            position: absolute;
+            z-index: 8;
+            right: 24px;
+            bottom: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 14px 10px 12px;
+            border: 1px solid rgba(244, 207, 120, 0.34);
+            border-radius: 999px;
+            color: rgba(247, 231, 176, 0.96);
+            background:
+                radial-gradient(circle at 20% 20%, rgba(244, 207, 120, 0.18), transparent 42%),
+                linear-gradient(145deg, rgba(10, 39, 62, 0.88), rgba(4, 18, 32, 0.94));
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 11px 24px rgba(0,0,0,0.34), 0 0 24px rgba(244, 207, 120, 0.12);
+            font: 900 0.62rem/1 "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            letter-spacing: 0.13em;
+            text-decoration: none;
+            text-transform: uppercase;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px) scale(0.97);
+            transition:
+                opacity 0.38s ease,
+                transform 0.38s cubic-bezier(.2,.9,.25,1),
+                visibility 0s linear 0.38s;
+            visibility: hidden;
+        }
+
+        .analytics-dashboard-window.is-command-centre-intro-complete .analytics-dashboard-ga4-link {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+            transition-delay: 0s;
+            visibility: visible;
+        }
+
+        .analytics-dashboard-ga4-link::before {
+            content: "GA4";
+            display: grid;
+            place-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            color: #061827;
+            background: conic-gradient(from 210deg, #f4cf78, #5ee0ac, #79eaed, #f4cf78);
+            box-shadow: 0 0 20px rgba(121, 234, 237, 0.22);
+            letter-spacing: 0.02em;
+        }
+
+        .analytics-dashboard-ga4-link:hover,
+        .analytics-dashboard-ga4-link:focus-visible {
+            color: #ffffff;
+            border-color: rgba(121, 234, 237, 0.64);
+            outline: none;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.16), 0 13px 28px rgba(0,0,0,0.38), 0 0 32px rgba(121, 234, 237, 0.2);
+        }
+
         .analytics-dashboard-stage {
             position: relative;
             z-index: 1;
@@ -1086,7 +1135,7 @@
             overflow-y: auto;
             overscroll-behavior: contain;
             scrollbar-color: rgba(121, 234, 237, 0.42) rgba(2, 15, 31, 0.7);
-            padding: clamp(16px, 2.2vw, 30px);
+            padding: clamp(16px, 2.2vw, 30px) clamp(16px, 2.2vw, 30px) 88px;
             background:
                 radial-gradient(circle at var(--holo-pointer-x) var(--holo-pointer-y), rgba(94, 226, 239, 0.055), transparent 24%),
                 linear-gradient(105deg, transparent 0 46%, rgba(106, 235, 246, 0.022) 50%, transparent 54%);
@@ -1778,6 +1827,71 @@
             text-transform: uppercase;
         }
 
+        .analytics-dashboard-external-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .analytics-dashboard-external-card {
+            position: relative;
+            overflow: hidden;
+            min-height: 92px;
+            padding: 15px;
+            border: 1px solid rgba(244, 207, 120, 0.18);
+            border-radius: 18px;
+            background:
+                radial-gradient(circle at 12% 0%, rgba(244, 207, 120, 0.12), transparent 46%),
+                rgba(4, 29, 48, 0.64);
+        }
+
+        .analytics-dashboard-external-card::after {
+            content: "";
+            position: absolute;
+            inset: auto 14px 12px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(244, 207, 120, 0.6), transparent);
+        }
+
+        .analytics-dashboard-external-label {
+            display: block;
+            color: rgba(121, 234, 237, 0.72);
+            font-size: 0.6rem;
+            font-weight: 900;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .analytics-dashboard-external-value {
+            display: block;
+            margin-top: 9px;
+            color: #f7e7b0;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: clamp(1.35rem, 2.5vw, 2rem);
+            font-weight: 900;
+        }
+
+        .analytics-dashboard-external-meta {
+            display: block;
+            margin-top: 8px;
+            color: rgba(211, 236, 239, 0.58);
+            font-size: 0.64rem;
+        }
+
+        .analytics-dashboard-outbound-link {
+            color: rgba(247, 231, 176, 0.9);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .analytics-dashboard-outbound-link:hover,
+        .analytics-dashboard-outbound-link:focus-visible {
+            color: #ffffff;
+            outline: none;
+            text-decoration: underline;
+        }
+
         .analytics-dashboard-table tbody tr,
         .analytics-dashboard-audio-table tbody tr {
             transition: background 0.18s ease, color 0.18s ease;
@@ -1973,6 +2087,7 @@
 
         .analytics-dashboard-window.is-command-centre-booting > .analytics-dashboard-head,
         .analytics-dashboard-window.is-command-centre-booting > .analytics-dashboard-stage,
+        .analytics-dashboard-window.is-command-centre-booting > .analytics-dashboard-ga4-link,
         .analytics-dashboard-window.is-command-centre-booting > .analytics-dashboard-holo-rail {
             opacity: 0;
             visibility: hidden;
@@ -6175,8 +6290,21 @@
                 font-size: 0.52rem;
             }
 
+            .analytics-dashboard-ga4-link {
+                right: 12px;
+                bottom: 10px;
+                gap: 7px;
+                padding: 8px 10px 8px 8px;
+                font-size: 0.52rem;
+            }
+
+            .analytics-dashboard-ga4-link::before {
+                width: 30px;
+                height: 30px;
+            }
+
             .analytics-dashboard-stage {
-                padding: 12px;
+                padding: 12px 12px 72px;
             }
 
             .analytics-dashboard-access-form {
@@ -6258,6 +6386,10 @@
 
             .analytics-dashboard-audio-body {
                 padding: 12px;
+            }
+
+            .analytics-dashboard-external-grid {
+                grid-template-columns: 1fr;
             }
 
             .edit-mode-toggle {
@@ -7205,7 +7337,7 @@
         let analyticsLastRenderedViewKey = null;
         let analyticsHeartbeatTimer = null;
         let analyticsActivePeriodStartedAt = document.visibilityState === 'visible' ? Date.now() : null;
-        let ga4LastPageLocation = '';
+        let ga4LastPageLocation = GA4_TRACKING_ENABLED ? window.location.href : '';
 
         function createAnalyticsId() {
             if (window.crypto && typeof window.crypto.randomUUID === 'function') {
@@ -7337,6 +7469,11 @@
             });
         }
 
+        function getGa4PageFile() {
+            const pageFile = window.location.pathname.split('/').filter(Boolean).pop();
+            return pageFile || 'index';
+        }
+
         function recordGa4VirtualPageView(viewKey) {
             if (!GA4_TRACKING_ENABLED || !overviewTree[viewKey]) {
                 return;
@@ -7355,8 +7492,25 @@
                 page_path: `${url.pathname}${url.search}`,
                 testoverview_view: viewKey,
                 testoverview_value: getDeepLinkValue(viewKey),
+                testoverview_page_file: getGa4PageFile(),
                 testoverview_device: getAnalyticsDeviceType()
             });
+        }
+
+        function getFieldGuideCtaKey(details) {
+            const elementKey = String(details.element_key || '');
+            const elementHref = String(details.element_href || '');
+            const ctaKey = String(details.metadata?.ga4_cta || '');
+            if (ctaKey === 'more_about_me' || ctaKey === 'try_next_level') {
+                return ctaKey;
+            }
+            if (elementKey === 'field-guide:more-about-me' || elementHref.includes('linkedin.com/in/ing-valentijn-p-b696371')) {
+                return 'more_about_me';
+            }
+            if (elementKey === 'field-guide:try-next-level' || elementHref.includes('breaksoftwaretesting.com')) {
+                return 'try_next_level';
+            }
+            return '';
         }
 
         function recordGa4InteractionEvent(eventType, details = {}) {
@@ -7369,15 +7523,32 @@
                 previous_view_key: details.previous_view_key,
                 target_view_key: details.target_view_key,
                 page_value: details.page_value || getAnalyticsPageValue(),
+                page_path: details.page_path || window.location.pathname,
+                testoverview_page_file: getGa4PageFile(),
                 element_kind: details.element_kind,
                 element_key: details.element_key,
                 element_label: details.element_label,
+                element_href: details.element_href,
                 pointer_type: details.pointer_type,
                 device_type: details.device_type || getAnalyticsDeviceType(),
                 audio_source: details.audio_source,
                 audio_listened_ms: details.audio_listened_ms,
-                audio_autoplay_enabled: details.audio_autoplay_enabled
+                audio_autoplay_enabled: details.audio_autoplay_enabled,
+                cta_key: details.metadata?.ga4_cta
             });
+            const fieldGuideCtaKey = eventType === 'click' ? getFieldGuideCtaKey(details) : '';
+            if (fieldGuideCtaKey) {
+                sendGa4Event('field_guide_cta_click', {
+                    cta_key: fieldGuideCtaKey,
+                    cta_label: details.element_label,
+                    outbound_url: details.element_href,
+                    view_key: details.view_key || getCurrentViewKey(),
+                    page_value: details.page_value || getAnalyticsPageValue(),
+                    page_path: details.page_path || window.location.pathname,
+                    testoverview_page_file: getGa4PageFile(),
+                    device_type: details.device_type || getAnalyticsDeviceType()
+                });
+            }
         }
 
         function scheduleAnalyticsFlush() {
@@ -7577,7 +7748,11 @@
                 target_view_key: analyticsText(element.dataset.trackTarget, 120),
                 pointer_type: event.detail === 0 ? 'keyboard' : analyticsText(event.pointerType || 'mouse', 20),
                 click_x: Math.max(0, Math.round(event.clientX || 0)),
-                click_y: Math.max(0, Math.round(event.clientY || 0))
+                click_y: Math.max(0, Math.round(event.clientY || 0)),
+                metadata: {
+                    ga4_cta: analyticsText(element.dataset.ga4Cta, 60),
+                    track_external: analyticsText(element.dataset.trackExternal, 80)
+                }
             });
 
             if (analyticsEvent) {
@@ -7585,6 +7760,9 @@
                     const resultingViewKey = getCurrentViewKey();
                     if (resultingViewKey !== sourceViewKey) {
                         analyticsEvent.target_view_key = resultingViewKey;
+                    }
+                    if (element.dataset.trackExternal) {
+                        flushAnalyticsEvents();
                     }
                 }, 0);
             }
@@ -10050,9 +10228,12 @@ A decision table combines these three outcomes into the eight possible states sh
             }
         }
 
-        async function playDashboardCommandCentreIntro(dashboardWindow) {
+        async function playDashboardCommandCentreIntro(dashboardWindow, options = {}) {
             stopDashboardCommandCentreIntro();
             const introToken = dashboardCommandIntroToken;
+            if (typeof options.onStart === 'function') {
+                options.onStart();
+            }
             stopNarration('dashboard_command_centre');
             const entryDelayMs = Math.max(0, dashboardEntrySequenceEndsAt - Date.now() + 180);
             if (entryDelayMs > 0) {
@@ -10069,6 +10250,9 @@ A decision table combines these three outcomes into the eight possible states sh
                 dashboardWindow.classList.remove('is-command-centre-booting');
                 dashboardWindow.classList.add('is-command-centre-ready');
                 playOverviewVictorySound('analytics-dashboard-interface-ready');
+                if (typeof options.onFinish === 'function') {
+                    options.onFinish();
+                }
                 window.setTimeout(() => dashboardWindow.classList.remove('is-command-centre-ready'), 1800);
             }, 10900);
 
@@ -12038,6 +12222,15 @@ A decision table combines these three outcomes into the eight possible states sh
             return `${hours}h ${remainingMinutes}m`;
         }
 
+        function formatDashboardTimestamp(value) {
+            if (!value) return '';
+            const date = new Date(String(value).replace(' ', 'T').replace(/(\.\d{3})\d*/, '$1') + 'Z');
+            if (Number.isNaN(date.getTime())) {
+                return String(value);
+            }
+            return date.toLocaleString();
+        }
+
         function getDashboardPreviewData(period, includeIpAddresses = false) {
             const periodFactor = period === 'day' ? 0.22 : (period === 'month' ? 3.7 : 1);
             const timeline = Array.from({ length: 30 }, (_, index) => ({
@@ -12101,6 +12294,16 @@ A decision table combines these three outcomes into the eight possible states sh
                     { session: 'b44a291e', ip_address: includeIpAddresses ? '2001:db8::24' : undefined, started_at: '2026-07-06 14:18:44', device: 'mobile', entry_page: '/index.php', entry_view: 'root', last_view: 'dtap', duration_seconds: 288, clicks: 7, path_length: 5 },
                     { session: '19d8ea52', ip_address: includeIpAddresses ? '198.51.100.18' : undefined, started_at: '2026-07-06 13:56:03', device: 'desktop', entry_page: '/testoverview.php', entry_view: 'technique-interaction-table', last_view: 'technique-interaction-table', duration_seconds: 419, clicks: 9, path_length: 1 }
                 ],
+                external_link_clicks: {
+                    totals: [
+                        { cta_label: 'More about me', clicks: Math.round(9 * periodFactor), sessions: Math.round(7 * periodFactor), last_clicked_at: '2026-07-06 14:41:18' },
+                        { cta_label: 'Try the next level', clicks: Math.round(6 * periodFactor), sessions: Math.round(5 * periodFactor), last_clicked_at: '2026-07-06 14:38:02' }
+                    ],
+                    recent: [
+                        { cta_label: 'More about me', element_key: 'field-guide:more-about-me', element_href: 'https://www.linkedin.com/in/ing-valentijn-p-b696371/', view_key: 'root', page_path: '/index.php', clicked_at: '2026-07-06 14:41:18', server_received_at: '2026-07-06 14:41:19', session: '7f23c2a1', ip_address: includeIpAddresses ? '203.0.113.42' : undefined, device: 'desktop' },
+                        { cta_label: 'Try the next level', element_key: 'field-guide:try-next-level', element_href: 'https://breaksoftwaretesting.com', view_key: 'root', page_path: '/testoverview.php', clicked_at: '2026-07-06 14:38:02', server_received_at: '2026-07-06 14:38:03', session: 'b44a291e', ip_address: includeIpAddresses ? '2001:db8::24' : undefined, device: 'mobile' }
+                    ]
+                },
                 timeline
             };
         }
@@ -12205,6 +12408,33 @@ A decision table combines these three outcomes into the eight possible states sh
                     </tr>
                 `).join('')
                 : `<tr><td colspan="${showIpAddresses ? 9 : 8}">No sessions recorded in this period yet.</td></tr>`;
+            const externalLinkClicks = data.external_link_clicks || {};
+            const externalTotals = Array.isArray(externalLinkClicks.totals) ? externalLinkClicks.totals : [];
+            const externalTotalLabels = ['More about me', 'Try the next level'];
+            const externalTotalsMarkup = externalTotalLabels.map((label) => {
+                const item = externalTotals.find((total) => total.cta_label === label) || {};
+                return `
+                    <article class="analytics-dashboard-external-card">
+                        <span class="analytics-dashboard-external-label">${escapeDashboardHtml(label)}</span>
+                        <strong class="analytics-dashboard-external-value">${formatDashboardNumber(item.clicks || 0)}</strong>
+                        <span class="analytics-dashboard-external-meta">${formatDashboardNumber(item.sessions || 0)} sessions${item.last_clicked_at ? ` &middot; last ${escapeDashboardHtml(formatDashboardTimestamp(item.last_clicked_at))}` : ''}</span>
+                    </article>
+                `;
+            }).join('');
+            const externalRecentRows = (externalLinkClicks.recent || []).length
+                ? externalLinkClicks.recent.map((item) => `
+                    <tr>
+                        <td>${escapeDashboardHtml(formatDashboardTimestamp(item.clicked_at || item.server_received_at))}</td>
+                        <td>${escapeDashboardHtml(item.cta_label)}</td>
+                        <td>${escapeDashboardHtml(item.session || 'unknown')}</td>
+                        ${showIpAddresses ? `<td>${escapeDashboardHtml(item.ip_address || 'unknown')}</td>` : ''}
+                        <td>${escapeDashboardHtml(item.device || 'unknown')}</td>
+                        <td>${escapeDashboardHtml(item.page_path || '')}</td>
+                        <td>${escapeDashboardHtml(item.view_key || '')}</td>
+                        <td>${item.element_href ? `<a class="analytics-dashboard-outbound-link" href="${escapeDashboardHtml(item.element_href)}" target="_blank" rel="noopener noreferrer">open</a>` : ''}</td>
+                    </tr>
+                `).join('')
+                : `<tr><td colspan="${showIpAddresses ? 8 : 7}">No Field Guide external clicks recorded in this period yet.</td></tr>`;
             const audioPageRows = (audio.pages || []).length
                 ? audio.pages.map((item) => `
                     <tr>
@@ -12276,6 +12506,17 @@ A decision table combines these three outcomes into the eight possible states sh
                     <section class="analytics-dashboard-columns">
                         <article class="analytics-dashboard-panel"><h3 class="analytics-dashboard-panel-title">Most activated controls</h3><div class="analytics-dashboard-ranking">${topClicksMarkup}</div></article>
                         <article class="analytics-dashboard-panel"><h3 class="analytics-dashboard-panel-title">Strongest transitions</h3><div class="analytics-dashboard-transitions">${transitionsMarkup}</div></article>
+                    </section>
+
+                    <section class="analytics-dashboard-panel">
+                        <h3 class="analytics-dashboard-panel-title">Field guide exits</h3>
+                        <div class="analytics-dashboard-external-grid">${externalTotalsMarkup}</div>
+                        <div class="analytics-dashboard-table-scroll">
+                            <table class="analytics-dashboard-table ${showIpAddresses ? 'is-ip-visible' : ''}">
+                                <thead><tr><th>When</th><th>CTA</th><th>Session</th>${showIpAddresses ? '<th>IP address</th>' : ''}<th>Device</th><th>Page</th><th>View</th><th>URL</th></tr></thead>
+                                <tbody>${externalRecentRows}</tbody>
+                            </table>
+                        </div>
                     </section>
 
                     <details class="analytics-dashboard-audio">
@@ -12363,6 +12604,7 @@ A decision table combines these three outcomes into the eight possible states sh
                         <button class="analytics-dashboard-close" type="button" aria-label="Close analytics dashboard">&times;</button>
                     </header>
                     <div class="analytics-dashboard-stage"></div>
+                    <a class="analytics-dashboard-ga4-link" href="https://analytics.google.com/analytics/web/?utm_campaign=2025-q2-gbl-all-gafree&utm_source=google-growth&utm_medium=email&utm_content=link_to_ads1#/a281009588p401797438/admin/streams/table/5981790415?params=_u..nav%3Dmaui" target="_blank" rel="noopener noreferrer" data-track-id="command-centre:open-ga4" data-track-label="Open GA4 stream" data-track-external="google-analytics" data-ga4-cta="open_ga4_stream">Open analytics</a>
                 </section>
             `;
             const stage = overlay.querySelector('.analytics-dashboard-stage');
@@ -12376,6 +12618,8 @@ A decision table combines these three outcomes into the eight possible states sh
             let commandCentreIntroPlayed = false;
             let revealIpAddresses = false;
             let ipRevealHoldTimer = null;
+            let commandCentreIntroActive = false;
+            let commandCentreReadyTimer = null;
 
             const handleDashboardPointerMove = (event) => {
                 if (event.pointerType === 'touch' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -12390,17 +12634,51 @@ A decision table combines these three outcomes into the eight possible states sh
                 dashboardWindow.style.setProperty('--holo-pointer-y', `${y}%`);
             };
 
+            const clearCommandCentreReadyTimer = () => {
+                if (commandCentreReadyTimer) {
+                    window.clearTimeout(commandCentreReadyTimer);
+                    commandCentreReadyTimer = null;
+                }
+            };
+            const markCommandCentreIntroReady = () => {
+                commandCentreIntroActive = false;
+                dashboardWindow.classList.remove('is-command-centre-booting');
+                dashboardWindow.classList.add('is-command-centre-ready');
+                dashboardWindow.classList.add('is-command-centre-intro-complete');
+                clearCommandCentreReadyTimer();
+                commandCentreReadyTimer = window.setTimeout(() => {
+                    commandCentreReadyTimer = null;
+                    dashboardWindow.classList.remove('is-command-centre-ready');
+                }, 1800);
+            };
+            const hideCommandCentreGa4Link = () => {
+                dashboardWindow.classList.remove('is-command-centre-intro-complete');
+            };
+            const cancelCommandCentreIntro = () => {
+                stopDashboardCommandCentreIntro();
+                markCommandCentreIntroReady();
+            };
+
             const closeDashboard = () => {
                 document.removeEventListener('keydown', handleDashboardKeydown);
                 overlay.removeEventListener('pointermove', handleDashboardPointerMove);
                 if (ipRevealHoldTimer) window.clearTimeout(ipRevealHoldTimer);
+                clearCommandCentreReadyTimer();
                 stopDashboardCommandCentreIntro();
                 document.body.style.overflow = previousBodyOverflow;
                 overlay.remove();
                 if (returnFocusTarget.isConnected) returnFocusTarget.focus();
             };
             const handleDashboardKeydown = (event) => {
-                if (event.key === 'Escape') closeDashboard();
+                if (event.key !== 'Escape') {
+                    return;
+                }
+                if (commandCentreIntroActive || dashboardWindow.classList.contains('is-command-centre-booting')) {
+                    event.preventDefault();
+                    cancelCommandCentreIntro();
+                    return;
+                }
+                closeDashboard();
             };
             const loadDashboard = async (period = activePeriod) => {
                 activePeriod = period;
@@ -12411,11 +12689,22 @@ A decision table combines these three outcomes into the eight possible states sh
                     if (playIntroAfterNextSuccessfulLoad && !commandCentreIntroPlayed) {
                         playIntroAfterNextSuccessfulLoad = false;
                         commandCentreIntroPlayed = true;
-                        playDashboardCommandCentreIntro(dashboardWindow);
+                        hideCommandCentreGa4Link();
+                        playDashboardCommandCentreIntro(dashboardWindow, {
+                            onStart: () => {
+                                commandCentreIntroActive = true;
+                                hideCommandCentreGa4Link();
+                            },
+                            onFinish: markCommandCentreIntroReady
+                        });
+                    } else {
+                        markCommandCentreIntroReady();
                     }
                 } catch (error) {
                     if (error.status === 401) {
                         playIntroAfterNextSuccessfulLoad = false;
+                        commandCentreIntroActive = false;
+                        hideCommandCentreGa4Link();
                         revealIpAddresses = false;
                         ipRevealButton.classList.remove('is-ip-visible');
                         ipRevealButton.setAttribute('aria-pressed', 'false');
@@ -12575,11 +12864,11 @@ A decision table combines these three outcomes into the eight possible states sh
                                 <h3 class="guide-section-title">About and next step</h3>
                                 <p class="guide-copy">This page is a Codex experiment created to make software testing easier to discuss, teach, and explore. If it sparks a useful question or a lively disagreement, it is already doing its job.</p>
                                 <div class="guide-link-grid">
-                                    <a class="guide-link-card" href="https://www.linkedin.com/in/ing-valentijn-p-b696371/" target="_blank" rel="noopener noreferrer">
+                                    <a class="guide-link-card" href="https://www.linkedin.com/in/ing-valentijn-p-b696371/" target="_blank" rel="noopener noreferrer" data-track-id="field-guide:more-about-me" data-track-label="More about me" data-track-external="linkedin" data-ga4-cta="more_about_me">
                                         <span class="guide-link-label">More about me</span>
                                         <span class="guide-link-copy">Meet Valentijn and continue the conversation on LinkedIn.</span>
                                     </a>
-                                    <a class="guide-link-card" href="https://breaksoftwaretesting.com" target="_blank" rel="noopener noreferrer">
+                                    <a class="guide-link-card" href="https://breaksoftwaretesting.com" target="_blank" rel="noopener noreferrer" data-track-id="field-guide:try-next-level" data-track-label="Try the next level" data-track-external="breaksoftwaretesting" data-ga4-cta="try_next_level">
                                         <span class="guide-link-label">Try the next level</span>
                                         <span class="guide-link-copy">Like this experiment? Go deeper at breaksoftwaretesting.com.</span>
                                     </a>
