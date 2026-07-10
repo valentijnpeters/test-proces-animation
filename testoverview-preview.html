@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Overview</title>
+    <script>
+        (() => {
+            const measurementId = 'G-NQ7JFWBNXP';
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = window.gtag || function () {
+                window.dataLayer.push(arguments);
+            };
+            window.testOverviewGa4MeasurementId = measurementId;
+            window.testOverviewGa4Enabled = /^(www\.)?testenvansoftware\.nl$/i.test(window.location.hostname);
+            if (!window.testOverviewGa4Enabled) {
+                return;
+            }
+
+            const googleTag = document.createElement('script');
+            googleTag.async = true;
+            googleTag.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+            document.head.appendChild(googleTag);
+            window.gtag('js', new Date());
+            window.gtag('config', measurementId, { send_page_view: false });
+        })();
+    </script>
     <style>
         :root {
             --bg-top: #081d3d;
@@ -420,6 +441,10 @@
             position: relative;
             isolation: isolate;
             overflow: hidden;
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
             display: inline-grid;
             grid-template-columns: 46px auto;
             align-items: center;
@@ -547,14 +572,6 @@
             font-weight: 900;
             letter-spacing: 0.08em;
             line-height: 1.05;
-            text-transform: uppercase;
-        }
-
-        .guide-launcher-secret {
-            margin-top: 2px;
-            color: rgba(184, 228, 202, 0.68);
-            font: 800 0.54rem/1.15 Consolas, "Courier New", monospace;
-            letter-spacing: 0.08em;
             text-transform: uppercase;
         }
 
@@ -6158,10 +6175,6 @@
                 font-size: 0.52rem;
             }
 
-            .guide-launcher-secret {
-                font-size: 0.5rem;
-            }
-
             .analytics-dashboard-stage {
                 padding: 12px;
             }
@@ -7160,6 +7173,19 @@
         const INTRO_GUIDE_FADE_DELAY_MS = 15000;
         const DEEP_LINK_NAVIGATOR_FADE_DELAY_MS = 5000;
         const EDIT_MODE_INTRO_FADE_DELAY_MS = 10000;
+        const GA4_MEASUREMENT_ID = window.testOverviewGa4MeasurementId || 'G-NQ7JFWBNXP';
+        const GA4_TRACKING_ENABLED = Boolean(window.testOverviewGa4Enabled && typeof window.gtag === 'function');
+        const GA4_EVENT_NAME_MAP = Object.freeze({
+            click: 'testoverview_click',
+            control_change: 'testoverview_control_change',
+            audio_start: 'testoverview_audio_start',
+            audio_pause: 'testoverview_audio_pause',
+            audio_resume: 'testoverview_audio_resume',
+            audio_stop: 'testoverview_audio_stop',
+            audio_complete: 'testoverview_audio_complete',
+            audio_error: 'testoverview_audio_error',
+            audio_autoplay_toggle: 'testoverview_autoplay_toggle'
+        });
 
         let activeNarrationText = '';
         let narrationVoicesPromise = null;
@@ -7179,6 +7205,7 @@
         let analyticsLastRenderedViewKey = null;
         let analyticsHeartbeatTimer = null;
         let analyticsActivePeriodStartedAt = document.visibilityState === 'visible' ? Date.now() : null;
+        let ga4LastPageLocation = '';
 
         function createAnalyticsId() {
             if (window.crypto && typeof window.crypto.randomUUID === 'function') {
@@ -7292,6 +7319,67 @@
             }
         }
 
+        function cleanGa4Parameters(parameters) {
+            return Object.fromEntries(Object.entries(parameters).filter(([, value]) => (
+                value !== undefined
+                && value !== null
+                && value !== ''
+            )));
+        }
+
+        function sendGa4Event(eventName, parameters = {}) {
+            if (!GA4_TRACKING_ENABLED) {
+                return;
+            }
+            window.gtag('event', eventName, {
+                send_to: GA4_MEASUREMENT_ID,
+                ...cleanGa4Parameters(parameters)
+            });
+        }
+
+        function recordGa4VirtualPageView(viewKey) {
+            if (!GA4_TRACKING_ENABLED || !overviewTree[viewKey]) {
+                return;
+            }
+            const view = getViewDefinition(viewKey) || overviewTree.root;
+            const url = new URL(window.location.href);
+            const pageLocation = url.toString();
+            if (ga4LastPageLocation === pageLocation) {
+                return;
+            }
+            ga4LastPageLocation = pageLocation;
+
+            sendGa4Event('page_view', {
+                page_title: `Test Overview - ${analyticsText(view.title || viewKey, 100)}`,
+                page_location: pageLocation,
+                page_path: `${url.pathname}${url.search}`,
+                testoverview_view: viewKey,
+                testoverview_value: getDeepLinkValue(viewKey),
+                testoverview_device: getAnalyticsDeviceType()
+            });
+        }
+
+        function recordGa4InteractionEvent(eventType, details = {}) {
+            const eventName = GA4_EVENT_NAME_MAP[eventType];
+            if (!eventName) {
+                return;
+            }
+            sendGa4Event(eventName, {
+                view_key: details.view_key || getCurrentViewKey(),
+                previous_view_key: details.previous_view_key,
+                target_view_key: details.target_view_key,
+                page_value: details.page_value || getAnalyticsPageValue(),
+                element_kind: details.element_kind,
+                element_key: details.element_key,
+                element_label: details.element_label,
+                pointer_type: details.pointer_type,
+                device_type: details.device_type || getAnalyticsDeviceType(),
+                audio_source: details.audio_source,
+                audio_listened_ms: details.audio_listened_ms,
+                audio_autoplay_enabled: details.audio_autoplay_enabled
+            });
+        }
+
         function scheduleAnalyticsFlush() {
             if (!analyticsRuntimeEnabled || analyticsFlushTimer || analyticsRequestInFlight) {
                 return;
@@ -7401,6 +7489,7 @@
                     : null,
                 metadata: details.metadata || {}
             };
+            recordGa4InteractionEvent(eventType, event);
             analyticsQueue.push(event);
             if (analyticsQueue.length >= ANALYTICS_BATCH_SIZE && analyticsRetryDelayMs === 0) {
                 flushAnalyticsEvents();
@@ -12433,7 +12522,6 @@ A decision table combines these three outcomes into the eight possible states sh
                 <span class="guide-launcher-copy">
                     <span class="guide-launcher-kicker">Start here</span>
                     <span class="guide-launcher-title">Open the field guide</span>
-                    <span class="guide-launcher-secret">Hold 5 sec for Command Centre</span>
                 </span>
             `;
 
@@ -12561,6 +12649,7 @@ A decision table combines these three outcomes into the eight possible states sh
             launcher.addEventListener('pointerup', endCommandCentreHold);
             launcher.addEventListener('pointercancel', endCommandCentreHold);
             launcher.addEventListener('pointerleave', endCommandCentreHold);
+            launcher.addEventListener('contextmenu', (event) => event.preventDefault());
             launcher.addEventListener('keydown', (event) => {
                 if ((event.key === 'Enter' || event.key === ' ') && !event.repeat) {
                     beginCommandCentreHold(event);
@@ -12788,6 +12877,7 @@ A decision table combines these three outcomes into the eight possible states sh
             const currentKey = getCurrentViewKey();
             const view = getViewDefinition(currentKey) || overviewTree.root;
             syncDeepLinkUrl(currentKey);
+            recordGa4VirtualPageView(currentKey);
             recordAnalyticsView(currentKey);
             stopNarration();
             updateNarrationButton(view);
