@@ -4,7 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Overview</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="description" content="Test Overview is an interactive software testing knowledge map that explains requirements, DTAP environments, testing mindsets, tacit and explicit knowledge, test techniques, collaboration, automation choices and testing complexity.">
+    <meta name="keywords" content="software testing knowledge map, test overview, QA learning tool, requirements testing, DTAP, tacit knowledge, explicit knowledge, decision table testing, boundary value analysis, equivalence partitioning, test automation">
+    <meta name="author" content="Valentijn P.">
+    <meta name="application-name" content="Test Overview">
+    <meta name="subject" content="Interactive software testing education, QA knowledge map and test methodology exploration">
+    <meta name="abstract" content="An interactive Codex experiment that teaches how software testing decisions connect across requirements, environments, knowledge types, test techniques, collaboration and system complexity.">
+    <link rel="canonical" href="https://testenvansoftware.nl/testoverview.php">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Testen van Software">
+    <meta property="og:title" content="Test Overview - Interactive software testing knowledge map">
+    <meta property="og:description" content="Explore how requirements, DTAP, testing mindsets, knowledge, test techniques, automation and complexity connect in software testing.">
+    <meta property="og:url" content="https://testenvansoftware.nl/testoverview.php">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Test Overview - Interactive software testing knowledge map">
+    <meta name="twitter:description" content="An interactive QA learning tool about requirements, testing mindsets, knowledge, techniques and complexity.">
+    <title>Test Overview - Interactive software testing knowledge map</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ7JFWBNXP"></script>
     <script>
@@ -15,6 +34,156 @@
         gtag('config', 'G-NQ7JFWBNXP');
         window.testOverviewGa4MeasurementId = 'G-NQ7JFWBNXP';
         window.testOverviewGa4Enabled = true;
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://testenvansoftware.nl/#valentijn-p",
+                "name": "Valentijn P.",
+                "url": "https://www.linkedin.com/in/ing-valentijn-p-b696371/",
+                "sameAs": [
+                    "https://www.linkedin.com/in/ing-valentijn-p-b696371/",
+                    "https://softwaretestingbreak.com"
+                ],
+                "knowsAbout": [
+                    "software testing",
+                    "quality assurance",
+                    "test management",
+                    "requirements testing",
+                    "test automation",
+                    "exploratory testing",
+                    "software testing education"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://testenvansoftware.nl/#website",
+                "name": "Testen van Software",
+                "url": "https://testenvansoftware.nl/",
+                "inLanguage": "en",
+                "publisher": {
+                    "@id": "https://testenvansoftware.nl/#valentijn-p"
+                }
+            },
+            {
+                "@type": [
+                    "WebPage",
+                    "LearningResource"
+                ],
+                "@id": "https://testenvansoftware.nl/testoverview.php#webpage",
+                "url": "https://testenvansoftware.nl/testoverview.php",
+                "name": "Test Overview - Interactive software testing knowledge map",
+                "description": "Test Overview is an interactive software testing knowledge map that explains how requirements, DTAP environments, testing mindsets, tacit and explicit knowledge, test techniques, automation choices and complexity connect.",
+                "isPartOf": {
+                    "@id": "https://testenvansoftware.nl/#website"
+                },
+                "author": {
+                    "@id": "https://testenvansoftware.nl/#valentijn-p"
+                },
+                "publisher": {
+                    "@id": "https://testenvansoftware.nl/#valentijn-p"
+                },
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "Software testers, QA professionals, test managers, business analysts and software teams"
+                },
+                "learningResourceType": [
+                    "interactive knowledge map",
+                    "software testing explainer",
+                    "QA training tool"
+                ],
+                "teaches": [
+                    "requirements categories",
+                    "risk priority in testing",
+                    "DTAP development environments",
+                    "tacit versus explicit knowledge",
+                    "structured chaos and tester collaboration",
+                    "decision table testing",
+                    "boundary value analysis",
+                    "equivalence partitioning",
+                    "connected test techniques",
+                    "test automation decision making"
+                ],
+                "about": [
+                    "software testing",
+                    "quality assurance",
+                    "requirements engineering",
+                    "test techniques",
+                    "test automation",
+                    "test management"
+                ],
+                "inLanguage": "en",
+                "dateModified": "2026-07-11",
+                "mainEntity": {
+                    "@id": "https://testenvansoftware.nl/testoverview.php#app"
+                }
+            },
+            {
+                "@type": "WebApplication",
+                "@id": "https://testenvansoftware.nl/testoverview.php#app",
+                "name": "Test Overview",
+                "url": "https://testenvansoftware.nl/testoverview.php",
+                "applicationCategory": "EducationalApplication",
+                "operatingSystem": "Any",
+                "browserRequirements": "Requires JavaScript; narration uses browser speech synthesis when available.",
+                "description": "An interactive Codex experiment for exploring how software testing concepts connect across requirements, environments, knowledge, techniques, collaboration and complexity.",
+                "featureList": [
+                    "direct URL navigation to testing slides",
+                    "audio narration and autoplay controls",
+                    "interactive DTAP and requirement flows",
+                    "structured chaos tester mindset sliders",
+                    "tacit versus explicit knowledge explanation",
+                    "connected test techniques decision table",
+                    "private command centre analytics dashboard"
+                ],
+                "creator": {
+                    "@id": "https://testenvansoftware.nl/#valentijn-p"
+                },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://testenvansoftware.nl/testoverview.php#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is Test Overview?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Test Overview is an interactive software testing knowledge map that shows how requirements, environments, testing mindsets, tacit and explicit knowledge, test techniques, automation choices and complexity connect."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Who is Test Overview for?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "It is designed for software testers, QA professionals, test managers, business analysts and software teams who want to discuss testing as a connected professional discipline."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which testing topics does the knowledge map cover?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The map covers requirement categories, priority, DTAP environments, software testing versus test automation, structured chaos, tacit and explicit knowledge, test case hierarchies, decision table testing, boundary value analysis, equivalence partitioning and connected test techniques."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I link directly to a slide?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The page supports direct URL navigation with a value parameter, such as ?value=requirement, ?value=dtap, ?value=tacitvsexplicit or ?value=connectedtesttechniques."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
     </script>
     <style>
         :root {
@@ -48,6 +217,640 @@
                 linear-gradient(180deg, var(--bg-top), var(--bg-mid) 42%, var(--bg-bottom));
         }
 
+        .root-journey-scene,
+        .root-journey-gates {
+            display: none;
+            pointer-events: none;
+        }
+
+        body[data-overview-view="root"] {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background:
+                radial-gradient(ellipse at 50% 30%, rgba(255, 223, 145, 0.28), transparent 24%),
+                radial-gradient(ellipse at 50% 58%, rgba(68, 184, 196, 0.26), transparent 40%),
+                linear-gradient(180deg, #06162f 0%, #103e70 37%, #287c96 57%, #102f54 78%, #071a35 100%);
+        }
+
+        body[data-overview-view="root"] .root-journey-scene {
+            display: block;
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        body[data-overview-view="root"] .root-journey-gates {
+            display: block;
+            position: fixed;
+            inset: 0;
+            z-index: 40;
+            overflow: hidden;
+            perspective: 1200px;
+            animation: root-journey-gates-dismiss 3.1s linear forwards;
+        }
+
+        body.has-seen-root-intro[data-overview-view="root"] .root-journey-gates {
+            display: none;
+            animation: none;
+        }
+
+        body[data-overview-view="root"] .page-shell {
+            position: relative;
+            z-index: 2;
+        }
+
+        body[data-overview-view="root"] .overview-card {
+            isolation: isolate;
+            border-color: rgba(185, 235, 255, 0.28);
+            background:
+                linear-gradient(160deg, rgba(8, 37, 82, 0.82), rgba(3, 22, 52, 0.9)),
+                linear-gradient(120deg, rgba(255,255,255,0.12), rgba(255,255,255,0));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.14),
+                0 24px 54px rgba(0,0,0,0.34),
+                0 0 0 1px rgba(116, 218, 236, 0.05),
+                0 0 78px rgba(70, 183, 203, 0.13);
+        }
+
+        body[data-overview-view="root"] .overview-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.88;
+            background:
+                repeating-linear-gradient(180deg, rgba(172, 239, 255, 0.22) 0 5px, transparent 5px 25px) 10px 0 / 7px 100% no-repeat,
+                repeating-linear-gradient(180deg, rgba(172, 239, 255, 0.22) 0 5px, transparent 5px 25px) calc(100% - 10px) 0 / 7px 100% no-repeat,
+                repeating-linear-gradient(180deg, rgba(255, 231, 162, 0.48) 0 13px, transparent 13px 38px) 50% 29% / 4px 72% no-repeat,
+                linear-gradient(180deg, transparent 28%, rgba(159, 238, 244, 0.12) 28.1% 28.35%, rgba(255, 226, 151, 0.34) 28.45%, transparent 28.75%),
+                radial-gradient(circle 72px at 50% 18%, rgba(255, 251, 219, 0.52) 0 22%, rgba(255, 224, 143, 0.38) 48%, rgba(249, 174, 82, 0.15) 65%, transparent 68%),
+                conic-gradient(from 0deg at 50% 29%, transparent 0deg 156deg, rgba(70, 177, 190, 0.06) 157deg, rgba(4, 23, 47, 0.34) 177deg 183deg, rgba(70, 177, 190, 0.06) 203deg, transparent 204deg 360deg);
+            pointer-events: none;
+        }
+
+        body[data-overview-view="root"] .overview-kicker::after {
+            content: "WELCOME, EXPLORER";
+            display: inline-flex;
+            margin-left: 10px;
+            padding: 4px 8px;
+            border: 1px solid rgba(255, 227, 150, 0.4);
+            border-radius: 999px;
+            color: #ffe5a2;
+            background: rgba(255, 229, 162, 0.08);
+            font-size: 0.62rem;
+            letter-spacing: 0.14em;
+            vertical-align: 1px;
+            animation: root-journey-welcome-pulse 3.6s ease-in-out infinite;
+        }
+
+        .root-journey-sky {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(108deg, transparent 0 18%, rgba(167, 239, 255, 0.04) 18.1% 18.3%, transparent 18.4% 74%, rgba(255, 229, 162, 0.06) 74.1% 74.3%, transparent 74.4%),
+                radial-gradient(ellipse at 50% 39%, rgba(255, 235, 180, 0.16), transparent 23%);
+        }
+
+        .root-journey-sky::before,
+        .root-journey-sky::after {
+            content: "";
+            position: absolute;
+            width: min(42vw, 560px);
+            height: 72px;
+            border-radius: 50%;
+            background: rgba(205, 243, 255, 0.055);
+            filter: blur(18px);
+            animation: root-journey-cloud-drift 18s ease-in-out infinite alternate;
+        }
+
+        .root-journey-sky::before {
+            top: 15%;
+            left: -10%;
+        }
+
+        .root-journey-sky::after {
+            top: 22%;
+            right: -8%;
+            animation-delay: -9s;
+            animation-direction: alternate-reverse;
+        }
+
+        .root-journey-sun {
+            position: absolute;
+            top: clamp(74px, 15vh, 150px);
+            left: 50%;
+            width: clamp(126px, 17vw, 238px);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at 42% 38%, #fffce6 0 8%, #ffe7a0 28%, #f8b75f 62%, rgba(240, 137, 63, 0.08) 72%);
+            box-shadow:
+                0 0 34px rgba(255, 222, 142, 0.75),
+                0 0 100px rgba(255, 184, 93, 0.42),
+                0 0 190px rgba(121, 233, 229, 0.16);
+            opacity: 0;
+            transform: translate(-50%, 95px) scale(0.72);
+            animation: root-journey-sunrise 4.2s cubic-bezier(.18,.75,.24,1) 0.35s forwards;
+        }
+
+        .root-journey-sun::after {
+            content: "";
+            position: absolute;
+            inset: -22%;
+            border: 1px solid rgba(255, 232, 171, 0.28);
+            border-radius: 50%;
+            animation: root-journey-sun-ring 4.8s ease-in-out infinite;
+        }
+
+        .root-journey-horizon {
+            position: absolute;
+            top: clamp(250px, 38vh, 390px);
+            left: -10%;
+            width: 120%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(167, 239, 255, 0.34) 16%, rgba(255, 229, 162, 0.72) 50%, rgba(167, 239, 255, 0.34) 84%, transparent);
+            box-shadow:
+                0 -3px 18px rgba(255, 225, 144, 0.38),
+                0 8px 34px rgba(88, 216, 221, 0.28);
+            opacity: 0;
+            animation: root-journey-horizon-in 2.8s ease 1.2s forwards;
+        }
+
+        .root-journey-horizon::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 100%;
+            height: 34vh;
+            background:
+                repeating-linear-gradient(90deg, transparent 0 70px, rgba(153, 235, 239, 0.08) 71px 72px),
+                repeating-linear-gradient(180deg, rgba(153, 235, 239, 0.09) 0 1px, transparent 1px 42px);
+            transform-origin: top;
+            transform: perspective(320px) rotateX(68deg);
+            mask-image: linear-gradient(180deg, rgba(0,0,0,0.75), transparent 80%);
+        }
+
+        .root-journey-road {
+            position: absolute;
+            top: clamp(250px, 38vh, 390px);
+            bottom: -8vh;
+            left: 5%;
+            width: 90%;
+            clip-path: polygon(49.2% 0, 50.8% 0, 78% 100%, 22% 100%);
+            background:
+                linear-gradient(90deg, transparent 0 20%, rgba(132, 230, 232, 0.12) 20.2%, rgba(255, 226, 147, 0.12) 49%, rgba(132, 230, 232, 0.12) 79.8%, transparent 80%),
+                linear-gradient(180deg, rgba(4, 22, 47, 0.32), rgba(2, 12, 28, 0.7));
+            filter: drop-shadow(0 0 22px rgba(128, 232, 231, 0.18));
+            opacity: 0;
+            animation: root-journey-road-in 2.6s ease 1.65s forwards;
+        }
+
+        .root-journey-road::before,
+        .root-journey-road::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        .root-journey-road::before {
+            left: 49.55%;
+            width: 0.9%;
+            min-width: 3px;
+            background: repeating-linear-gradient(180deg, rgba(255, 229, 162, 0.86) 0 18px, transparent 18px 48px);
+            background-position-y: 0;
+            box-shadow: 0 0 12px rgba(255, 218, 122, 0.36);
+            animation: root-journey-road-move 2.6s linear infinite;
+        }
+
+        .root-journey-road::after {
+            left: 21%;
+            right: 21%;
+            border-right: 1px solid rgba(169, 240, 240, 0.34);
+            border-left: 1px solid rgba(169, 240, 240, 0.34);
+        }
+
+        .root-journey-route-map {
+            position: absolute;
+            inset: 7% 4% 3%;
+            width: 92%;
+            height: 90%;
+            overflow: visible;
+            opacity: 0.74;
+        }
+
+        .root-journey-route-line {
+            fill: none;
+            stroke: rgba(255, 228, 151, 0.48);
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-dasharray: 5 15;
+            filter: drop-shadow(0 0 6px rgba(255, 218, 124, 0.45));
+            animation: root-journey-route-dash 2.2s linear infinite;
+        }
+
+        .root-journey-traveller {
+            fill: #fff1b8;
+            stroke: rgba(153, 240, 255, 0.9);
+            stroke-width: 5;
+            filter: drop-shadow(0 0 10px #ffe29a);
+        }
+
+        .root-journey-film-rail {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: clamp(18px, 2.6vw, 38px);
+            border-right: 1px solid rgba(164, 235, 255, 0.18);
+            border-left: 1px solid rgba(164, 235, 255, 0.18);
+            background:
+                repeating-linear-gradient(180deg, rgba(2, 14, 32, 0.82) 0 13px, transparent 13px 25px),
+                linear-gradient(90deg, rgba(119, 224, 239, 0.08), rgba(255, 228, 151, 0.18), rgba(119, 224, 239, 0.08));
+            box-shadow: 0 0 22px rgba(102, 223, 237, 0.12);
+            opacity: 0.78;
+        }
+
+        .root-journey-film-rail.is-left {
+            left: clamp(5px, 1.6vw, 26px);
+        }
+
+        .root-journey-film-rail.is-right {
+            right: clamp(5px, 1.6vw, 26px);
+        }
+
+        .root-journey-film-rail::before {
+            content: "";
+            position: absolute;
+            top: -12%;
+            left: 4px;
+            right: 4px;
+            height: 44px;
+            border-radius: 5px;
+            background: linear-gradient(180deg, transparent, #dffaff 45%, #ffe4a0 55%, transparent);
+            box-shadow: 0 0 18px rgba(164, 239, 255, 0.72);
+            animation: root-journey-playhead 7s linear infinite;
+        }
+
+        .root-journey-film-rail::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: rgba(230, 249, 255, 0.46);
+            font-size: 0.52rem;
+            font-weight: 900;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            transform: translate(-50%, -50%);
+        }
+
+        .root-journey-film-rail.is-left::after {
+            content: "FRAME 01  \00B7  PLAY  \00B7  FRAME 02";
+        }
+
+        .root-journey-film-rail.is-right::after {
+            content: "KEYFRAME  \00B7  MOTION  \00B7  24 FPS";
+        }
+
+        .root-journey-waypoint {
+            position: absolute;
+            display: grid;
+            place-items: center;
+            width: 86px;
+            aspect-ratio: 1;
+            border: 1px solid rgba(171, 238, 255, 0.3);
+            border-radius: 50%;
+            color: rgba(235, 250, 255, 0.76);
+            background: radial-gradient(circle, rgba(10, 49, 77, 0.72), rgba(3, 20, 43, 0.12) 68%, transparent 70%);
+            box-shadow: inset 0 0 20px rgba(126, 229, 234, 0.1), 0 0 24px rgba(81, 215, 225, 0.12);
+            font-size: 0.56rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-align: center;
+            text-transform: uppercase;
+            animation: root-journey-waypoint-float 5.5s ease-in-out infinite;
+        }
+
+        .root-journey-waypoint::before {
+            content: "";
+            position: absolute;
+            inset: 8px;
+            border: 1px dashed rgba(255, 226, 148, 0.34);
+            border-radius: 50%;
+            animation: root-journey-waypoint-spin 12s linear infinite;
+        }
+
+        .root-journey-waypoint.is-explore {
+            top: 22%;
+            left: max(40px, calc((100vw - 1120px) / 4));
+        }
+
+        .root-journey-waypoint.is-discover {
+            top: 53%;
+            right: max(40px, calc((100vw - 1120px) / 4));
+            animation-delay: -2.6s;
+        }
+
+        .root-journey-animation-badge {
+            position: absolute;
+            right: max(42px, calc((100vw - 1120px) / 4));
+            bottom: 24px;
+            display: grid;
+            grid-template-columns: 36px auto;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 13px 10px 10px;
+            border: 1px solid rgba(160, 235, 255, 0.26);
+            border-radius: 16px;
+            color: rgba(239, 251, 255, 0.82);
+            background: rgba(3, 22, 48, 0.62);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 12px 28px rgba(0,0,0,0.18);
+            backdrop-filter: blur(8px);
+        }
+
+        .root-journey-animation-badge > span:first-child {
+            display: grid;
+            place-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            color: #092744;
+            background: linear-gradient(145deg, #fff0b3, #86e5ef);
+            box-shadow: 0 0 16px rgba(139, 232, 240, 0.42);
+            font-size: 0.82rem;
+            animation: root-journey-play-pulse 2.4s ease-in-out infinite;
+        }
+
+        .root-journey-animation-badge strong,
+        .root-journey-animation-badge small {
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .root-journey-animation-badge strong {
+            color: #ffe4a0;
+            font-size: 0.62rem;
+            letter-spacing: 0.13em;
+        }
+
+        .root-journey-animation-badge small {
+            margin-top: 3px;
+            color: rgba(193, 235, 248, 0.62);
+            font-size: 0.48rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+        }
+
+        .root-journey-door {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50.2%;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg, transparent 0 12%, rgba(166, 235, 255, 0.08) 12.2% 12.6%, transparent 12.8% 86%, rgba(255, 226, 148, 0.09) 86.2% 86.6%, transparent 86.8%),
+                radial-gradient(circle at 50% 48%, rgba(74, 196, 211, 0.14), transparent 32%),
+                linear-gradient(145deg, #061831, #0a3359 56%, #041329);
+            box-shadow: inset 0 0 70px rgba(0,0,0,0.42), 0 0 55px rgba(0,0,0,0.46);
+            backface-visibility: hidden;
+        }
+
+        .root-journey-door::before {
+            content: "";
+            position: absolute;
+            inset: 28px;
+            border: 1px solid rgba(179, 237, 255, 0.16);
+            border-radius: 18px;
+            box-shadow: inset 0 0 0 8px rgba(0, 10, 27, 0.2);
+        }
+
+        .root-journey-door::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, #ffdfa0 28%, #9beaf3 72%, transparent);
+            box-shadow: 0 0 20px rgba(255, 224, 154, 0.68);
+        }
+
+        .root-journey-door.is-left {
+            left: 0;
+            transform-origin: left center;
+            animation: root-journey-door-left 2.75s cubic-bezier(.58,.02,.23,1) 0.16s forwards;
+        }
+
+        .root-journey-door.is-left::after {
+            right: 0;
+        }
+
+        .root-journey-door.is-right {
+            right: 0;
+            transform-origin: right center;
+            animation: root-journey-door-right 2.75s cubic-bezier(.58,.02,.23,1) 0.16s forwards;
+        }
+
+        .root-journey-door.is-right::after {
+            left: 0;
+        }
+
+        .root-journey-door-copy {
+            position: absolute;
+            top: 48%;
+            color: #fff0bb;
+            font-size: clamp(0.78rem, 1.5vw, 1.12rem);
+            font-weight: 950;
+            letter-spacing: 0.28em;
+            text-shadow: 0 0 22px rgba(255, 224, 150, 0.4);
+            white-space: nowrap;
+        }
+
+        .root-journey-door.is-left .root-journey-door-copy {
+            right: clamp(22px, 5vw, 80px);
+        }
+
+        .root-journey-door.is-right .root-journey-door-copy {
+            left: clamp(22px, 5vw, 80px);
+        }
+
+        @keyframes root-journey-gates-dismiss {
+            0%, 94% { visibility: visible; }
+            100% { visibility: hidden; }
+        }
+
+        @keyframes root-journey-door-left {
+            0%, 16% { transform: translateX(0) rotateY(0); opacity: 1; }
+            54% { transform: translateX(-22%) rotateY(-24deg); opacity: 1; }
+            100% { transform: translateX(-108%) rotateY(-58deg); opacity: 0.12; }
+        }
+
+        @keyframes root-journey-door-right {
+            0%, 16% { transform: translateX(0) rotateY(0); opacity: 1; }
+            54% { transform: translateX(22%) rotateY(24deg); opacity: 1; }
+            100% { transform: translateX(108%) rotateY(58deg); opacity: 0.12; }
+        }
+
+        @keyframes root-journey-sunrise {
+            0% { opacity: 0; transform: translate(-50%, 95px) scale(0.72); filter: saturate(0.7); }
+            55% { opacity: 0.9; }
+            100% { opacity: 1; transform: translate(-50%, 0) scale(1); filter: saturate(1); }
+        }
+
+        @keyframes root-journey-sun-ring {
+            0%, 100% { transform: scale(0.88); opacity: 0.22; }
+            50% { transform: scale(1.08); opacity: 0.7; }
+        }
+
+        @keyframes root-journey-horizon-in {
+            from { opacity: 0; transform: scaleX(0.18); }
+            to { opacity: 1; transform: scaleX(1); }
+        }
+
+        @keyframes root-journey-road-in {
+            from { opacity: 0; transform: translateY(90px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes root-journey-road-move {
+            to { background-position-y: 48px; }
+        }
+
+        @keyframes root-journey-route-dash {
+            to { stroke-dashoffset: -40; }
+        }
+
+        @keyframes root-journey-cloud-drift {
+            from { transform: translateX(-2vw) scaleX(0.9); opacity: 0.35; }
+            to { transform: translateX(12vw) scaleX(1.1); opacity: 0.8; }
+        }
+
+        @keyframes root-journey-playhead {
+            0% { transform: translateY(-10vh); opacity: 0; }
+            8%, 88% { opacity: 1; }
+            100% { transform: translateY(112vh); opacity: 0; }
+        }
+
+        @keyframes root-journey-waypoint-float {
+            0%, 100% { transform: translateY(0); opacity: 0.54; }
+            50% { transform: translateY(-13px); opacity: 0.9; }
+        }
+
+        @keyframes root-journey-waypoint-spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes root-journey-play-pulse {
+            0%, 100% { transform: scale(0.94); filter: brightness(0.9); }
+            50% { transform: scale(1.06); filter: brightness(1.15); }
+        }
+
+        @keyframes root-journey-welcome-pulse {
+            0%, 100% { box-shadow: 0 0 0 rgba(255, 226, 148, 0); }
+            50% { box-shadow: 0 0 18px rgba(255, 226, 148, 0.18); }
+        }
+
+        @media (max-width: 900px) {
+            .root-journey-film-rail {
+                width: 9px;
+                border: 0;
+                opacity: 0.5;
+            }
+
+            .root-journey-film-rail.is-left { left: 1px; }
+            .root-journey-film-rail.is-right { right: 1px; }
+
+            .root-journey-film-rail::after,
+            .root-journey-waypoint,
+            .root-journey-animation-badge {
+                display: none;
+            }
+
+            .root-journey-sun {
+                top: 80px;
+                width: 146px;
+            }
+
+            .root-journey-horizon,
+            .root-journey-road {
+                top: 250px;
+            }
+
+            .root-journey-route-map {
+                inset: 4% -28% 2%;
+                width: 156%;
+            }
+
+            .root-journey-door::before {
+                inset: 12px;
+            }
+
+            .root-journey-door-copy {
+                top: 45%;
+                max-width: 42vw;
+                overflow: hidden;
+                font-size: 0.66rem;
+                letter-spacing: 0.18em;
+            }
+
+            .root-journey-door.is-left .root-journey-door-copy { right: 14px; }
+            .root-journey-door.is-right .root-journey-door-copy { left: 14px; }
+
+            body[data-overview-view="root"] .overview-kicker::after {
+                display: flex;
+                width: fit-content;
+                margin: 7px 0 0;
+            }
+        }
+
+        @media (min-width: 901px) and (max-width: 1300px) {
+            .root-journey-waypoint {
+                width: 46px;
+                font-size: 0.38rem;
+                letter-spacing: 0.05em;
+            }
+
+            .root-journey-waypoint::before {
+                inset: 5px;
+            }
+
+            .root-journey-waypoint.is-explore {
+                left: 8px;
+            }
+
+            .root-journey-waypoint.is-discover {
+                right: 8px;
+            }
+
+            .root-journey-animation-badge {
+                right: 14px;
+                transform: scale(0.82);
+                transform-origin: right bottom;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            body[data-overview-view="root"] .root-journey-gates {
+                display: none;
+            }
+
+            .root-journey-sun {
+                opacity: 1;
+                transform: translate(-50%, 0) scale(1);
+            }
+
+            .root-journey-horizon,
+            .root-journey-road {
+                opacity: 1;
+            }
+
+            .root-journey-scene *,
+            body[data-overview-view="root"] .overview-kicker::after {
+                animation: none !important;
+            }
+        }
+
         .page-shell {
             width: min(1120px, calc(100% - 28px));
             margin: 0 auto;
@@ -74,6 +877,476 @@
                 radial-gradient(circle at 14% 12%, rgba(255,255,255,0.12), transparent 26%),
                 radial-gradient(circle at 88% 8%, rgba(167, 239, 255, 0.12), transparent 20%);
             pointer-events: none;
+        }
+
+        .seo-ai-summary {
+            position: relative;
+            max-height: 2200px;
+            margin-top: 28px;
+            padding: clamp(22px, 4vw, 34px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 30px;
+            color: rgba(239, 248, 255, 0.94);
+            background:
+                radial-gradient(circle at top right, rgba(167, 239, 255, 0.16), transparent 28%),
+                linear-gradient(155deg, rgba(7, 29, 65, 0.88), rgba(6, 45, 78, 0.76));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.09),
+                0 20px 42px rgba(0,0,0,0.22);
+            overflow: hidden;
+            opacity: 1;
+            transform: translateY(0);
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease,
+                max-height 0.85s ease,
+                margin-top 0.85s ease,
+                padding-top 0.85s ease,
+                padding-bottom 0.85s ease,
+                border-width 0.85s ease;
+        }
+
+        .seo-ai-summary.is-faded {
+            max-height: 0;
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-width: 0;
+            opacity: 0;
+            transform: translateY(14px);
+            pointer-events: none;
+        }
+
+        .seo-ai-summary::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(255,255,255,0.055) 1px, transparent 1px);
+            background-size: 42px 42px;
+            mask-image: linear-gradient(180deg, rgba(0,0,0,0.8), transparent 85%);
+            opacity: 0.55;
+            pointer-events: none;
+        }
+
+        .seo-ai-summary > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .seo-ai-kicker {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 0 10px;
+            padding: 6px 10px;
+            border: 1px solid rgba(255,255,255,0.22);
+            border-radius: 999px;
+            color: var(--cyan-soft);
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .seo-ai-title {
+            margin: 0 0 12px;
+            color: #ffffff;
+            font-size: clamp(1.7rem, 4vw, 3rem);
+            letter-spacing: -0.04em;
+            line-height: 1;
+        }
+
+        .seo-ai-copy {
+            max-width: 920px;
+            margin: 0;
+            color: rgba(239, 248, 255, 0.9);
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+
+        .seo-ai-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        .seo-ai-card,
+        .seo-ai-faq details {
+            border: 1px solid rgba(255,255,255,0.16);
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07);
+            padding: 16px;
+        }
+
+        .seo-ai-card h3,
+        .seo-ai-faq summary {
+            margin: 0 0 8px;
+            color: #ffffff;
+            font-weight: 900;
+        }
+
+        .seo-ai-card p,
+        .seo-ai-faq p {
+            margin: 0;
+            color: rgba(239, 248, 255, 0.86);
+            line-height: 1.55;
+        }
+
+        .seo-ai-faq {
+            display: grid;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .seo-ai-faq summary {
+            cursor: pointer;
+            list-style-position: inside;
+        }
+
+        .seo-ai-faq p {
+            margin-top: 8px;
+        }
+
+        .page-rating-shell {
+            --page-rating-color: rgba(167, 239, 255, 0.7);
+            position: relative;
+            width: min(430px, 100%);
+            min-height: 176px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 16px;
+            margin: 20px 0 24px auto;
+            border: 1px solid rgba(184, 230, 255, 0.18);
+            border-radius: 24px;
+            background:
+                radial-gradient(circle at 88% 4%, color-mix(in srgb, var(--page-rating-color) 16%, transparent), transparent 40%),
+                linear-gradient(155deg, rgba(7, 35, 73, 0.92), rgba(3, 21, 48, 0.96));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.09),
+                0 15px 30px rgba(0,0,0,0.2);
+            padding: 16px 17px;
+            overflow: hidden;
+            transition:
+                width 0.42s cubic-bezier(.2,.82,.28,1),
+                min-height 0.42s cubic-bezier(.2,.82,.28,1),
+                padding 0.42s cubic-bezier(.2,.82,.28,1),
+                border-color 0.28s ease,
+                box-shadow 0.28s ease,
+                background 0.28s ease;
+        }
+
+        .page-rating-shell.is-collapsed {
+            width: 58px;
+            height: 58px;
+            max-height: 58px;
+            min-height: 58px;
+            grid-template-columns: 1fr;
+            gap: 0;
+            border-radius: 18px;
+            padding: 0;
+        }
+
+        .page-rating-launcher {
+            position: absolute;
+            z-index: 3;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            border: 0;
+            background: transparent;
+            color: rgba(214, 235, 246, 0.82);
+            cursor: pointer;
+            padding: 16px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-18px) scale(0.55);
+            transition: opacity 0.24s ease, transform 0.42s cubic-bezier(.2,.82,.28,1.18), color 0.2s ease;
+        }
+
+        .page-rating-launcher svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 5px 7px rgba(0,0,0,0.26));
+        }
+
+        .page-rating-shell.is-collapsed .page-rating-launcher {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(0) scale(1);
+        }
+
+        .page-rating-shell.is-collapsed.is-up .page-rating-launcher,
+        .page-rating-shell.is-collapsed.is-down .page-rating-launcher {
+            color: var(--page-rating-color);
+        }
+
+        .page-rating-launcher:hover,
+        .page-rating-launcher:focus-visible {
+            color: #ffffff;
+            outline: none;
+            transform: translateX(0) translateY(-2px) rotate(-6deg) scale(1.04);
+        }
+
+        .page-rating-collapse {
+            position: absolute;
+            z-index: 4;
+            top: 9px;
+            right: 9px;
+            width: 26px;
+            height: 26px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(191, 225, 243, 0.14);
+            border-radius: 9px;
+            background: rgba(2, 16, 37, 0.48);
+            color: rgba(219, 237, 247, 0.62);
+            cursor: pointer;
+            font: 900 1rem/1 "Segoe UI", sans-serif;
+            transition: opacity 0.24s ease, transform 0.24s ease, color 0.18s ease, border-color 0.18s ease;
+        }
+
+        .page-rating-collapse:hover,
+        .page-rating-collapse:focus-visible {
+            border-color: rgba(219, 239, 250, 0.38);
+            color: #ffffff;
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .page-rating-copy,
+        .page-rating-control {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+            transition: opacity 0.24s 0.13s ease, visibility 0s 0s, transform 0.34s 0.08s ease;
+        }
+
+        .page-rating-shell.is-collapsed .page-rating-copy,
+        .page-rating-shell.is-collapsed .page-rating-control,
+        .page-rating-shell.is-collapsed .page-rating-collapse {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateX(22px);
+            transition: opacity 0.12s ease, visibility 0s 0.42s, transform 0.25s ease;
+        }
+
+        .page-rating-shell.is-up,
+        .page-rating-shell.is-down {
+            border-color: color-mix(in srgb, var(--page-rating-color) 54%, rgba(255,255,255,0.16));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 16px 30px rgba(0,0,0,0.22),
+                0 0 24px color-mix(in srgb, var(--page-rating-color) 16%, transparent);
+        }
+
+        .page-rating-copy {
+            min-width: 0;
+            display: grid;
+            align-content: center;
+            gap: 5px;
+        }
+
+        .page-rating-kicker {
+            margin: 0;
+            color: rgba(167, 239, 255, 0.62);
+            font-size: 0.6rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .page-rating-title {
+            margin: 0;
+            color: #f4fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .page-rating-page-name {
+            overflow: hidden;
+            margin: 0;
+            color: rgba(220, 240, 251, 0.58);
+            font-size: 0.7rem;
+            line-height: 1.35;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .page-rating-readout {
+            margin: 7px 0 0;
+            color: rgba(232, 247, 255, 0.76);
+            font-size: 0.76rem;
+            font-weight: 800;
+            line-height: 1.35;
+        }
+
+        .page-rating-shell.is-up .page-rating-readout,
+        .page-rating-shell.is-down .page-rating-readout {
+            color: var(--page-rating-color);
+        }
+
+        .page-rating-submit {
+            width: fit-content;
+            min-width: 104px;
+            min-height: 34px;
+            margin-top: 8px;
+            border: 1px solid rgba(190, 225, 243, 0.18);
+            border-radius: 11px;
+            background: rgba(167, 239, 255, 0.08);
+            color: rgba(233, 247, 255, 0.82);
+            cursor: pointer;
+            font: 900 0.62rem "Segoe UI", sans-serif;
+            letter-spacing: 0.09em;
+            padding: 7px 11px;
+            text-transform: uppercase;
+            transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, opacity 0.18s ease;
+        }
+
+        .page-rating-submit:not(:disabled):hover,
+        .page-rating-submit:not(:disabled):focus-visible {
+            transform: translateY(-1px);
+            border-color: var(--page-rating-color);
+            background: color-mix(in srgb, var(--page-rating-color) 14%, rgba(3, 25, 53, 0.9));
+            outline: none;
+        }
+
+        .page-rating-submit:disabled {
+            cursor: default;
+            opacity: 0.4;
+        }
+
+        .page-rating-status {
+            min-height: 16px;
+            margin: 2px 0 0;
+            color: rgba(205, 229, 242, 0.55);
+            font-size: 0.62rem;
+            line-height: 1.35;
+        }
+
+        .page-rating-status.is-error {
+            color: #ffb4bf;
+        }
+
+        .page-rating-control {
+            display: grid;
+            grid-template-columns: 42px 38px;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+            gap: 7px 6px;
+        }
+
+        .page-rating-thumb {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(187, 224, 244, 0.17);
+            border-radius: 13px;
+            background:
+                linear-gradient(180deg, rgba(44, 67, 91, 0.78), rgba(13, 25, 42, 0.92));
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 7px 13px rgba(0,0,0,0.19);
+            color: rgba(214, 231, 241, 0.65);
+            cursor: pointer;
+            padding: 10px;
+            transition: transform 0.24s cubic-bezier(.2,.82,.28,1.12), border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .page-rating-thumb svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .page-rating-thumb.is-down svg {
+            transform: rotate(180deg);
+        }
+
+        .page-rating-thumb:hover,
+        .page-rating-thumb:focus-visible {
+            border-color: rgba(213, 239, 252, 0.42);
+            color: #f0f9ff;
+            outline: none;
+        }
+
+        .page-rating-thumb.is-selected {
+            border-color: var(--page-rating-color);
+            color: var(--page-rating-color);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.14),
+                0 8px 16px rgba(0,0,0,0.22),
+                0 0 18px color-mix(in srgb, var(--page-rating-color) 34%, transparent);
+        }
+
+        .page-rating-thumb.is-up.is-selected {
+            transform: translateY(-4px) rotate(-4deg);
+        }
+
+        .page-rating-thumb.is-down.is-selected {
+            transform: translateY(4px) rotate(-4deg);
+        }
+
+        .page-rating-rail {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            justify-items: center;
+            gap: 2px;
+            min-height: 116px;
+        }
+
+        .page-rating-limit {
+            color: rgba(221, 239, 249, 0.55);
+            font: 900 0.58rem Consolas, "Courier New", monospace;
+            line-height: 1;
+        }
+
+        .page-rating-range {
+            width: 26px;
+            height: 88px;
+            margin: 0;
+            accent-color: var(--page-rating-color);
+            cursor: ns-resize;
+            direction: rtl;
+            writing-mode: vertical-lr;
+            -webkit-appearance: slider-vertical;
+        }
+
+        .page-rating-shell.is-down .page-rating-range {
+            direction: ltr;
+        }
+
+        .page-rating-range:disabled {
+            cursor: default;
+            filter: grayscale(1);
+            opacity: 0.38;
+        }
+
+        .page-rating-range:focus-visible {
+            outline: 2px solid color-mix(in srgb, var(--page-rating-color) 72%, white);
+            outline-offset: 3px;
+        }
+
+        .page-rating-shell.is-saving {
+            opacity: 0.78;
+            pointer-events: none;
+        }
+
+        .page-rating-shell.is-saved {
+            animation: page-rating-saved 0.52s ease;
+        }
+
+        @keyframes page-rating-saved {
+            0%, 100% { transform: translateY(0); }
+            45% { transform: translateY(-2px); filter: brightness(1.16); }
         }
 
         .overview-header {
@@ -168,11 +1441,13 @@
             position: relative;
             width: 30px;
             height: 16px;
+            border: 1px solid rgba(226, 236, 248, 0.28);
             border-radius: 999px;
             background: linear-gradient(180deg, rgba(18, 23, 31, 0.98), rgba(57, 67, 82, 0.96));
             box-shadow:
                 inset 0 1px 2px rgba(0,0,0,0.34),
                 inset 0 1px 0 rgba(255,255,255,0.06);
+            transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
         }
 
         .autoplay-toggle-knob {
@@ -192,6 +1467,14 @@
         .autoplay-toggle.is-active .autoplay-toggle-knob {
             transform: translateX(14px);
             background: linear-gradient(180deg, #ffffff, #cfd7e3);
+        }
+
+        .autoplay-toggle.is-active .autoplay-toggle-track {
+            border-color: rgba(151, 239, 255, 0.88);
+            background: linear-gradient(180deg, #39bdd5, #176b88);
+            box-shadow:
+                inset 0 1px 2px rgba(4, 37, 51, 0.42),
+                0 0 10px rgba(107, 226, 247, 0.42);
         }
 
         .overview-title-wrap {
@@ -277,9 +1560,13 @@
             width: 54px;
             height: 54px;
             flex: 0 0 auto;
+            position: relative;
+            isolation: isolate;
             border: 0;
             border-radius: 18px;
             cursor: pointer;
+            touch-action: manipulation;
+            user-select: none;
             color: #f7fbff;
             background:
                 radial-gradient(circle at 26% 20%, rgba(255,255,255,0.38), transparent 24%),
@@ -291,6 +1578,33 @@
                 0 8px 0 rgba(2, 15, 36, 0.86),
                 0 18px 30px rgba(0,0,0,0.28);
             transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .back-button::before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            inset: 4px;
+            border-radius: 14px;
+            opacity: 0;
+            transform: scaleY(0);
+            transform-origin: 50% 100%;
+            background:
+                linear-gradient(180deg, rgba(134, 243, 255, 0.48), rgba(255, 211, 105, 0.92)),
+                rgba(42, 168, 218, 0.54);
+            box-shadow: inset 0 0 18px rgba(255,255,255,0.42);
+            pointer-events: none;
+        }
+
+        .back-button::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            inset: -8px;
+            border: 2px solid rgba(145, 237, 255, 0);
+            border-radius: 25px;
+            opacity: 0;
+            pointer-events: none;
         }
 
         .back-button:hover,
@@ -314,11 +1628,78 @@
                 0 10px 18px rgba(0,0,0,0.24);
         }
 
+        .back-button.is-home-holding::before {
+            opacity: 0.82;
+            animation: back-button-home-progress 2s linear forwards;
+        }
+
+        .back-button.is-home-holding svg {
+            animation: back-button-home-pulse 0.72s ease-in-out infinite alternate;
+        }
+
+        .back-button.is-home-launching {
+            pointer-events: none;
+            animation: back-button-home-launch 1.05s cubic-bezier(0.18, 0.82, 0.22, 1) both;
+        }
+
+        .back-button.is-home-launching::before {
+            opacity: 1;
+            transform: scaleY(1);
+            animation: back-button-home-core 1.05s ease-out both;
+        }
+
+        .back-button.is-home-launching::after {
+            animation: back-button-home-ring 1.05s ease-out both;
+        }
+
+        .back-button.is-home-launching svg {
+            animation: back-button-home-arrow 1.05s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+        }
+
+        @keyframes back-button-home-progress {
+            0% { transform: scaleY(0); opacity: 0.38; }
+            72% { opacity: 0.82; }
+            100% { transform: scaleY(1); opacity: 1; }
+        }
+
+        @keyframes back-button-home-pulse {
+            from { transform: translateX(0) scale(1); filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
+            to { transform: translateX(-2px) scale(1.08); filter: drop-shadow(0 0 6px rgba(255,255,255,0.9)); }
+        }
+
+        @keyframes back-button-home-launch {
+            0% { transform: translateY(2px) rotateY(0deg) scale(1); }
+            35% { transform: translateY(-5px) rotateY(210deg) scale(1.16); }
+            72% { transform: translateY(-2px) rotateY(540deg) scale(1.08); }
+            100% { transform: translateY(0) rotateY(720deg) scale(1); }
+        }
+
+        @keyframes back-button-home-core {
+            0% { filter: brightness(1); }
+            42% { filter: brightness(2.1) saturate(1.35); }
+            100% { filter: brightness(1.15); }
+        }
+
+        @keyframes back-button-home-ring {
+            0% { inset: -5px; opacity: 0; border-color: rgba(145, 237, 255, 0.9); }
+            35% { opacity: 1; }
+            100% { inset: -30px; opacity: 0; border-color: rgba(255, 211, 105, 0.25); }
+        }
+
+        @keyframes back-button-home-arrow {
+            0% { transform: translateX(0) scale(1); }
+            35% { transform: translateX(-5px) scale(1.18); }
+            70% { transform: translateX(3px) scale(0.92); }
+            100% { transform: translateX(0) scale(1); }
+        }
+
         .back-button[hidden] {
             display: none;
         }
 
         .back-button svg {
+            position: relative;
+            z-index: 2;
             width: 22px;
             height: 22px;
         }
@@ -405,6 +1786,8 @@
         }
 
         .guide-launcher-row {
+            position: relative;
+            z-index: 4;
             display: flex;
             justify-content: flex-end;
             max-height: 110px;
@@ -464,12 +1847,30 @@
             content: "";
             position: absolute;
             z-index: 0;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            height: 100%;
-            background: linear-gradient(90deg, rgba(113, 220, 210, 0.24), rgba(244, 207, 120, 0.34));
-            box-shadow: 0 0 22px rgba(126, 232, 221, 0.2);
+            left: 12px;
+            right: 12px;
+            bottom: 8px;
+            height: 6px;
+            border-radius: 999px;
+            opacity: 0;
+            transform: scaleX(0);
+            transform-origin: left center;
+            background: linear-gradient(90deg, rgba(113, 220, 210, 0.94), rgba(244, 207, 120, 0.98), rgba(143, 246, 255, 0.94));
+            box-shadow:
+                0 0 16px rgba(126, 232, 221, 0.48),
+                0 0 30px rgba(244, 207, 120, 0.22);
+            pointer-events: none;
+        }
+
+        .guide-launcher::before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            inset: 2px;
+            border: 0 solid rgba(236, 231, 184, 0);
+            border-radius: 15px;
+            opacity: 0;
+            box-shadow: none;
             pointer-events: none;
         }
 
@@ -479,12 +1880,12 @@
         }
 
         .guide-launcher.is-command-centre-holding::after {
-            animation: analytics-dashboard-hold-progress 5s linear forwards;
+            animation: analytics-dashboard-hold-progress 4s linear forwards;
         }
 
         .guide-launcher.is-command-centre-holding {
             border-color: rgba(244, 224, 151, 0.92);
-            animation: analytics-dashboard-hold-charge 0.55s ease-in-out infinite alternate;
+            animation: analytics-dashboard-hold-charge 0.68s ease-in-out infinite alternate;
         }
 
         .guide-launcher:hover,
@@ -506,6 +1907,44 @@
                 inset 0 1px 0 rgba(243, 239, 201, 0.14),
                 0 2px 0 #0a1109,
                 0 8px 14px rgba(0,0,0,0.25);
+        }
+
+        .guide-launcher.is-command-centre-launching {
+            z-index: 8;
+            overflow: visible;
+            pointer-events: none;
+            transform-origin: center center;
+            backface-visibility: visible;
+            transform-style: preserve-3d;
+            will-change: transform, filter, box-shadow;
+            animation: guide-command-centre-launch-spin 2.4s cubic-bezier(.18,.72,.16,1) both;
+        }
+
+        .guide-launcher.is-command-centre-launching::before {
+            inset: -4px;
+            border-width: 4px;
+            border-color: rgba(232, 226, 174, 0.94);
+            border-radius: 22px;
+            opacity: 1;
+            box-shadow:
+                2px 2px 0 #79815a,
+                5px 5px 0 #475035,
+                8px 8px 0 #252e20,
+                11px 11px 0 #0a1109,
+                14px 16px 24px rgba(0,0,0,0.44);
+            animation: guide-command-centre-launch-depth 2.4s ease-in-out both;
+        }
+
+        .guide-launcher.is-command-centre-launching::after {
+            inset: 0;
+            height: auto;
+            border-radius: inherit;
+            opacity: 1;
+            transform: none;
+            background:
+                radial-gradient(circle at 24% 30%, rgba(143, 246, 255, 0.45), transparent 20%),
+                linear-gradient(110deg, rgba(94, 224, 172, 0.18), rgba(244, 207, 120, 0.42), rgba(143, 246, 255, 0.2));
+            animation: guide-command-centre-launch-wash 2.4s cubic-bezier(.2,.72,.18,1) both;
         }
 
         .guide-document-icon {
@@ -819,7 +2258,7 @@
             min-height: 560px;
             overflow: hidden;
             display: grid;
-            grid-template-rows: auto minmax(0, 1fr);
+            grid-template-rows: auto minmax(0, 1fr) auto;
             border: 1px solid rgba(137, 234, 237, 0.3);
             border-radius: 30px;
             background:
@@ -1071,13 +2510,13 @@
         }
 
         .analytics-dashboard-ga4-link {
-            position: absolute;
+            position: static;
             z-index: 8;
-            right: 24px;
-            bottom: 18px;
+            justify-self: end;
             display: inline-flex;
             align-items: center;
             gap: 10px;
+            margin: 0 24px 18px;
             padding: 11px 14px 10px 12px;
             border: 1px solid rgba(244, 207, 120, 0.34);
             border-radius: 999px;
@@ -1092,10 +2531,8 @@
             text-transform: uppercase;
             opacity: 0;
             pointer-events: none;
-            transform: translateY(10px) scale(0.97);
             transition:
                 opacity 0.38s ease,
-                transform 0.38s cubic-bezier(.2,.9,.25,1),
                 visibility 0s linear 0.38s;
             visibility: hidden;
         }
@@ -1103,7 +2540,6 @@
         .analytics-dashboard-window.is-command-centre-intro-complete .analytics-dashboard-ga4-link {
             opacity: 1;
             pointer-events: auto;
-            transform: translateY(0) scale(1);
             transition-delay: 0s;
             visibility: visible;
         }
@@ -1136,7 +2572,7 @@
             overflow-y: auto;
             overscroll-behavior: contain;
             scrollbar-color: rgba(121, 234, 237, 0.42) rgba(2, 15, 31, 0.7);
-            padding: clamp(16px, 2.2vw, 30px) clamp(16px, 2.2vw, 30px) 88px;
+            padding: clamp(16px, 2.2vw, 30px);
             background:
                 radial-gradient(circle at var(--holo-pointer-x) var(--holo-pointer-y), rgba(94, 226, 239, 0.055), transparent 24%),
                 linear-gradient(105deg, transparent 0 46%, rgba(106, 235, 246, 0.022) 50%, transparent 54%);
@@ -1797,6 +3233,116 @@
             text-transform: uppercase;
         }
 
+        .analytics-dashboard-ratings {
+            border-color: rgba(115, 232, 169, 0.22);
+            background:
+                radial-gradient(circle at 10% 0%, rgba(75, 224, 145, 0.1), transparent 42%),
+                radial-gradient(circle at 94% 100%, rgba(255, 84, 112, 0.08), transparent 38%),
+                rgba(2, 18, 34, 0.72);
+        }
+
+        .analytics-dashboard-rating-icon {
+            position: relative;
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            border: 1px solid rgba(141, 238, 187, 0.17);
+            border-radius: 15px;
+            background: rgba(12, 57, 50, 0.34);
+            color: #68dfa2;
+        }
+
+        .analytics-dashboard-rating-icon svg {
+            width: 22px;
+            height: 22px;
+            filter: drop-shadow(0 0 8px rgba(80, 227, 151, 0.34));
+        }
+
+        .analytics-dashboard-rating-balance {
+            display: grid;
+            grid-template-columns: var(--rating-up, 50%) minmax(0, 1fr);
+            min-height: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(211, 238, 239, 0.1);
+            border-radius: 999px;
+            background: rgba(255, 74, 103, 0.42);
+        }
+
+        .analytics-dashboard-rating-balance span {
+            background: linear-gradient(90deg, rgba(56, 207, 128, 0.56), #58e29b);
+            box-shadow: 0 0 16px rgba(73, 223, 146, 0.28);
+        }
+
+        .analytics-dashboard-rating-balance-labels {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 8px;
+            color: rgba(208, 235, 237, 0.62);
+            font-size: 0.65rem;
+            font-weight: 800;
+        }
+
+        .analytics-dashboard-rating-distribution {
+            display: grid;
+            gap: 8px;
+        }
+
+        .analytics-dashboard-rating-distribution-row {
+            display: grid;
+            grid-template-columns: 55px minmax(0, 1fr) 55px;
+            align-items: center;
+            gap: 9px;
+            color: rgba(211, 236, 239, 0.66);
+            font: 800 0.64rem Consolas, "Courier New", monospace;
+        }
+
+        .analytics-dashboard-rating-distribution-row > span:last-child {
+            text-align: right;
+        }
+
+        .analytics-dashboard-rating-distribution-track {
+            height: 7px;
+            display: grid;
+            grid-template-columns: minmax(0, var(--down-width, 0%)) minmax(0, var(--up-width, 0%));
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 999px;
+            background: rgba(192, 227, 234, 0.06);
+        }
+
+        .analytics-dashboard-rating-distribution-track i:first-child {
+            background: linear-gradient(90deg, rgba(255, 70, 99, 0.42), #ff5872);
+        }
+
+        .analytics-dashboard-rating-distribution-track i:last-child {
+            background: linear-gradient(90deg, #4bd68f, rgba(75, 214, 143, 0.38));
+        }
+
+        .analytics-dashboard-rating-score {
+            display: inline-flex;
+            min-width: 44px;
+            justify-content: center;
+            border: 1px solid color-mix(in srgb, var(--rating-score-color, #79eaed) 36%, transparent);
+            border-radius: 999px;
+            background: color-mix(in srgb, var(--rating-score-color, #79eaed) 10%, transparent);
+            color: var(--rating-score-color, #79eaed);
+            font: 900 0.68rem Consolas, "Courier New", monospace;
+            padding: 4px 7px;
+        }
+
+        .analytics-dashboard-rating-unavailable {
+            margin: 0;
+            border: 1px dashed rgba(244, 207, 120, 0.28);
+            border-radius: 15px;
+            color: rgba(232, 237, 220, 0.72);
+            font-size: 0.74rem;
+            line-height: 1.55;
+            padding: 15px;
+        }
+
         .analytics-dashboard-table-scroll {
             overflow-x: auto;
             scrollbar-color: rgba(121, 234, 237, 0.34) rgba(2, 15, 31, 0.6);
@@ -1814,6 +3360,14 @@
             min-width: 980px;
         }
 
+        .analytics-dashboard-table.is-journeys {
+            min-width: 1000px;
+        }
+
+        .analytics-dashboard-table.is-journeys.is-ip-visible {
+            min-width: 1160px;
+        }
+
         .analytics-dashboard-table th,
         .analytics-dashboard-table td {
             border-bottom: 1px solid rgba(121, 234, 237, 0.08);
@@ -1826,6 +3380,29 @@
             font-size: 0.6rem;
             letter-spacing: 0.11em;
             text-transform: uppercase;
+        }
+
+        .analytics-dashboard-journey-when {
+            min-width: 172px;
+            white-space: nowrap;
+        }
+
+        .analytics-dashboard-journey-when strong,
+        .analytics-dashboard-journey-when span {
+            display: block;
+        }
+
+        .analytics-dashboard-journey-when strong {
+            color: rgba(231, 250, 252, 0.92);
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+
+        .analytics-dashboard-journey-when span {
+            margin-top: 4px;
+            color: rgba(121, 234, 237, 0.58);
+            font-size: 0.56rem;
+            letter-spacing: 0.04em;
         }
 
         .analytics-dashboard-external-grid {
@@ -2241,8 +3818,10 @@
         }
 
         @keyframes analytics-dashboard-hold-progress {
-            from { width: 7%; opacity: 1; }
-            to { width: 100%; }
+            0% { opacity: 0; transform: scaleX(0); filter: brightness(1); }
+            8% { opacity: 1; transform: scaleX(0.04); }
+            58% { opacity: 1; transform: scaleX(0.64); filter: brightness(1.08); }
+            100% { opacity: 1; transform: scaleX(1); filter: brightness(1.35); }
         }
 
         @keyframes analytics-dashboard-hold-charge {
@@ -2254,6 +3833,94 @@
                 filter: brightness(1.22);
                 box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 4px 0 rgba(2, 16, 38, 0.76), 0 0 34px rgba(121, 234, 237, 0.5), 0 0 62px rgba(244, 207, 120, 0.18);
             }
+        }
+
+        @keyframes guide-command-centre-launch-spin {
+            0% {
+                transform: perspective(1100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+                filter: brightness(1);
+                box-shadow:
+                    inset 0 1px 0 rgba(243, 239, 201, 0.2),
+                    2px 2px 0 #79815a,
+                    5px 5px 0 #475035,
+                    9px 9px 0 #0a1109,
+                    0 14px 24px rgba(0,0,0,0.28);
+            }
+            18% {
+                transform: perspective(1100px) rotateX(-8deg) rotateY(12deg) rotateZ(64deg) scale(0.92);
+                filter: brightness(1.2) saturate(1.1);
+            }
+            38% {
+                transform: perspective(1100px) rotateX(7deg) rotateY(-13deg) rotateZ(142deg) scale(0.86);
+                filter: brightness(1.52) saturate(1.26);
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.34),
+                    2px 2px 0 #96a26a,
+                    6px 6px 0 #4b5736,
+                    11px 11px 0 #0a1109,
+                    0 0 34px rgba(143, 246, 255, 0.72),
+                    0 0 72px rgba(94, 224, 172, 0.38);
+            }
+            58% {
+                transform: perspective(1100px) rotateX(-7deg) rotateY(12deg) rotateZ(222deg) scale(0.88);
+                filter: brightness(1.7) saturate(1.34);
+            }
+            78% {
+                transform: perspective(1100px) rotateX(6deg) rotateY(-10deg) rotateZ(300deg) scale(0.93);
+                filter: brightness(1.4) saturate(1.22);
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.38),
+                    2px 2px 0 #8e9966,
+                    6px 6px 0 #465133,
+                    10px 10px 0 #0a1109,
+                    0 0 42px rgba(244, 207, 120, 0.62),
+                    0 0 92px rgba(143, 246, 255, 0.34);
+            }
+            91% {
+                transform: perspective(1100px) rotateX(-3deg) rotateY(5deg) rotateZ(340deg) scale(0.97);
+                filter: brightness(1.22) saturate(1.12);
+            }
+            100% {
+                transform: perspective(1100px) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scale(1);
+                filter: brightness(1.08);
+                box-shadow:
+                    inset 0 1px 0 rgba(243, 239, 201, 0.22),
+                    2px 2px 0 #79815a,
+                    5px 5px 0 #475035,
+                    9px 9px 0 #0a1109,
+                    0 18px 34px rgba(0,0,0,0.3),
+                    0 0 34px rgba(94, 224, 172, 0.36);
+            }
+        }
+
+        @keyframes guide-command-centre-launch-depth {
+            0%, 100% {
+                border-color: rgba(232, 226, 174, 0.92);
+                box-shadow:
+                    2px 2px 0 #79815a,
+                    5px 5px 0 #475035,
+                    8px 8px 0 #252e20,
+                    11px 11px 0 #0a1109,
+                    14px 16px 24px rgba(0,0,0,0.44);
+            }
+            38%, 78% {
+                border-color: rgba(156, 241, 248, 0.96);
+                box-shadow:
+                    3px 3px 0 #98a76e,
+                    7px 7px 0 #54613d,
+                    11px 11px 0 #283321,
+                    15px 15px 0 #0a1109,
+                    19px 22px 34px rgba(0,0,0,0.5),
+                    0 0 34px rgba(107, 226, 247, 0.36);
+            }
+        }
+
+        @keyframes guide-command-centre-launch-wash {
+            0% { opacity: 0; filter: blur(16px) hue-rotate(0deg); transform: scale(0.72); }
+            20% { opacity: 0.55; filter: blur(5px) hue-rotate(18deg); transform: scale(0.94); }
+            48% { opacity: 1; filter: blur(0) hue-rotate(42deg); transform: scale(1); }
+            72% { opacity: 0.72; filter: blur(2px) hue-rotate(15deg); transform: scale(1.04); }
+            100% { opacity: 0; filter: blur(12px) hue-rotate(0deg); transform: scale(1.08); }
         }
 
         @keyframes analytics-dashboard-ip-charge {
@@ -2271,6 +3938,7 @@
             .analytics-dashboard-device-ring,
             .analytics-dashboard-audio-wave i,
             .guide-launcher.is-command-centre-holding,
+            .guide-launcher.is-command-centre-launching,
             .analytics-dashboard-orbit.is-ip-holding,
             .analytics-dashboard-kaleidoscope,
             .analytics-dashboard-kaleidoscope::after,
@@ -3486,6 +5154,2260 @@
             }
             48%, 58% {
                 transform: rotateY(180deg);
+            }
+        }
+
+        .integration-testing-stage {
+            display: grid;
+            gap: 22px;
+        }
+
+        .integration-testing-intro {
+            width: min(780px, 100%);
+            margin: 0 auto;
+            color: rgba(231, 246, 255, 0.86);
+            font-size: clamp(0.94rem, 1.7vw, 1.08rem);
+            line-height: 1.62;
+            text-align: center;
+        }
+
+        .integration-release {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(167, 239, 255, 0.28);
+            border-radius: 32px;
+            background:
+                radial-gradient(circle at 50% -10%, rgba(91, 225, 217, 0.16), transparent 38%),
+                linear-gradient(155deg, rgba(7, 39, 80, 0.98), rgba(3, 18, 42, 0.995));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 24px 46px rgba(0,0,0,0.28),
+                0 0 36px rgba(95, 221, 225, 0.08);
+            padding: clamp(20px, 3.5vw, 34px);
+        }
+
+        .integration-release::before {
+            content: "";
+            position: absolute;
+            inset: 10px;
+            border: 1px solid rgba(167, 239, 255, 0.06);
+            border-radius: 24px;
+            pointer-events: none;
+        }
+
+        .integration-release-head {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            margin-bottom: 24px;
+        }
+
+        .integration-release-identity {
+            display: grid;
+            gap: 4px;
+        }
+
+        .integration-release-kicker {
+            margin: 0;
+            color: rgba(167, 239, 255, 0.64);
+            font-size: 0.66rem;
+            font-weight: 900;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+        }
+
+        .integration-release-title {
+            margin: 0;
+            color: var(--gold-soft);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+            font-weight: 900;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+
+        .integration-version {
+            display: grid;
+            min-width: 82px;
+            min-height: 62px;
+            place-items: center;
+            border: 1px solid rgba(255, 229, 162, 0.34);
+            border-radius: 18px;
+            background:
+                linear-gradient(180deg, rgba(255, 229, 162, 0.15), rgba(255, 229, 162, 0.05)),
+                rgba(3, 24, 52, 0.82);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 10px 20px rgba(0,0,0,0.22);
+        }
+
+        .integration-version small {
+            align-self: end;
+            color: rgba(255, 229, 162, 0.62);
+            font-size: 0.52rem;
+            font-weight: 900;
+            letter-spacing: 0.14em;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .integration-version strong {
+            align-self: start;
+            color: #fff0bd;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1.45rem;
+            letter-spacing: 0.06em;
+            line-height: 1.1;
+        }
+
+        .integration-feature-grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .integration-feature {
+            position: relative;
+            min-width: 0;
+            overflow: hidden;
+            border: 1px solid rgba(167, 239, 255, 0.15);
+            border-radius: 24px;
+            background:
+                linear-gradient(155deg, rgba(13, 57, 108, 0.94), rgba(4, 25, 57, 0.98));
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 15px 28px rgba(0,0,0,0.2);
+            padding: 17px;
+            transition: border-color 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
+        }
+
+        .integration-feature::after {
+            content: "";
+            position: absolute;
+            inset: auto -34px -52px auto;
+            width: 130px;
+            height: 130px;
+            border: 1px solid rgba(167, 239, 255, 0.08);
+            border-radius: 999px;
+            box-shadow: 0 0 0 18px rgba(167, 239, 255, 0.025);
+            pointer-events: none;
+        }
+
+        .integration-feature.is-active {
+            border-color: rgba(111, 238, 199, 0.54);
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.14),
+                0 17px 30px rgba(0,0,0,0.24),
+                0 0 24px rgba(86, 225, 188, 0.15);
+        }
+
+        .integration-feature-head {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .integration-feature-name {
+            margin: 0;
+            color: #f4fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .integration-feature-purpose {
+            display: block;
+            margin-top: 4px;
+            color: rgba(167, 239, 255, 0.56);
+            font-size: 0.6rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .integration-toggle {
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            gap: 7px;
+            flex: 0 0 auto;
+            border: 0;
+            background: transparent;
+            color: rgba(224, 242, 252, 0.68);
+            cursor: pointer;
+            font: inherit;
+            padding: 2px;
+        }
+
+        .integration-toggle-track {
+            position: relative;
+            width: 42px;
+            height: 23px;
+            border: 1px solid rgba(188, 225, 244, 0.2);
+            border-radius: 999px;
+            background: rgba(2, 15, 35, 0.72);
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.48);
+            transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .integration-toggle-track::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 15px;
+            height: 15px;
+            border-radius: 999px;
+            background: #8ca2b4;
+            box-shadow: 0 3px 7px rgba(0,0,0,0.38);
+            transition: transform 0.25s cubic-bezier(.2,.84,.3,1.16), background 0.25s ease;
+        }
+
+        .integration-toggle[aria-checked="true"] .integration-toggle-track {
+            border-color: rgba(129, 255, 213, 0.5);
+            background: rgba(36, 154, 117, 0.72);
+            box-shadow: inset 0 1px 4px rgba(1, 46, 36, 0.44), 0 0 15px rgba(90, 237, 194, 0.24);
+        }
+
+        .integration-toggle[aria-checked="true"] .integration-toggle-track::after {
+            transform: translateX(19px);
+            background: #eafff7;
+        }
+
+        .integration-toggle:focus-visible {
+            border-radius: 8px;
+            outline: 2px solid rgba(255, 229, 162, 0.72);
+            outline-offset: 3px;
+        }
+
+        .integration-toggle-state {
+            min-width: 21px;
+            color: inherit;
+            font-size: 0.58rem;
+            font-weight: 900;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .integration-toggle[aria-checked="true"] .integration-toggle-state {
+            color: #abf5dc;
+        }
+
+        .integration-feature-body {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            align-content: start;
+            gap: 13px;
+            min-height: 240px;
+        }
+
+        .integration-decision-ghost {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            opacity: 0.34;
+        }
+
+        .integration-decision-ghost span {
+            display: grid;
+            min-height: 22px;
+            place-items: center;
+            border: 1px solid rgba(255, 229, 162, 0.25);
+            border-radius: 7px;
+            background: rgba(2, 14, 32, 0.55);
+            color: rgba(255, 233, 164, 0.88);
+            font-size: 0.56rem;
+            font-weight: 900;
+        }
+
+        .integration-decision-ghost span:nth-child(n+4) {
+            color: rgba(167, 239, 255, 0.86);
+        }
+
+        .integration-input-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 7px;
+        }
+
+        .integration-input-grid label {
+            display: grid;
+            gap: 4px;
+            color: rgba(214, 235, 248, 0.56);
+            font-size: 0.55rem;
+            font-weight: 800;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+
+        .integration-input-grid input {
+            width: 100%;
+            min-width: 0;
+            height: 31px;
+            border: 1px solid rgba(167, 239, 255, 0.15);
+            border-radius: 9px;
+            outline: none;
+            background: rgba(1, 14, 34, 0.68);
+            color: #eefaff;
+            font: 700 0.72rem Consolas, "Courier New", monospace;
+            padding: 0 8px;
+        }
+
+        .integration-input-grid input:focus {
+            border-color: rgba(167, 239, 255, 0.62);
+            box-shadow: 0 0 0 3px rgba(167, 239, 255, 0.08);
+        }
+
+        .integration-pipeline {
+            display: grid;
+            gap: 10px;
+            padding-top: 8px;
+        }
+
+        .integration-pipeline-step {
+            position: relative;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            border: 1px solid rgba(167, 239, 255, 0.13);
+            border-radius: 13px;
+            background: rgba(2, 17, 39, 0.48);
+            color: rgba(233, 247, 255, 0.78);
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 9px 11px;
+        }
+
+        .integration-pipeline-step:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: calc(100% + 1px);
+            width: 1px;
+            height: 9px;
+            background: rgba(167, 239, 255, 0.3);
+        }
+
+        .integration-pipeline-step code {
+            color: var(--gold-soft);
+            font: 700 0.62rem Consolas, "Courier New", monospace;
+        }
+
+        .integration-output-preview {
+            display: grid;
+            gap: 11px;
+            padding-top: 8px;
+        }
+
+        .integration-output-screen {
+            min-height: 90px;
+            display: grid;
+            align-content: center;
+            gap: 7px;
+            border: 1px solid rgba(167, 239, 255, 0.14);
+            border-radius: 16px;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(167, 239, 255, 0.1), transparent 50%),
+                rgba(1, 13, 31, 0.7);
+            padding: 13px;
+            text-align: center;
+        }
+
+        .integration-output-screen strong {
+            color: #effaff;
+            font-size: 0.82rem;
+        }
+
+        .integration-output-screen span {
+            color: rgba(216, 238, 250, 0.58);
+            font-size: 0.66rem;
+            line-height: 1.4;
+        }
+
+        .integration-event-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .integration-event-row span {
+            border: 1px solid rgba(255, 229, 162, 0.16);
+            border-radius: 999px;
+            background: rgba(255, 229, 162, 0.06);
+            color: rgba(255, 235, 177, 0.72);
+            font: 700 0.57rem Consolas, "Courier New", monospace;
+            padding: 6px 8px;
+        }
+
+        .integration-branch {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            margin: 5px 0 0;
+            padding-top: 28px;
+        }
+
+        .integration-branch::before {
+            content: "";
+            position: absolute;
+            left: calc(16.666% - 1px);
+            right: calc(16.666% - 1px);
+            top: 15px;
+            height: 3px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(167, 239, 255, 0.28), rgba(255, 229, 162, 0.48), rgba(167, 239, 255, 0.28));
+            box-shadow: 0 0 12px rgba(167, 239, 255, 0.12);
+        }
+
+        .integration-branch-node {
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+
+        .integration-branch-node::before {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            width: 2px;
+            height: 28px;
+            background: rgba(167, 239, 255, 0.22);
+        }
+
+        .integration-branch-node::after {
+            content: "";
+            position: absolute;
+            bottom: calc(100% + 8px);
+            width: 10px;
+            height: 10px;
+            border: 2px solid rgba(167, 239, 255, 0.34);
+            border-radius: 999px;
+            background: #061b39;
+            transition: background 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+        }
+
+        .integration-branch-node.is-active::before {
+            background: rgba(104, 240, 196, 0.78);
+            box-shadow: 0 0 10px rgba(104, 240, 196, 0.34);
+        }
+
+        .integration-branch-node.is-active::after {
+            border-color: #b8ffe8;
+            background: #4bd5a7;
+            box-shadow: 0 0 15px rgba(75, 213, 167, 0.76);
+        }
+
+        .integration-branch-label {
+            border: 1px solid rgba(167, 239, 255, 0.14);
+            border-radius: 999px;
+            background: rgba(2, 17, 39, 0.72);
+            color: rgba(210, 235, 248, 0.65);
+            font: 700 0.61rem Consolas, "Courier New", monospace;
+            padding: 7px 10px;
+        }
+
+        .integration-branch-core {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            margin: 13px auto 0;
+            width: fit-content;
+            border: 1px solid rgba(255, 229, 162, 0.24);
+            border-radius: 999px;
+            background: rgba(255, 229, 162, 0.07);
+            color: var(--gold-soft);
+            font: 800 0.68rem Consolas, "Courier New", monospace;
+            padding: 9px 13px;
+        }
+
+        .integration-branch-core::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: #65d8ff;
+            box-shadow: 0 0 12px rgba(101, 216, 255, 0.7);
+        }
+
+        .integration-outcome {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 14px;
+            margin-top: 22px;
+            border: 1px solid rgba(167, 239, 255, 0.16);
+            border-radius: 22px;
+            background: rgba(2, 17, 39, 0.66);
+            padding: 17px 18px;
+            transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .integration-outcome.is-pulsing {
+            animation: integration-outcome-pulse 0.46s ease;
+        }
+
+        .integration-outcome.is-success {
+            border-color: rgba(112, 244, 199, 0.42);
+            background: rgba(13, 76, 58, 0.44);
+            box-shadow: 0 0 25px rgba(92, 229, 184, 0.1);
+        }
+
+        .integration-outcome.is-warning {
+            border-color: rgba(255, 205, 105, 0.52);
+            background: rgba(92, 59, 13, 0.42);
+            box-shadow: 0 0 28px rgba(255, 190, 71, 0.11);
+        }
+
+        .integration-outcome.is-failure {
+            border-color: rgba(255, 130, 142, 0.52);
+            background: rgba(91, 20, 36, 0.46);
+            box-shadow: 0 0 30px rgba(255, 89, 117, 0.12);
+        }
+
+        .integration-outcome-icon {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(167, 239, 255, 0.2);
+            border-radius: 14px;
+            background: rgba(167, 239, 255, 0.08);
+            color: var(--cyan-soft);
+            font-size: 1.05rem;
+            font-weight: 900;
+        }
+
+        .integration-outcome.is-success .integration-outcome-icon {
+            border-color: rgba(112, 244, 199, 0.48);
+            background: rgba(112, 244, 199, 0.12);
+            color: #baffea;
+        }
+
+        .integration-outcome.is-warning .integration-outcome-icon {
+            border-color: rgba(255, 215, 132, 0.5);
+            background: rgba(255, 205, 105, 0.12);
+            color: #ffe7a8;
+        }
+
+        .integration-outcome.is-failure .integration-outcome-icon {
+            border-color: rgba(255, 145, 158, 0.5);
+            background: rgba(255, 105, 128, 0.12);
+            color: #ffc2ca;
+        }
+
+        .integration-outcome-copy {
+            min-width: 0;
+        }
+
+        .integration-outcome-title {
+            margin: 0;
+            color: #f4fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.04em;
+        }
+
+        .integration-outcome-text {
+            margin: 5px 0 0;
+            color: rgba(226, 242, 251, 0.72);
+            font-size: 0.78rem;
+            line-height: 1.5;
+        }
+
+        .integration-outcome-issues {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 10px;
+        }
+
+        .integration-outcome-issues span {
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 999px;
+            background: rgba(0,0,0,0.16);
+            color: rgba(245, 250, 255, 0.78);
+            font-size: 0.64rem;
+            font-weight: 800;
+            padding: 6px 9px;
+        }
+
+        .integration-testing-actions {
+            display: flex;
+            justify-content: center;
+        }
+
+        .integration-testing-actions .choice-button {
+            width: min(280px, 100%);
+        }
+
+        @keyframes integration-outcome-pulse {
+            0% { transform: scale(1); filter: brightness(1); }
+            48% { transform: scale(1.012); filter: brightness(1.22); }
+            100% { transform: scale(1); filter: brightness(1); }
+        }
+
+        .knowledge-exchange-stage {
+            display: grid;
+            gap: 22px;
+        }
+
+        .knowledge-exchange-intro {
+            width: min(820px, 100%);
+            margin: 0 auto;
+            color: rgba(229, 245, 255, 0.84);
+            font-size: clamp(0.96rem, 1.8vw, 1.1rem);
+            line-height: 1.65;
+            text-align: center;
+        }
+
+        .knowledge-exchange-intro strong {
+            color: var(--gold-soft);
+        }
+
+        .knowledge-exchange-lab {
+            --exchange-developer: #75d8ff;
+            --exchange-shared: #ffe59a;
+            --exchange-tester: #7eebbd;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(167, 239, 255, 0.25);
+            border-radius: 34px;
+            background:
+                radial-gradient(circle at 50% -8%, rgba(255, 226, 139, 0.16), transparent 34%),
+                radial-gradient(circle at 2% 50%, rgba(85, 198, 255, 0.13), transparent 31%),
+                radial-gradient(circle at 98% 50%, rgba(91, 230, 171, 0.12), transparent 31%),
+                linear-gradient(150deg, rgba(6, 37, 77, 0.99), rgba(2, 17, 39, 0.995));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.12),
+                0 24px 48px rgba(0,0,0,0.28),
+                0 0 38px rgba(97, 218, 226, 0.08);
+            padding: clamp(20px, 3.7vw, 38px);
+        }
+
+        .knowledge-exchange-lab::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: 0.2;
+            background-image:
+                linear-gradient(rgba(167, 239, 255, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(167, 239, 255, 0.08) 1px, transparent 1px);
+            background-size: 32px 32px;
+            mask-image: linear-gradient(to bottom, black, transparent 72%);
+            pointer-events: none;
+        }
+
+        .knowledge-exchange-lab::after {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            inset: -28%;
+            opacity: 0;
+            background:
+                conic-gradient(from 0deg, transparent 0 9%, rgba(255, 229, 154, 0.2) 11%, transparent 14% 27%, rgba(117, 216, 255, 0.18) 30%, transparent 34% 51%, rgba(126, 235, 189, 0.18) 54%, transparent 58% 76%, rgba(255, 145, 173, 0.16) 79%, transparent 83%);
+            filter: blur(10px);
+            pointer-events: none;
+            transform: scale(0.45) rotate(0deg);
+        }
+
+        .knowledge-exchange-lab.is-celebrating::after {
+            animation: knowledge-kickoff-flash 3.6s ease-out forwards;
+        }
+
+        .knowledge-exchange-lab-head {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 27px;
+        }
+
+        .knowledge-exchange-kicker {
+            margin: 0;
+            color: rgba(167, 239, 255, 0.62);
+            font-size: 0.62rem;
+            font-weight: 900;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+        }
+
+        .knowledge-exchange-lab-title {
+            margin: 4px 0 0;
+            color: #f4fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .knowledge-exchange-duration {
+            display: grid;
+            min-width: 76px;
+            min-height: 59px;
+            place-items: center;
+            border: 1px solid rgba(255, 229, 154, 0.33);
+            border-radius: 17px;
+            background: rgba(255, 229, 154, 0.07);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 10px 20px rgba(0,0,0,0.18);
+            color: #fff0bd;
+            font: 900 1.08rem/1 "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+        }
+
+        .knowledge-exchange-duration small {
+            align-self: end;
+            color: rgba(255, 234, 175, 0.6);
+            font-size: 0.48rem;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .knowledge-exchange-duration strong {
+            align-self: start;
+            letter-spacing: 0.04em;
+        }
+
+        .knowledge-exchange-handoff {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 7px;
+            margin: -8px 0 24px;
+            border: 1px solid rgba(167, 239, 255, 0.12);
+            border-radius: 18px;
+            background: rgba(2, 18, 42, 0.48);
+            padding: 8px;
+        }
+
+        .knowledge-exchange-handoff-step {
+            position: relative;
+            min-height: 43px;
+            display: grid;
+            align-content: center;
+            justify-items: center;
+            border: 1px solid rgba(167, 239, 255, 0.11);
+            border-radius: 12px;
+            background: rgba(7, 41, 78, 0.62);
+            color: rgba(218, 239, 250, 0.65);
+            font-size: 0.57rem;
+            font-weight: 900;
+            letter-spacing: 0.07em;
+            line-height: 1.25;
+            padding: 7px 9px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .knowledge-exchange-handoff-step:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            left: calc(100% + 1px);
+            top: 50%;
+            width: 12px;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(167, 239, 255, 0.5), transparent);
+            transform: translateY(-50%);
+        }
+
+        .knowledge-exchange-handoff-step.is-complete {
+            border-color: rgba(107, 232, 184, 0.27);
+            color: #baf5dc;
+        }
+
+        .knowledge-exchange-handoff-step.is-current {
+            border-color: rgba(255, 229, 154, 0.48);
+            background: rgba(255, 229, 154, 0.1);
+            box-shadow: 0 0 18px rgba(255, 224, 139, 0.1);
+            color: #fff0bd;
+        }
+
+        .knowledge-exchange-handoff-step small {
+            display: block;
+            margin-top: 3px;
+            color: rgba(211, 235, 247, 0.45);
+            font-size: 0.47rem;
+            letter-spacing: 0.05em;
+        }
+
+        .knowledge-exchange-nodes {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: center;
+            gap: clamp(12px, 2.4vw, 28px);
+        }
+
+        .knowledge-exchange-nodes::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 14%;
+            right: 14%;
+            height: 3px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(117, 216, 255, 0.24), rgba(255, 229, 154, 0.56), rgba(126, 235, 189, 0.24));
+            box-shadow: 0 0 16px rgba(167, 239, 255, 0.16);
+        }
+
+        .knowledge-exchange-node {
+            --node-color: var(--exchange-developer);
+            position: relative;
+            min-width: 0;
+            min-height: 144px;
+            display: grid;
+            align-content: center;
+            justify-items: center;
+            gap: 9px;
+            overflow: hidden;
+            border: 1px solid color-mix(in srgb, var(--node-color) 28%, transparent);
+            border-radius: 27px;
+            background:
+                radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--node-color) 13%, transparent), transparent 50%),
+                linear-gradient(155deg, rgba(10, 49, 93, 0.96), rgba(3, 23, 52, 0.99));
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 15px 28px rgba(0,0,0,0.23);
+            color: #f4fbff;
+            cursor: pointer;
+            padding: 18px 13px;
+            isolation: isolate;
+            transition: transform 0.3s cubic-bezier(.2,.84,.3,1.12), border-color 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+        }
+
+        .knowledge-exchange-node.is-shared { --node-color: var(--exchange-shared); }
+        .knowledge-exchange-node.is-tester { --node-color: var(--exchange-tester); }
+
+        .knowledge-exchange-node::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset: 100% 8% auto;
+            height: 70%;
+            border-radius: 999px 999px 0 0;
+            background: color-mix(in srgb, var(--node-color) 18%, transparent);
+            filter: blur(18px);
+            transition: inset 0.4s ease;
+        }
+
+        .knowledge-exchange-node:hover,
+        .knowledge-exchange-node:focus-visible {
+            border-color: color-mix(in srgb, var(--node-color) 68%, white 8%);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 18px 32px rgba(0,0,0,0.27), 0 0 24px color-mix(in srgb, var(--node-color) 18%, transparent);
+            filter: brightness(1.08);
+            outline: none;
+            transform: translateY(-4px);
+        }
+
+        .knowledge-exchange-node.is-active {
+            border-color: var(--node-color);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 18px 32px rgba(0,0,0,0.25), 0 0 30px color-mix(in srgb, var(--node-color) 30%, transparent);
+            transform: translateY(-3px);
+        }
+
+        .knowledge-exchange-node.is-active::after {
+            inset: 47% 8% -20%;
+        }
+
+        .knowledge-exchange-node.is-activated-now {
+            animation: knowledge-node-activate 0.58s cubic-bezier(.2,.84,.3,1.2);
+        }
+
+        .knowledge-exchange-node-icon {
+            width: 47px;
+            height: 47px;
+            display: grid;
+            place-items: center;
+            border: 1px solid color-mix(in srgb, var(--node-color) 40%, transparent);
+            border-radius: 16px;
+            background: color-mix(in srgb, var(--node-color) 10%, rgba(3, 24, 52, 0.7));
+            color: var(--node-color);
+            font-size: 1.25rem;
+            font-weight: 900;
+            box-shadow: 0 0 18px color-mix(in srgb, var(--node-color) 12%, transparent);
+        }
+
+        .knowledge-exchange-node-title {
+            color: #f4fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(0.8rem, 1.55vw, 1rem);
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .knowledge-exchange-node-hint {
+            color: color-mix(in srgb, var(--node-color) 68%, rgba(220, 239, 250, 0.6));
+            font-size: 0.57rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .knowledge-exchange-sequence {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            margin: 22px auto 0;
+        }
+
+        .knowledge-exchange-sequence-slot {
+            min-width: 98px;
+            min-height: 32px;
+            display: grid;
+            place-items: center;
+            border: 1px dashed rgba(167, 239, 255, 0.18);
+            border-radius: 999px;
+            color: rgba(206, 231, 245, 0.42);
+            font-size: 0.55rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            padding: 6px 10px;
+            text-transform: uppercase;
+            transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+        }
+
+        .knowledge-exchange-sequence-slot.is-filled {
+            border-style: solid;
+            border-color: color-mix(in srgb, var(--slot-color) 45%, transparent);
+            background: color-mix(in srgb, var(--slot-color) 8%, transparent);
+            color: var(--slot-color);
+            transform: translateY(-2px);
+        }
+
+        .knowledge-exchange-sequence-arrow {
+            color: rgba(167, 239, 255, 0.34);
+            font-size: 0.76rem;
+        }
+
+        .knowledge-exchange-insights {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .knowledge-exchange-insight {
+            --insight-color: var(--exchange-developer);
+            min-width: 0;
+            min-height: 0;
+            max-height: 0;
+            overflow: hidden;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            background: rgba(2, 18, 42, 0.62);
+            opacity: 0;
+            padding: 0 16px;
+            transform: translateY(14px) scale(0.98);
+            transition: max-height 0.52s ease, min-height 0.52s ease, opacity 0.34s ease, transform 0.42s ease, padding 0.42s ease, border-color 0.32s ease;
+        }
+
+        .knowledge-exchange-insight.is-shared { --insight-color: var(--exchange-shared); }
+        .knowledge-exchange-insight.is-tester { --insight-color: var(--exchange-tester); }
+
+        .knowledge-exchange-insight.is-visible {
+            min-height: 192px;
+            max-height: 340px;
+            border-color: color-mix(in srgb, var(--insight-color) 23%, transparent);
+            opacity: 1;
+            padding: 16px;
+            transform: translateY(0) scale(1);
+        }
+
+        .knowledge-exchange-insight h3 {
+            margin: 0;
+            color: var(--insight-color);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 0.82rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .knowledge-exchange-insight p {
+            margin: 8px 0 11px;
+            color: rgba(226, 242, 251, 0.7);
+            font-size: 0.69rem;
+            line-height: 1.5;
+        }
+
+        .knowledge-exchange-chip-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .knowledge-exchange-chip-list span {
+            border: 1px solid color-mix(in srgb, var(--insight-color) 24%, transparent);
+            border-radius: 999px;
+            background: color-mix(in srgb, var(--insight-color) 7%, transparent);
+            color: color-mix(in srgb, var(--insight-color) 76%, white 8%);
+            font-size: 0.58rem;
+            font-weight: 800;
+            padding: 6px 8px;
+        }
+
+        .knowledge-exchange-calendar {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 15px;
+            margin-top: 18px;
+            border: 1px solid rgba(255, 229, 154, 0.2);
+            border-radius: 22px;
+            background: linear-gradient(135deg, rgba(255, 229, 154, 0.08), rgba(4, 29, 60, 0.68));
+            padding: 15px 17px;
+            transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .knowledge-exchange-calendar.is-protected {
+            border-color: rgba(115, 238, 185, 0.48);
+            background: linear-gradient(135deg, rgba(93, 226, 169, 0.13), rgba(4, 43, 55, 0.78));
+            box-shadow: 0 0 24px rgba(93, 226, 169, 0.11);
+        }
+
+        .knowledge-exchange-calendar-icon {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(255, 229, 154, 0.3);
+            border-radius: 15px;
+            background: rgba(255, 229, 154, 0.08);
+            color: #ffe9a8;
+            font-size: 1.15rem;
+            font-weight: 900;
+        }
+
+        .knowledge-exchange-calendar-copy strong,
+        .knowledge-exchange-calendar-copy span {
+            display: block;
+        }
+
+        .knowledge-exchange-calendar-copy strong {
+            color: #f7fbff;
+            font-size: 0.82rem;
+        }
+
+        .knowledge-exchange-calendar-copy span {
+            margin-top: 4px;
+            color: rgba(218, 238, 249, 0.6);
+            font-size: 0.65rem;
+            line-height: 1.4;
+        }
+
+        .knowledge-exchange-calendar-button,
+        .knowledge-exchange-replay {
+            border: 1px solid rgba(255, 230, 165, 0.28);
+            border-radius: 12px;
+            background: rgba(255, 229, 154, 0.08);
+            color: #fff0bd;
+            cursor: pointer;
+            font: 900 0.59rem "Segoe UI", sans-serif;
+            letter-spacing: 0.08em;
+            padding: 10px 12px;
+            text-transform: uppercase;
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .knowledge-exchange-calendar-button:hover,
+        .knowledge-exchange-calendar-button:focus-visible,
+        .knowledge-exchange-replay:hover,
+        .knowledge-exchange-replay:focus-visible {
+            border-color: rgba(255, 238, 191, 0.62);
+            background: rgba(255, 229, 154, 0.15);
+            outline: none;
+            transform: translateY(-2px);
+        }
+
+        .knowledge-exchange-calendar.is-protected .knowledge-exchange-calendar-button {
+            border-color: rgba(132, 245, 196, 0.46);
+            background: rgba(105, 233, 178, 0.12);
+            color: #baffdf;
+        }
+
+        .knowledge-exchange-finale {
+            position: relative;
+            z-index: 2;
+            min-height: 94px;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 15px;
+            overflow: hidden;
+            margin-top: 18px;
+            border: 1px solid rgba(167, 239, 255, 0.16);
+            border-radius: 24px;
+            background: rgba(2, 17, 39, 0.68);
+            padding: 16px 18px;
+            transition: border-color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .knowledge-exchange-finale.is-connected {
+            border-color: rgba(120, 220, 255, 0.42);
+            background: rgba(16, 64, 91, 0.58);
+        }
+
+        .knowledge-exchange-finale.is-synergy {
+            border-color: rgba(255, 229, 154, 0.58);
+            background:
+                radial-gradient(circle at 50% 0%, rgba(255, 229, 154, 0.2), transparent 52%),
+                rgba(18, 69, 62, 0.72);
+            box-shadow: 0 0 34px rgba(255, 224, 132, 0.13), inset 0 1px 0 rgba(255,255,255,0.12);
+            animation: knowledge-finale-celebrate 1.1s cubic-bezier(.2,.84,.3,1.12) both;
+        }
+
+        .knowledge-exchange-finale-icon {
+            width: 50px;
+            height: 50px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(167, 239, 255, 0.23);
+            border-radius: 17px;
+            background: rgba(167, 239, 255, 0.08);
+            color: var(--cyan-soft);
+            font-size: 1.15rem;
+            font-weight: 900;
+            transition: transform 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+        }
+
+        .knowledge-exchange-finale.is-synergy .knowledge-exchange-finale-icon {
+            border-color: rgba(255, 233, 171, 0.54);
+            color: #fff0bd;
+            transform: rotate(360deg) scale(1.08);
+        }
+
+        .knowledge-exchange-finale-copy h3 {
+            margin: 0;
+            color: #f4fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.04em;
+        }
+
+        .knowledge-exchange-finale-copy p {
+            margin: 5px 0 0;
+            color: rgba(225, 242, 251, 0.68);
+            font-size: 0.72rem;
+            line-height: 1.5;
+        }
+
+        .knowledge-exchange-replay {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(7px);
+        }
+
+        .knowledge-exchange-finale.is-complete .knowledge-exchange-replay {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .knowledge-fireworks {
+            position: absolute;
+            z-index: 6;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .knowledge-firework-particle {
+            --firework-color: #ffe59a;
+            position: absolute;
+            left: var(--firework-x);
+            top: var(--firework-y);
+            width: 9px;
+            height: 9px;
+            border-radius: 999px;
+            background: var(--firework-color);
+            box-shadow: 0 0 7px var(--firework-color), 0 0 17px var(--firework-color);
+            opacity: 0;
+            animation: knowledge-firework-burst 2.65s var(--firework-delay) cubic-bezier(.12,.72,.24,1) forwards;
+        }
+
+        .knowledge-firework-ring {
+            position: absolute;
+            left: var(--firework-x);
+            top: var(--firework-y);
+            width: 30px;
+            height: 30px;
+            border: 3px solid var(--firework-color);
+            border-radius: 999px;
+            box-shadow: 0 0 18px var(--firework-color), inset 0 0 12px var(--firework-color);
+            opacity: 0;
+            animation: knowledge-firework-ring 2.3s var(--firework-delay) ease-out forwards;
+        }
+
+        .knowledge-exchange-actions {
+            display: flex;
+            justify-content: center;
+        }
+
+        .knowledge-exchange-actions .choice-button {
+            width: min(280px, 100%);
+        }
+
+        @keyframes knowledge-node-activate {
+            0% { transform: translateY(0) scale(1); }
+            40% { transform: translateY(-9px) scale(1.045); filter: brightness(1.24); }
+            100% { transform: translateY(-3px) scale(1); }
+        }
+
+        @keyframes knowledge-firework-burst {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+            8% { opacity: 1; }
+            65% { opacity: 1; }
+            100% { opacity: 0; transform: translate(calc(-50% + var(--firework-dx)), calc(-50% + var(--firework-dy) + 28px)) scale(0.55); }
+        }
+
+        @keyframes knowledge-firework-ring {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.15); }
+            12% { opacity: 0.9; }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(7.5); }
+        }
+
+        @keyframes knowledge-kickoff-flash {
+            0% { opacity: 0; transform: scale(0.42) rotate(0deg); }
+            16% { opacity: 0.78; }
+            52% { opacity: 0.32; }
+            100% { opacity: 0; transform: scale(1.2) rotate(135deg); }
+        }
+
+        @keyframes knowledge-finale-celebrate {
+            0% { transform: scale(0.96); filter: brightness(1); }
+            45% { transform: scale(1.015); filter: brightness(1.28); }
+            100% { transform: scale(1); filter: brightness(1); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .knowledge-exchange-node,
+            .knowledge-exchange-insight,
+            .knowledge-exchange-finale-icon,
+            .knowledge-firework-particle,
+            .knowledge-firework-ring,
+            .knowledge-exchange-lab::after {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .knowledge-firework-particle {
+                display: none;
+            }
+
+            .knowledge-firework-ring {
+                display: none;
+            }
+        }
+
+        .retest-investigation-stage {
+            display: grid;
+            gap: 22px;
+        }
+
+        .retest-investigation-intro {
+            width: min(860px, 100%);
+            margin: 0 auto;
+            color: rgba(229, 245, 255, 0.86);
+            font-size: clamp(0.96rem, 1.75vw, 1.08rem);
+            line-height: 1.65;
+            text-align: center;
+        }
+
+        .retest-investigation-intro strong {
+            color: var(--gold-soft);
+        }
+
+        .retest-investigation-workbench {
+            --retest-cyan: #78d9ff;
+            --retest-gold: #ffe29a;
+            --retest-green: #78e2b4;
+            --retest-coral: #ff9a9f;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(167, 239, 255, 0.24);
+            border-radius: 30px;
+            background:
+                radial-gradient(circle at 8% 0%, rgba(120, 217, 255, 0.13), transparent 29%),
+                radial-gradient(circle at 92% 8%, rgba(255, 226, 154, 0.1), transparent 25%),
+                linear-gradient(155deg, rgba(5, 31, 67, 0.98), rgba(2, 18, 42, 0.995));
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.11),
+                0 24px 48px rgba(0,0,0,0.28),
+                0 0 40px rgba(95, 215, 229, 0.07);
+            padding: clamp(18px, 3.2vw, 34px);
+        }
+
+        .retest-investigation-workbench::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: 0.18;
+            background-image:
+                linear-gradient(rgba(167, 239, 255, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(167, 239, 255, 0.08) 1px, transparent 1px);
+            background-size: 30px 30px;
+            pointer-events: none;
+        }
+
+        .retest-investigation-workbench > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .retest-request {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 16px;
+            border: 1px solid rgba(120, 217, 255, 0.2);
+            border-radius: 22px;
+            background: rgba(5, 27, 57, 0.72);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 14px 26px rgba(0,0,0,0.16);
+            padding: 16px 18px;
+            animation: retest-request-arrive 0.72s cubic-bezier(.2,.82,.25,1) both;
+        }
+
+        .retest-request-avatar {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(120, 217, 255, 0.34);
+            border-radius: 16px;
+            color: var(--retest-cyan);
+            background: rgba(120, 217, 255, 0.08);
+            box-shadow: 0 0 22px rgba(120, 217, 255, 0.1);
+            font: 900 0.82rem/1 Consolas, "Courier New", monospace;
+        }
+
+        .retest-request-copy {
+            min-width: 0;
+        }
+
+        .retest-request-kicker,
+        .retest-section-kicker,
+        .retest-learning-kicker {
+            margin: 0;
+            color: rgba(120, 217, 255, 0.66);
+            font-size: 0.59rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .retest-request blockquote {
+            margin: 6px 0 0;
+            color: #f4fbff;
+            font-size: clamp(0.87rem, 1.55vw, 1rem);
+            font-weight: 700;
+            line-height: 1.45;
+        }
+
+        .retest-request-status {
+            display: grid;
+            gap: 4px;
+            justify-items: center;
+            min-width: 90px;
+            border: 1px solid rgba(255, 226, 154, 0.28);
+            border-radius: 15px;
+            background: rgba(255, 226, 154, 0.07);
+            color: #fff0bd;
+            padding: 10px 12px;
+            text-align: center;
+        }
+
+        .retest-request-status strong {
+            font: 900 0.78rem/1 "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .retest-request-status small {
+            color: rgba(255, 235, 181, 0.56);
+            font-size: 0.48rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .retest-section {
+            margin-top: 24px;
+        }
+
+        .retest-section-head {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 18px;
+            margin-bottom: 13px;
+        }
+
+        .retest-section-title {
+            margin: 4px 0 0;
+            color: #f4fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(1.02rem, 2.2vw, 1.34rem);
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .retest-section-note {
+            max-width: 430px;
+            margin: 0;
+            color: rgba(214, 237, 249, 0.62);
+            font-size: 0.7rem;
+            line-height: 1.45;
+            text-align: right;
+        }
+
+        .retest-hat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .retest-hat-card {
+            --hat-color: var(--retest-cyan);
+            position: relative;
+            min-width: 0;
+            min-height: 210px;
+            display: grid;
+            align-content: start;
+            justify-items: center;
+            gap: 7px;
+            overflow: hidden;
+            border: 1px solid color-mix(in srgb, var(--hat-color) 23%, transparent);
+            border-radius: 20px;
+            cursor: pointer;
+            color: #f4fbff;
+            background:
+                radial-gradient(circle at 50% 4%, color-mix(in srgb, var(--hat-color) 13%, transparent), transparent 43%),
+                rgba(4, 25, 54, 0.72);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 12px 22px rgba(0,0,0,0.16);
+            padding: 15px 12px 14px;
+            transition: transform 0.28s cubic-bezier(.2,.82,.25,1.08), border-color 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+            animation: retest-hat-arrive 0.65s cubic-bezier(.2,.82,.25,1) both;
+        }
+
+        .retest-hat-card:nth-child(2) { --hat-color: var(--retest-coral); animation-delay: 0.08s; }
+        .retest-hat-card:nth-child(3) { --hat-color: var(--retest-gold); animation-delay: 0.16s; }
+        .retest-hat-card:nth-child(4) { --hat-color: var(--retest-green); animation-delay: 0.24s; }
+
+        .retest-hat-card::after {
+            content: "";
+            position: absolute;
+            inset: auto 12% -34px;
+            height: 48px;
+            border-radius: 50%;
+            background: color-mix(in srgb, var(--hat-color) 24%, transparent);
+            filter: blur(20px);
+            opacity: 0;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+        }
+
+        .retest-hat-card:hover,
+        .retest-hat-card:focus-visible {
+            border-color: color-mix(in srgb, var(--hat-color) 64%, white 8%);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 17px 29px rgba(0,0,0,0.23), 0 0 24px color-mix(in srgb, var(--hat-color) 13%, transparent);
+            outline: none;
+            transform: translateY(-4px);
+        }
+
+        .retest-hat-card.is-selected {
+            border-color: var(--hat-color);
+            background:
+                radial-gradient(circle at 50% 4%, color-mix(in srgb, var(--hat-color) 24%, transparent), transparent 48%),
+                rgba(6, 36, 69, 0.9);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.14), 0 17px 29px rgba(0,0,0,0.23), 0 0 28px color-mix(in srgb, var(--hat-color) 22%, transparent);
+            transform: translateY(-4px);
+        }
+
+        .retest-hat-card.is-selected::after {
+            opacity: 1;
+            transform: translateY(-18px);
+        }
+
+        .retest-hat-card.is-selected .retest-hat-visual {
+            animation: retest-hat-selected 0.74s cubic-bezier(.2,.82,.25,1.16);
+        }
+
+        .retest-hat-visual {
+            width: 78px;
+            height: 68px;
+            color: var(--hat-color);
+            filter: drop-shadow(0 0 9px color-mix(in srgb, var(--hat-color) 26%, transparent));
+            transform-origin: center bottom;
+        }
+
+        .retest-hat-visual .is-head {
+            fill: rgba(229, 245, 255, 0.09);
+            stroke: rgba(222, 245, 255, 0.24);
+            stroke-width: 1.5;
+        }
+
+        .retest-hat-visual .is-main {
+            fill: color-mix(in srgb, currentColor 28%, rgba(5, 29, 59, 0.9));
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linejoin: round;
+        }
+
+        .retest-hat-visual .is-accent {
+            fill: none;
+            stroke: #fff1bd;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .retest-hat-role {
+            color: var(--hat-color);
+            font-size: 0.58rem;
+            font-weight: 900;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .retest-hat-title {
+            color: #f5fbff;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 0.87rem;
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            line-height: 1.18;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .retest-hat-copy {
+            margin: 1px 0 0;
+            color: rgba(213, 236, 248, 0.62);
+            font-size: 0.62rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .retest-knowledge-grid {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .retest-knowledge-grid::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(120, 217, 255, 0.18), rgba(255, 226, 154, 0.58), rgba(120, 226, 180, 0.18));
+            box-shadow: 0 0 15px rgba(255, 226, 154, 0.15);
+        }
+
+        .retest-knowledge-card {
+            --knowledge-color: var(--retest-cyan);
+            position: relative;
+            z-index: 1;
+            min-height: 116px;
+            display: grid;
+            align-content: center;
+            gap: 6px;
+            border: 1px solid color-mix(in srgb, var(--knowledge-color) 22%, transparent);
+            border-radius: 18px;
+            cursor: pointer;
+            color: #f4fbff;
+            background: rgba(4, 24, 52, 0.91);
+            padding: 15px;
+            text-align: left;
+            transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+        }
+
+        .retest-knowledge-card:nth-child(2) { --knowledge-color: var(--retest-green); }
+        .retest-knowledge-card:nth-child(3) { --knowledge-color: var(--retest-gold); }
+
+        .retest-knowledge-card:hover,
+        .retest-knowledge-card:focus-visible,
+        .retest-knowledge-card.is-selected {
+            border-color: var(--knowledge-color);
+            outline: none;
+            box-shadow: 0 0 23px color-mix(in srgb, var(--knowledge-color) 16%, transparent);
+            transform: translateY(-3px);
+        }
+
+        .retest-knowledge-card.is-selected {
+            background: color-mix(in srgb, var(--knowledge-color) 10%, rgba(4, 24, 52, 0.94));
+        }
+
+        .retest-knowledge-label {
+            color: var(--knowledge-color);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: 0.82rem;
+            font-weight: 900;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+
+        .retest-knowledge-copy {
+            color: rgba(215, 237, 249, 0.66);
+            font-size: 0.64rem;
+            line-height: 1.4;
+        }
+
+        .retest-technique-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .retest-technique-chip {
+            min-height: 40px;
+            border: 1px solid rgba(167, 239, 255, 0.18);
+            border-radius: 999px;
+            cursor: pointer;
+            color: rgba(225, 243, 252, 0.76);
+            background: rgba(4, 25, 54, 0.72);
+            font: 800 0.65rem/1.2 "Segoe UI", Arial, sans-serif;
+            padding: 9px 13px;
+            transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .retest-technique-chip:hover,
+        .retest-technique-chip:focus-visible {
+            border-color: rgba(255, 226, 154, 0.52);
+            color: #fff0bd;
+            outline: none;
+            transform: translateY(-2px);
+        }
+
+        .retest-technique-chip.is-selected {
+            border-color: rgba(255, 226, 154, 0.72);
+            color: #fff0bd;
+            background: rgba(255, 226, 154, 0.1);
+            box-shadow: 0 0 18px rgba(255, 226, 154, 0.12);
+        }
+
+        .retest-toolkit-summary {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 12px;
+            margin-top: 17px;
+            border: 1px solid rgba(167, 239, 255, 0.14);
+            border-radius: 18px;
+            background: rgba(2, 16, 37, 0.62);
+            padding: 12px 13px;
+        }
+
+        .retest-toolkit-number {
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(120, 217, 255, 0.26);
+            border-radius: 11px;
+            color: var(--retest-cyan);
+            background: rgba(120, 217, 255, 0.07);
+            font: 900 0.7rem/1 Consolas, "Courier New", monospace;
+        }
+
+        .retest-toolkit-copy {
+            min-width: 0;
+            color: rgba(218, 239, 250, 0.66);
+            font-size: 0.68rem;
+            line-height: 1.45;
+        }
+
+        .retest-toolkit-copy strong {
+            color: #f4fbff;
+        }
+
+        .retest-start-button {
+            min-height: 42px;
+            border: 1px solid rgba(255, 226, 154, 0.48);
+            border-radius: 14px;
+            cursor: pointer;
+            color: #092744;
+            background: linear-gradient(145deg, #fff1b8, #8ce5ef);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 10px 19px rgba(0,0,0,0.18), 0 0 19px rgba(137, 230, 239, 0.13);
+            font: 900 0.63rem/1 "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            letter-spacing: 0.09em;
+            padding: 0 15px;
+            text-transform: uppercase;
+            transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+        }
+
+        .retest-start-button:hover:not(:disabled),
+        .retest-start-button:focus-visible:not(:disabled) {
+            filter: brightness(1.08);
+            outline: none;
+            transform: translateY(-2px);
+        }
+
+        .retest-start-button:disabled {
+            cursor: not-allowed;
+            filter: grayscale(0.72);
+            opacity: 0.38;
+        }
+
+        .retest-run-board {
+            margin-top: 20px;
+            border: 1px solid rgba(167, 239, 255, 0.18);
+            border-radius: 22px;
+            background:
+                radial-gradient(circle at 100% 0%, rgba(120, 226, 180, 0.08), transparent 34%),
+                rgba(2, 16, 38, 0.72);
+            padding: 17px;
+        }
+
+        .retest-run-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(170px, 0.28fr);
+            align-items: stretch;
+            gap: 14px;
+        }
+
+        .retest-route {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            align-items: start;
+            gap: 7px;
+            padding: 13px 4px 4px;
+        }
+
+        .retest-route::before,
+        .retest-route::after {
+            content: "";
+            position: absolute;
+            top: 34px;
+            left: 9%;
+            right: 9%;
+            height: 2px;
+            border-radius: 999px;
+        }
+
+        .retest-route::before {
+            background: rgba(167, 239, 255, 0.14);
+        }
+
+        .retest-route::after {
+            right: 91%;
+            background: linear-gradient(90deg, var(--retest-cyan), var(--retest-gold), var(--retest-green));
+            box-shadow: 0 0 12px rgba(120, 217, 255, 0.45);
+            transition: right 0.5s ease;
+        }
+
+        .retest-run-board[data-progress="1"] .retest-route::after { right: 70%; }
+        .retest-run-board[data-progress="2"] .retest-route::after { right: 50%; }
+        .retest-run-board[data-progress="3"] .retest-route::after { right: 30%; }
+        .retest-run-board[data-progress="4"] .retest-route::after,
+        .retest-run-board[data-progress="5"] .retest-route::after { right: 9%; }
+
+        .retest-route-step {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            justify-items: center;
+            gap: 8px;
+            color: rgba(205, 231, 244, 0.46);
+            font-size: 0.53rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            line-height: 1.25;
+            text-align: center;
+            text-transform: uppercase;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .retest-route-step span {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(167, 239, 255, 0.18);
+            border-radius: 50%;
+            color: rgba(210, 237, 249, 0.5);
+            background: #061d3d;
+            box-shadow: 0 0 0 5px rgba(4, 28, 59, 0.92);
+            font: 900 0.67rem/1 Consolas, "Courier New", monospace;
+            transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .retest-route-step.is-active {
+            color: #eafaff;
+            transform: translateY(-3px);
+        }
+
+        .retest-route-step.is-active span {
+            border-color: var(--retest-cyan);
+            color: #061d3d;
+            background: linear-gradient(145deg, #e8fcff, #7edff0);
+            box-shadow: 0 0 0 5px rgba(4, 28, 59, 0.92), 0 0 20px rgba(120, 217, 255, 0.48);
+            animation: retest-route-node 0.55s cubic-bezier(.2,.82,.25,1.12);
+        }
+
+        .retest-scanner {
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            align-content: center;
+            justify-items: center;
+            gap: 6px;
+            min-height: 126px;
+            border: 1px solid rgba(120, 226, 180, 0.22);
+            border-radius: 18px;
+            background: rgba(5, 35, 57, 0.72);
+            text-align: center;
+            padding: 13px;
+        }
+
+        .retest-scanner::before {
+            content: "";
+            position: absolute;
+            top: -40%;
+            bottom: -40%;
+            width: 30%;
+            background: linear-gradient(90deg, transparent, rgba(120, 226, 180, 0.16), transparent);
+            opacity: 0;
+            transform: rotate(18deg) translateX(-420%);
+        }
+
+        .retest-run-board.is-running .retest-scanner::before {
+            opacity: 1;
+            animation: retest-scanner-sweep 1.05s linear infinite;
+        }
+
+        .retest-scanner-kicker {
+            color: rgba(120, 226, 180, 0.58);
+            font-size: 0.5rem;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .retest-scanner-value {
+            min-height: 32px;
+            display: grid;
+            place-items: center;
+            color: var(--retest-green);
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(0.82rem, 1.6vw, 1.02rem);
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            line-height: 1.15;
+            text-transform: uppercase;
+        }
+
+        .retest-scanner-value.is-changing {
+            animation: retest-scanner-value 0.2s ease;
+        }
+
+        .retest-scanner-state {
+            color: rgba(213, 238, 246, 0.5);
+            font-size: 0.55rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .retest-result {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(12px);
+            transition: max-height 0.68s ease, opacity 0.4s ease, transform 0.5s ease, margin-top 0.5s ease;
+        }
+
+        .retest-result.is-visible {
+            max-height: 480px;
+            margin-top: 14px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .retest-result-card {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 14px;
+            border: 1px solid rgba(255, 226, 154, 0.38);
+            border-radius: 19px;
+            background:
+                radial-gradient(circle at 0 0, rgba(255, 226, 154, 0.13), transparent 35%),
+                rgba(7, 37, 58, 0.9);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.09), 0 0 28px rgba(255, 226, 154, 0.08);
+            padding: 16px;
+        }
+
+        .retest-result-icon {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(255, 226, 154, 0.48);
+            border-radius: 50%;
+            color: #092744;
+            background: linear-gradient(145deg, #fff2bd, #79dfd1);
+            box-shadow: 0 0 23px rgba(255, 226, 154, 0.26);
+            font-size: 1.14rem;
+            font-weight: 950;
+        }
+
+        .retest-result-kicker {
+            margin: 0;
+            color: rgba(255, 232, 170, 0.66);
+            font-size: 0.55rem;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .retest-result-title {
+            margin: 4px 0 5px;
+            color: #fff0bd;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(0.95rem, 2vw, 1.2rem);
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            line-height: 1.15;
+            text-transform: uppercase;
+        }
+
+        .retest-result-copy,
+        .retest-result-principle {
+            margin: 0;
+            color: rgba(222, 241, 250, 0.72);
+            font-size: 0.7rem;
+            line-height: 1.5;
+        }
+
+        .retest-result-principle {
+            margin-top: 7px;
+            color: rgba(120, 226, 180, 0.82);
+            font-weight: 700;
+        }
+
+        .retest-learning {
+            margin-top: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 226, 154, 0.2);
+            border-radius: 24px;
+            background:
+                radial-gradient(circle at 100% 0%, rgba(255, 226, 154, 0.09), transparent 30%),
+                linear-gradient(145deg, rgba(7, 38, 70, 0.88), rgba(3, 20, 44, 0.94));
+            padding: clamp(18px, 3vw, 26px);
+        }
+
+        .retest-learning-title {
+            margin: 5px 0 8px;
+            color: #fff0bd;
+            font-family: "Bahnschrift SemiCondensed", "Trebuchet MS", sans-serif;
+            font-size: clamp(1rem, 2.2vw, 1.32rem);
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .retest-learning-copy {
+            max-width: 860px;
+            margin: 0;
+            color: rgba(222, 240, 250, 0.76);
+            font-size: 0.76rem;
+            line-height: 1.58;
+        }
+
+        .retest-learning-steps {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            align-items: end;
+            gap: 7px;
+            margin-top: 18px;
+            padding-top: 28px;
+        }
+
+        .retest-learning-step {
+            min-height: 72px;
+            display: grid;
+            align-content: center;
+            gap: 5px;
+            border: 1px solid rgba(167, 239, 255, 0.14);
+            border-radius: 14px 14px 5px 5px;
+            background: rgba(4, 25, 53, 0.74);
+            color: rgba(222, 241, 250, 0.72);
+            padding: 10px;
+            transform: translateY(var(--learning-offset));
+            opacity: 0;
+            animation: retest-learning-step-in 0.52s cubic-bezier(.2,.82,.25,1) forwards;
+            animation-delay: var(--learning-delay);
+        }
+
+        .retest-learning-step:nth-child(1) { --learning-offset: 26px; --learning-delay: 0.25s; }
+        .retest-learning-step:nth-child(2) { --learning-offset: 19px; --learning-delay: 0.37s; }
+        .retest-learning-step:nth-child(3) { --learning-offset: 12px; --learning-delay: 0.49s; }
+        .retest-learning-step:nth-child(4) { --learning-offset: 5px; --learning-delay: 0.61s; }
+        .retest-learning-step:nth-child(5) {
+            --learning-offset: -2px;
+            --learning-delay: 0.73s;
+            border-color: rgba(255, 226, 154, 0.34);
+            color: #fff0bd;
+            background: rgba(255, 226, 154, 0.07);
+        }
+
+        .retest-learning-step small {
+            color: rgba(120, 217, 255, 0.5);
+            font-size: 0.46rem;
+            font-weight: 900;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .retest-learning-step strong {
+            font-size: 0.59rem;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+
+        .retest-investigation-actions {
+            display: flex;
+            justify-content: center;
+        }
+
+        .retest-investigation-actions .choice-button {
+            width: min(280px, 100%);
+        }
+
+        .retest-investigation-actions .choice-button:disabled {
+            cursor: not-allowed;
+            filter: grayscale(0.72);
+            opacity: 0.4;
+            transform: none;
+        }
+
+        @keyframes retest-request-arrive {
+            from { opacity: 0; transform: translateX(-22px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes retest-hat-arrive {
+            from { opacity: 0; transform: translateY(18px) rotateX(-10deg); }
+            to { opacity: 1; transform: translateY(0) rotateX(0); }
+        }
+
+        @keyframes retest-hat-selected {
+            0% { transform: rotate(-5deg) scale(0.94); }
+            45% { transform: rotate(7deg) scale(1.08); }
+            100% { transform: rotate(0) scale(1); }
+        }
+
+        @keyframes retest-route-node {
+            0% { transform: scale(0.72); filter: brightness(0.8); }
+            55% { transform: scale(1.16); filter: brightness(1.22); }
+            100% { transform: scale(1); filter: brightness(1); }
+        }
+
+        @keyframes retest-scanner-sweep {
+            from { transform: rotate(18deg) translateX(-420%); }
+            to { transform: rotate(18deg) translateX(420%); }
+        }
+
+        @keyframes retest-scanner-value {
+            0% { opacity: 0.2; transform: translateY(5px); filter: blur(2px); }
+            100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+
+        @keyframes retest-learning-step-in {
+            from { opacity: 0; transform: translateY(calc(var(--learning-offset) + 15px)); }
+            to { opacity: 1; transform: translateY(var(--learning-offset)); }
+        }
+
+        @media (max-width: 900px) {
+            .retest-request {
+                grid-template-columns: auto minmax(0, 1fr);
+            }
+
+            .retest-request-status {
+                grid-column: 1 / -1;
+                grid-template-columns: auto auto;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .retest-section-head {
+                display: grid;
+                gap: 7px;
+            }
+
+            .retest-section-note {
+                max-width: none;
+                text-align: left;
+            }
+
+            .retest-hat-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .retest-hat-card {
+                min-height: 202px;
+            }
+
+            .retest-knowledge-grid,
+            .retest-run-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .retest-knowledge-grid::before {
+                display: none;
+            }
+
+            .retest-toolkit-summary {
+                grid-template-columns: auto minmax(0, 1fr);
+            }
+
+            .retest-start-button {
+                grid-column: 1 / -1;
+                width: 100%;
+            }
+
+            .retest-learning-steps {
+                grid-template-columns: 1fr;
+                gap: 7px;
+                padding: 0 0 0 18px;
+            }
+
+            .retest-learning-step,
+            .retest-learning-step:nth-child(n) {
+                min-height: 58px;
+                border-radius: 12px;
+                transform: none;
+                animation-name: retest-learning-step-mobile-in;
+            }
+
+            .retest-learning-steps::before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                bottom: 6px;
+                left: 5px;
+                width: 2px;
+                background: linear-gradient(var(--retest-cyan), var(--retest-gold));
+            }
+        }
+
+        @media (max-width: 560px) {
+            .retest-investigation-workbench {
+                border-radius: 22px;
+                padding: 15px;
+            }
+
+            .retest-hat-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .retest-hat-card {
+                min-height: 0;
+                grid-template-columns: 68px minmax(0, 1fr);
+                grid-template-rows: auto auto 1fr;
+                align-items: center;
+                justify-items: start;
+                column-gap: 12px;
+                text-align: left;
+            }
+
+            .retest-hat-visual {
+                grid-row: 1 / 4;
+                width: 66px;
+                height: 60px;
+            }
+
+            .retest-hat-title,
+            .retest-hat-copy {
+                text-align: left;
+            }
+
+            .retest-route {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                padding: 0;
+            }
+
+            .retest-route::before,
+            .retest-route::after {
+                display: none;
+            }
+
+            .retest-route-step {
+                grid-template-columns: 38px minmax(0, 1fr);
+                justify-items: start;
+                align-items: center;
+                text-align: left;
+            }
+
+            .retest-route-step span {
+                width: 36px;
+                height: 36px;
+                box-shadow: none;
+            }
+
+            .retest-result-card {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes retest-learning-step-mobile-in {
+            from { opacity: 0; transform: translateX(-12px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .retest-request,
+            .retest-hat-card,
+            .retest-hat-card.is-selected .retest-hat-visual,
+            .retest-route-step.is-active span,
+            .retest-scanner::before,
+            .retest-scanner-value,
+            .retest-learning-step {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .retest-learning-step {
+                opacity: 1;
             }
         }
 
@@ -5356,6 +9278,55 @@
                 0 2px 0 rgba(2, 16, 38, 0.82);
         }
 
+        @media (hover: hover) and (pointer: fine) {
+            body[data-overview-view="root"] .choice-button {
+                transition:
+                    transform 0.22s ease,
+                    box-shadow 0.22s ease,
+                    border-color 0.22s ease,
+                    filter 0.22s ease;
+            }
+
+            body[data-overview-view="root"] .choice-button:hover {
+                transform: translateY(-2px) scale(1.003);
+                border-color: rgba(255, 232, 164, 0.88);
+                background:
+                    radial-gradient(circle at 18% 10%, rgba(255, 240, 184, 0.32), transparent 34%),
+                    linear-gradient(145deg, rgba(31, 164, 146, 0.98), rgba(7, 69, 99, 0.99) 62%, rgba(4, 35, 72, 0.99));
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.34),
+                    0 24px 38px rgba(0,0,0,0.3),
+                    0 5px 0 rgba(3, 39, 55, 0.9),
+                    0 0 28px rgba(93, 231, 208, 0.34),
+                    0 0 48px rgba(255, 226, 145, 0.15);
+            }
+
+            body[data-overview-view="root"] .choice-button:hover .choice-label {
+                color: #fff4c7;
+                text-shadow: 0 2px 12px rgba(0, 20, 35, 0.48);
+            }
+
+            body[data-overview-view^="requirement-"] .matrix-cell-button:hover {
+                transform: translateY(-2px);
+                border-color: rgba(255, 246, 205, 0.94);
+                color: #08284b;
+                background:
+                    radial-gradient(circle at 24% 14%, rgba(255,255,255,0.62), transparent 31%),
+                    linear-gradient(155deg, #ffe89b, #e9aa37 58%, #b96d17);
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.68),
+                    0 20px 32px rgba(0,0,0,0.3),
+                    0 5px 0 rgba(91, 48, 7, 0.82),
+                    0 0 28px rgba(255, 211, 100, 0.4);
+            }
+
+            body[data-overview-view^="requirement-"] .matrix-cell-button:hover .matrix-cell-tone,
+            body[data-overview-view^="requirement-"] .matrix-cell-button:hover .matrix-cell-score {
+                color: #08284b;
+                text-shadow: 0 1px 0 rgba(255,255,255,0.34);
+            }
+        }
+
         .matrix-cell-tone {
             display: block;
             color: var(--gold-soft);
@@ -6165,6 +10136,61 @@
         }
 
         @media (max-width: 900px) {
+            .seo-ai-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .seo-ai-summary {
+                border-radius: 24px;
+                padding: 20px 16px;
+            }
+
+            .page-rating-shell {
+                width: 100%;
+                min-height: 168px;
+                grid-template-columns: minmax(0, 1fr) auto;
+                gap: 12px;
+                margin-top: 14px;
+                border-radius: 20px;
+                padding: 14px;
+            }
+
+            .page-rating-shell.is-collapsed {
+                width: 54px;
+                height: 54px;
+                max-height: 54px;
+                min-height: 54px;
+                grid-template-columns: 1fr;
+                gap: 0;
+                margin-left: auto;
+                border-radius: 17px;
+                padding: 0;
+            }
+
+            .page-rating-launcher {
+                padding: 15px;
+            }
+
+            .page-rating-control {
+                grid-template-columns: 39px 34px;
+                gap: 6px 4px;
+            }
+
+            .page-rating-thumb {
+                width: 39px;
+                height: 39px;
+                border-radius: 12px;
+                padding: 9px;
+            }
+
+            .page-rating-range {
+                height: 82px;
+            }
+
+            .page-rating-page-name {
+                white-space: normal;
+            }
+
             .page-shell {
                 width: min(100% - 18px, 100%);
                 padding: 18px 0 24px;
@@ -6292,8 +10318,7 @@
             }
 
             .analytics-dashboard-ga4-link {
-                right: 12px;
-                bottom: 10px;
+                margin: 0 12px 10px;
                 gap: 7px;
                 padding: 8px 10px 8px 8px;
                 font-size: 0.52rem;
@@ -6305,7 +10330,7 @@
             }
 
             .analytics-dashboard-stage {
-                padding: 12px 12px 72px;
+                padding: 12px;
             }
 
             .analytics-dashboard-access-form {
@@ -6407,19 +10432,76 @@
             .narration-control {
                 gap: 7px;
                 padding: 7px;
+                border: 2px solid rgba(169, 222, 246, 0.72);
                 border-radius: 18px;
+                background:
+                    linear-gradient(180deg, rgba(38, 55, 76, 0.98), rgba(9, 18, 31, 0.99)),
+                    linear-gradient(135deg, rgba(157, 231, 255, 0.12), rgba(255,255,255,0));
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.18),
+                    0 0 0 2px rgba(4, 18, 34, 0.5),
+                    0 12px 22px rgba(0,0,0,0.3),
+                    0 0 16px rgba(115, 212, 246, 0.16);
             }
 
             .autoplay-toggle {
-                min-width: 72px;
+                min-width: 78px;
                 min-height: 48px;
                 padding: 6px 8px;
+                border: 2px solid rgba(205, 232, 247, 0.76);
                 border-radius: 14px;
+                color: #ffffff;
+                background:
+                    linear-gradient(180deg, rgba(61, 78, 100, 0.99), rgba(19, 29, 44, 0.99)),
+                    linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0));
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.24),
+                    0 5px 0 rgba(4, 14, 27, 0.94),
+                    0 10px 16px rgba(0,0,0,0.28);
+            }
+
+            .autoplay-toggle.is-active {
+                border-color: #8cecff;
+                color: #ffffff;
+                background:
+                    linear-gradient(180deg, rgba(47, 113, 139, 0.99), rgba(12, 48, 70, 0.99)),
+                    linear-gradient(135deg, rgba(181, 245, 255, 0.2), rgba(255,255,255,0));
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.3),
+                    0 5px 0 rgba(3, 28, 42, 0.96),
+                    0 10px 18px rgba(0,0,0,0.3),
+                    0 0 18px rgba(107, 226, 247, 0.36);
+            }
+
+            .autoplay-toggle:hover,
+            .autoplay-toggle:focus-visible {
+                border-color: #b5f2ff;
+                box-shadow:
+                    inset 0 1px 0 rgba(255,255,255,0.28),
+                    0 5px 0 rgba(4, 20, 34, 0.94),
+                    0 10px 18px rgba(0,0,0,0.3),
+                    0 0 18px rgba(107, 226, 247, 0.3);
             }
 
             .autoplay-toggle-label {
-                font-size: 0.5rem;
-                letter-spacing: 0.1em;
+                font-size: 0.62rem;
+                letter-spacing: 0.12em;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+            }
+
+            .autoplay-toggle-track {
+                width: 34px;
+                height: 18px;
+                border-color: rgba(255,255,255,0.48);
+            }
+
+            .autoplay-toggle-knob {
+                width: 14px;
+                height: 14px;
+            }
+
+            .autoplay-toggle.is-active .autoplay-toggle-knob {
+                transform: translateX(16px);
             }
 
             .edit-mode-toggle-label {
@@ -6604,6 +10686,195 @@
             .technique-link-equation-part,
             .technique-link-equation-result {
                 padding: 7px 9px;
+            }
+
+            .integration-testing-intro {
+                font-size: 0.9rem;
+                text-align: left;
+            }
+
+            .integration-release {
+                border-radius: 24px;
+                padding: 18px 12px;
+            }
+
+            .integration-release::before {
+                inset: 7px;
+                border-radius: 19px;
+            }
+
+            .integration-release-head {
+                margin-bottom: 18px;
+                padding: 0 5px;
+            }
+
+            .integration-version {
+                min-width: 70px;
+                min-height: 56px;
+                border-radius: 15px;
+            }
+
+            .integration-feature-grid {
+                grid-template-columns: 1fr;
+                gap: 11px;
+            }
+
+            .integration-feature {
+                border-radius: 19px;
+                padding: 15px;
+            }
+
+            .integration-feature-body {
+                min-height: 0;
+            }
+
+            .integration-branch {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 5px;
+                padding-top: 25px;
+            }
+
+            .integration-branch-label {
+                max-width: 100%;
+                overflow: hidden;
+                font-size: 0.5rem;
+                padding: 6px 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .integration-branch-core {
+                font-size: 0.59rem;
+                padding: 8px 10px;
+            }
+
+            .integration-outcome {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                border-radius: 18px;
+                padding: 15px;
+            }
+
+            .integration-outcome-icon {
+                width: 36px;
+                height: 36px;
+                border-radius: 12px;
+            }
+
+            .knowledge-exchange-intro {
+                font-size: 0.9rem;
+                text-align: left;
+            }
+
+            .knowledge-exchange-lab {
+                border-radius: 24px;
+                padding: 18px 12px;
+            }
+
+            .knowledge-exchange-lab-head {
+                margin-bottom: 20px;
+                padding: 0 5px;
+            }
+
+            .knowledge-exchange-duration {
+                min-width: 68px;
+                min-height: 54px;
+                border-radius: 15px;
+            }
+
+            .knowledge-exchange-handoff {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                margin: -5px 0 19px;
+                border-radius: 16px;
+                padding: 7px;
+            }
+
+            .knowledge-exchange-handoff-step {
+                min-height: 48px;
+                border-radius: 11px;
+                font-size: 0.51rem;
+            }
+
+            .knowledge-exchange-handoff-step:not(:last-child)::after {
+                display: none;
+            }
+
+            .knowledge-exchange-nodes {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .knowledge-exchange-nodes::before {
+                top: 12%;
+                bottom: 12%;
+                left: 50%;
+                right: auto;
+                width: 3px;
+                height: auto;
+                transform: translateX(-50%);
+                background: linear-gradient(rgba(117, 216, 255, 0.25), rgba(255, 229, 154, 0.58), rgba(126, 235, 189, 0.25));
+            }
+
+            .knowledge-exchange-node {
+                min-height: 110px;
+                border-radius: 20px;
+                padding: 13px;
+            }
+
+            .knowledge-exchange-node-icon {
+                width: 39px;
+                height: 39px;
+                border-radius: 13px;
+                font-size: 1rem;
+            }
+
+            .knowledge-exchange-sequence {
+                gap: 4px;
+                margin-top: 17px;
+            }
+
+            .knowledge-exchange-sequence-slot {
+                min-width: 0;
+                flex: 1 1 0;
+                font-size: 0.46rem;
+                padding: 5px 4px;
+            }
+
+            .knowledge-exchange-sequence-arrow {
+                font-size: 0.6rem;
+            }
+
+            .knowledge-exchange-insights {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .knowledge-exchange-insight.is-visible {
+                min-height: 0;
+                max-height: 360px;
+                border-radius: 17px;
+                padding: 14px;
+            }
+
+            .knowledge-exchange-calendar,
+            .knowledge-exchange-finale {
+                grid-template-columns: auto minmax(0, 1fr);
+                gap: 11px;
+                border-radius: 19px;
+                padding: 14px;
+            }
+
+            .knowledge-exchange-calendar-button,
+            .knowledge-exchange-replay {
+                grid-column: 1 / -1;
+                width: 100%;
+            }
+
+            .knowledge-exchange-calendar-icon,
+            .knowledge-exchange-finale-icon {
+                width: 42px;
+                height: 42px;
+                border-radius: 14px;
             }
 
             .deep-link-shell {
@@ -7234,6 +11505,32 @@
     </style>
 </head>
 <body>
+    <div class="root-journey-scene" aria-hidden="true">
+        <div class="root-journey-sky"></div>
+        <span class="root-journey-sun"></span>
+        <span class="root-journey-horizon"></span>
+        <span class="root-journey-road"></span>
+        <svg class="root-journey-route-map" viewBox="0 0 1000 720" preserveAspectRatio="none" focusable="false">
+            <path id="rootJourneyRoute" class="root-journey-route-line" d="M 40 650 C 150 600, 100 470, 260 430 S 420 535, 505 354 S 645 190, 740 255 S 860 190, 965 68"></path>
+            <circle class="root-journey-traveller" r="5">
+                <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#rootJourneyRoute"></mpath>
+                </animateMotion>
+            </circle>
+        </svg>
+        <span class="root-journey-film-rail is-left"></span>
+        <span class="root-journey-film-rail is-right"></span>
+        <span class="root-journey-waypoint is-explore">Explore</span>
+        <span class="root-journey-waypoint is-discover">Discover</span>
+        <span class="root-journey-animation-badge">
+            <span>&#9654;</span>
+            <span><strong>Animated tour</strong><small>Keyframes in motion</small></span>
+        </span>
+    </div>
+    <div class="root-journey-gates" aria-hidden="true">
+        <span class="root-journey-door is-left"><span class="root-journey-door-copy">Welcome</span></span>
+        <span class="root-journey-door is-right"><span class="root-journey-door-copy">Explorer</span></span>
+    </div>
     <main class="page-shell">
         <section class="overview-card" aria-live="polite">
             <div class="overview-header">
@@ -7263,7 +11560,7 @@
                             </svg>
                         </button>
                     </div>
-                    <button id="backButton" class="back-button" type="button" hidden aria-label="Go back one level">
+                    <button id="backButton" class="back-button" type="button" hidden aria-label="Go back one level. Hold for two seconds to return to the first page.">
                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                             <path fill="currentColor" d="M14.72 5.47a.85.85 0 0 1 0 1.2L10.25 11.1h8.11a.85.85 0 1 1 0 1.7h-8.1l4.46 4.43a.85.85 0 1 1-1.2 1.2l-5.9-5.88a.85.85 0 0 1 0-1.2l5.9-5.88a.85.85 0 0 1 1.2 0Z"/>
                         </svg>
@@ -7271,6 +11568,78 @@
                 </div>
             </div>
             <div id="overviewContent" class="overview-content"></div>
+        </section>
+        <section id="pageRatingShell" class="page-rating-shell is-collapsed" aria-labelledby="pageRatingTitle">
+            <button id="pageRatingLauncher" class="page-rating-launcher" type="button" aria-expanded="false" aria-controls="pageRatingPanel" aria-label="Open page rating">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M2 21h4V9H2v12Zm20-10.8c0-1.1-.9-2-2-2h-6.3l.9-4.4.03-.3c0-.4-.17-.8-.44-1.1L13.1 1.3 6.5 7.9C6.2 8.2 6 8.7 6 9.2V19c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7c.1-.2.2-.5.2-.8v-1.8Z"/>
+                </svg>
+            </button>
+            <button id="pageRatingCollapse" class="page-rating-collapse" type="button" aria-label="Collapse page rating">&times;</button>
+            <div class="page-rating-copy">
+                <p class="page-rating-kicker">Your signal</p>
+                <h2 id="pageRatingTitle" class="page-rating-title">Rate this page</h2>
+                <p id="pageRatingPageName" class="page-rating-page-name">Test overview</p>
+                <p id="pageRatingReadout" class="page-rating-readout">Choose a thumb</p>
+                <button id="pageRatingSubmit" class="page-rating-submit" type="button" disabled>Save rating</button>
+                <p id="pageRatingStatus" class="page-rating-status" aria-live="polite"></p>
+            </div>
+            <div id="pageRatingPanel" class="page-rating-control">
+                <button id="pageRatingUp" class="page-rating-thumb is-up" type="button" aria-pressed="false" aria-label="Rate this page thumbs up">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M2 21h4V9H2v12Zm20-10.8c0-1.1-.9-2-2-2h-6.3l.9-4.4.03-.3c0-.4-.17-.8-.44-1.1L13.1 1.3 6.5 7.9C6.2 8.2 6 8.7 6 9.2V19c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7c.1-.2.2-.5.2-.8v-1.8Z"/>
+                    </svg>
+                </button>
+                <div class="page-rating-rail">
+                    <span id="pageRatingTopLimit" class="page-rating-limit">5</span>
+                    <input id="pageRatingRange" class="page-rating-range" type="range" min="1" max="5" step="1" value="3" orient="vertical" disabled aria-label="Rating strength from 1 to 5">
+                    <span id="pageRatingBottomLimit" class="page-rating-limit">1</span>
+                </div>
+                <button id="pageRatingDown" class="page-rating-thumb is-down" type="button" aria-pressed="false" aria-label="Rate this page thumbs down">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M2 21h4V9H2v12Zm20-10.8c0-1.1-.9-2-2-2h-6.3l.9-4.4.03-.3c0-.4-.17-.8-.44-1.1L13.1 1.3 6.5 7.9C6.2 8.2 6 8.7 6 9.2V19c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7c.1-.2.2-.5.2-.8v-1.8Z"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section id="about-test-overview" class="seo-ai-summary" data-ai-readable="true" aria-labelledby="aboutTestOverviewTitle">
+            <p class="seo-ai-kicker">AI readable field note</p>
+            <h2 id="aboutTestOverviewTitle" class="seo-ai-title">About this interactive software testing overview</h2>
+            <p class="seo-ai-copy">
+                Test Overview is an interactive Codex experiment and software testing knowledge map. It helps testers, QA professionals, test managers, business analysts and software teams explore how requirements, test environments, testing mindsets, tacit and explicit knowledge, test techniques, automation and complexity influence each other.
+            </p>
+            <div class="seo-ai-grid" aria-label="What this test overview explains">
+                <article class="seo-ai-card">
+                    <h3>Purpose</h3>
+                    <p>Make the hidden relationships in software testing visible, instead of treating test cases, requirements and automation as isolated topics.</p>
+                </article>
+                <article class="seo-ai-card">
+                    <h3>Core topics</h3>
+                    <p>Requirement categories, DTAP, priority, tacit versus explicit knowledge, structured chaos, connected test techniques and re-testing complexity.</p>
+                </article>
+                <article class="seo-ai-card">
+                    <h3>How to share</h3>
+                    <p>Use direct URLs with a value parameter, for example <strong>?value=requirement</strong>, <strong>?value=dtap</strong> or <strong>?value=connectedtesttechniques</strong>.</p>
+                </article>
+            </div>
+            <div id="faq" class="seo-ai-faq" aria-label="Frequently asked questions">
+                <details open>
+                    <summary>What is Test Overview?</summary>
+                    <p>Test Overview is an interactive software testing knowledge map that shows how requirements, environments, testing mindsets, tacit and explicit knowledge, test techniques, automation choices and complexity connect.</p>
+                </details>
+                <details>
+                    <summary>Who is it for?</summary>
+                    <p>It is designed for software testers, QA professionals, test managers, business analysts and software teams who want to discuss testing as a connected professional discipline.</p>
+                </details>
+                <details>
+                    <summary>Which techniques are included?</summary>
+                    <p>The page references techniques and perspectives such as decision table testing, boundary value analysis, equivalence partitioning, functional testing, software testing versus automation, and knowledge-based testing.</p>
+                </details>
+                <details>
+                    <summary>Why does the page include audio and sliders?</summary>
+                    <p>The narration, sliders and animations make abstract testing concepts more concrete, so visitors can explore how a change in mindset, environment, requirement or test technique changes the testing conversation.</p>
+                </details>
+            </div>
         </section>
     </main>
 
@@ -7283,6 +11652,19 @@
         const viewTitle = document.getElementById('viewTitle');
         const viewBreadcrumb = document.getElementById('viewBreadcrumb');
         const overviewContent = document.getElementById('overviewContent');
+        const pageRatingShell = document.getElementById('pageRatingShell');
+        const pageRatingLauncher = document.getElementById('pageRatingLauncher');
+        const pageRatingCollapse = document.getElementById('pageRatingCollapse');
+        const pageRatingPageName = document.getElementById('pageRatingPageName');
+        const pageRatingReadout = document.getElementById('pageRatingReadout');
+        const pageRatingStatus = document.getElementById('pageRatingStatus');
+        const pageRatingUp = document.getElementById('pageRatingUp');
+        const pageRatingDown = document.getElementById('pageRatingDown');
+        const pageRatingRange = document.getElementById('pageRatingRange');
+        const pageRatingTopLimit = document.getElementById('pageRatingTopLimit');
+        const pageRatingBottomLimit = document.getElementById('pageRatingBottomLimit');
+        const pageRatingSubmit = document.getElementById('pageRatingSubmit');
+        const seoAiSummary = document.getElementById('about-test-overview');
         const EDIT_MODE_STORAGE_KEY = 'testoverview-edit-mode-v1';
         const CUSTOM_OVERVIEW_STORAGE_KEY = 'testoverview-custom-overview-v1';
         const DTAP_THEME_STORAGE_KEY = 'testoverview-dtap-theme-v1';
@@ -7293,6 +11675,8 @@
         const ANALYTICS_SESSION_STARTED_STORAGE_KEY = 'testoverview-analytics-started-v1';
         const ANALYTICS_SEQUENCE_STORAGE_KEY = 'testoverview-analytics-sequence-v1';
         const ANALYTICS_ENDPOINT = 'testoverview-track.php';
+        const PAGE_RATING_ENDPOINT = 'testoverview-rate.php';
+        const PAGE_RATING_STORAGE_KEY = 'testoverview-page-ratings-v1';
         const ANALYTICS_APPLICATION_KEY = 'test_overview';
         const ANALYTICS_BATCH_SIZE = 25;
         const ANALYTICS_FLUSH_DELAY_MS = 800;
@@ -7300,10 +11684,15 @@
         const ANALYTICS_HEARTBEAT_MAX_DELTA_SECONDS = 45;
         const ANALYTICS_DASHBOARD_TOKEN_STORAGE_KEY = 'testoverview-dashboard-token-v1';
         const ANALYTICS_DASHBOARD_HOLD_MS = 5000;
+        const ANALYTICS_DASHBOARD_HOLD_REVEAL_MS = 1000;
+        const ANALYTICS_DASHBOARD_LAUNCH_SPIN_MS = 2400;
+        const BACK_TO_START_HOLD_MS = 2000;
+        const BACK_TO_START_LAUNCH_MS = 1050;
         const supportsSpeechSynthesis = typeof window !== 'undefined'
             && 'speechSynthesis' in window
             && typeof window.SpeechSynthesisUtterance === 'function';
         const INTRO_GUIDE_FADE_DELAY_MS = 15000;
+        const AI_FIELD_NOTE_FADE_DELAY_MS = 5000;
         const DEEP_LINK_NAVIGATOR_FADE_DELAY_MS = 5000;
         const EDIT_MODE_INTRO_FADE_DELAY_MS = 10000;
         const GA4_MEASUREMENT_ID = window.testOverviewGa4MeasurementId || 'G-NQ7JFWBNXP';
@@ -7322,6 +11711,8 @@
 
         let activeNarrationText = '';
         let narrationVoicesPromise = null;
+        let cachedNarrationVoice = null;
+        let narrationLastVoiceName = '';
         let narrationPlaybackToken = 0;
         let narrationState = 'idle';
         let continueNarrationPlayback = null;
@@ -7508,7 +11899,7 @@
             if (elementKey === 'field-guide:more-about-me' || elementHref.includes('linkedin.com/in/ing-valentijn-p-b696371')) {
                 return 'more_about_me';
             }
-            if (elementKey === 'field-guide:try-next-level' || elementHref.includes('breaksoftwaretesting.com')) {
+            if (elementKey === 'field-guide:try-next-level' || elementHref.includes('softwaretestingbreak.com') || elementHref.includes('breaksoftwaretesting.com')) {
                 return 'try_next_level';
             }
             return '';
@@ -8358,6 +12749,48 @@
             }
         }
 
+        function normalizePageRatingStates(rawValue) {
+            if (!rawValue || typeof rawValue !== 'object') {
+                return {};
+            }
+
+            return Object.entries(rawValue).reduce((states, [viewKey, rating]) => {
+                if (!rating || typeof rating !== 'object') {
+                    return states;
+                }
+                const sentiment = rating.sentiment === 'up' || rating.sentiment === 'down'
+                    ? rating.sentiment
+                    : '';
+                const score = Math.min(5, Math.max(1, Math.round(Number(rating.score) || 0)));
+                if (!sentiment || score < 1 || score > 5) {
+                    return states;
+                }
+                states[String(viewKey).slice(0, 120)] = {
+                    sentiment,
+                    score,
+                    savedAt: typeof rating.savedAt === 'string' ? rating.savedAt : ''
+                };
+                return states;
+            }, {});
+        }
+
+        function loadPageRatingStates() {
+            try {
+                const storedValue = window.sessionStorage.getItem(PAGE_RATING_STORAGE_KEY);
+                return normalizePageRatingStates(storedValue ? JSON.parse(storedValue) : null);
+            } catch (error) {
+                return {};
+            }
+        }
+
+        function savePageRatingStates() {
+            try {
+                window.sessionStorage.setItem(PAGE_RATING_STORAGE_KEY, JSON.stringify(pageRatingStates));
+            } catch (error) {
+                // The live database remains authoritative if browser storage is unavailable.
+            }
+        }
+
         function createCustomViewKey() {
             return `custom-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
         }
@@ -8403,6 +12836,16 @@
         let currentDtapThemeKey = loadDtapThemeState();
         let currentDtapStage = loadDtapStageState();
         let isNarrationAutoplayEnabled = loadNarrationAutoplayState();
+        let pageRatingStates = loadPageRatingStates();
+        let activePageRatingViewKey = '';
+        let activePageRatingViewTitle = '';
+        let activePageRatingSentiment = '';
+        let activePageRatingScore = 3;
+        let pageRatingRequestInFlight = false;
+        let backToStartHoldTimer = null;
+        let backToStartLaunchTimer = null;
+        let backToStartLongPressTriggered = false;
+        let seoAiSummaryFadeTimer = null;
 
         function applyPageTheme(themeKey = '') {
             const theme = dtapThemes[themeKey] || defaultPageTheme;
@@ -8734,6 +13177,58 @@ This is one of the reasons why testing is far more than simply executing test ca
 Imagine that Light 1 is driven by Boundary Value Analysis. It switches on when an input touches or crosses a critical limit. Light 2 can be driven by Equivalence Partitioning, switching on when a value belongs to a selected valid or invalid class. Light 3 might represent a State Transition, such as whether the application has entered the expected state.
 
 A decision table combines these three outcomes into the eight possible states shown here. In this way, one technique produces information that another technique can use, revealing test scenarios that would be easy to miss if every technique were applied separately.`
+            },
+            'integration-testing': {
+                title: 'Integration testing',
+                breadcrumb: 'Combine independently working features and inspect what happens at their shared boundaries.',
+                type: 'integration-testing',
+                speechText: `Integration testing is not only about checking whether individual features work correctly. It is about discovering what happens when those features are combined within the same version of an application.
+
+Feature one, feature two, and feature three may each work perfectly on their own. But once they share data, processes, interfaces, or dependencies, unexpected problems can appear. One feature may change the state of another, overwrite its data, or respond differently when several features are active at the same time.
+
+Use the toggles to combine the features in version 1.8. Observe how a stable feature can suddenly behave differently when another feature joins the same branch. This interaction between working components is exactly what makes integration testing so important.`
+            },
+            'knowledge-exchange': {
+                title: 'Knowledge exchange',
+                breadcrumb: 'Connect developer knowledge, testing perspective, and shared understanding.',
+                type: 'knowledge-exchange',
+                speechText: `Integration testing showed what can happen when software features meet. But there is another important integration point: the one between people.
+
+A developer carries technical context about architecture, dependencies, data, decisions, and limitations. A tester approaches the same software through risks, user behaviour, edge cases, and unexpected scenarios.
+
+This kickoff takes place when the developer has finished coding, the pull request has been approved, and the code has been deployed to the Test environment, T. That is the moment when technical context should travel with the code instead of being left behind.
+
+Knowledge exchange should not be treated as an afterthought. Schedule it in the calendar, protect the time, and give both people the opportunity to prepare. It should not become another status meeting. It is a conversation intended to create shared understanding.
+
+Start with why the change exists. Then discuss how it works, what has changed, which assumptions were made, and where uncertainty still exists. Use concrete examples and make sure important words mean the same thing to everyone.
+
+The goal is not for one person to speak while the other takes notes. Both perspectives should influence the conversation. Technical details can reveal new test ideas, while testing questions can expose hidden dependencies or design risks.
+
+A successful knowledge exchange ends with clearer terminology, visible assumptions, useful test ideas, documented decisions, and an owner for every unanswered question.
+
+Documentation can preserve knowledge. Conversation creates understanding. And when different perspectives truly connect, synergy begins.`
+            },
+            'retest-investigation': {
+                title: 'Re-test investigation',
+                breadcrumb: 'Choose a testing lens, combine knowledge and techniques, and follow the difference that changes the outcome.',
+                type: 'retest-investigation',
+                speechText: `We have now reached a point at which concepts introduced earlier begin to operate together.
+
+A developer asks: Can you re-test this? I really need to understand what causes this error. Please test this flow again.
+
+The request sounds simple, but it does not define the tester's objective. The tester may try to prove that the software works, prove that it does not work, find out why it works unexpectedly, or find out why it does not work. Think of these as professional hats. The Inspector verifies expected behaviour. The Detective builds evidence for a defect. The Laboratory Analyst uses controlled experiments to explain an unexpected success. The Explorer enters uncertain territory to discover the cause of a failure.
+
+The tester can then draw on explicit knowledge, tacit knowledge, or both. Explicit knowledge includes requirements, logs, models, documentation, and known test cases. Tacit knowledge includes experience, intuition, team history, domain understanding, and the ability to recognise an unusual signal.
+
+One test technique may be sufficient. Several techniques may need to work together. Boundary Value Analysis, Equivalence Partitioning, Decision Tables, State Transitions, and Exploratory Testing each provide a different way to create evidence. However, a technique is not the investigation itself. It is one instrument within it.
+
+During the re-test, almost any changed condition can become the decisive difference: test data, timing, permissions, feature flags, caching, environment configuration, API versions, execution order, or a dependency changed elsewhere in the system.
+
+A re-test does not automatically prove a root cause. It produces evidence, challenges hypotheses, and narrows the search until the explanation is strong enough to act upon.
+
+We hope you have noticed that this experience teaches software testing processes progressively. Each page builds on concepts introduced earlier. The level of complexity increases step by step, while terminology, context, and conceptual understanding are allowed to develop at the same pace.
+
+Choose a professional lens, assemble the knowledge and techniques you need, and start the investigation.`
             },
             'requirement-language-clarity': {
                 title: 'Requirement wording',
@@ -9227,7 +13722,10 @@ A decision table combines these three outcomes into the eight possible states sh
             'test-techniques': 'testtechniques',
             'test-methods': 'testmethods',
             'testcase-bridge': 'testcase',
-            'technique-interaction-table': 'connectedtechniques'
+            'technique-interaction-table': 'connectedtechniques',
+            'integration-testing': 'integrationtesting',
+            'knowledge-exchange': 'knowledgeexchange',
+            'retest-investigation': 'retestinvestigation'
         });
 
         const deepLinkNavigatorKeys = Object.freeze([
@@ -9257,6 +13755,9 @@ A decision table combines these three outcomes into the eight possible states sh
             'technique-decision-table-testing-proof-not-work',
             'testcase-bridge',
             'technique-interaction-table',
+            'integration-testing',
+            'knowledge-exchange',
+            'retest-investigation',
             'test-methods',
             'method-black-box'
         ]);
@@ -9309,9 +13810,6 @@ A decision table combines these three outcomes into the eight possible states sh
         const requestedDeepLink = new URLSearchParams(window.location.search).get('value');
         const initialViewKey = resolveDeepLinkValue(requestedDeepLink) || 'root';
         const historyStack = initialViewKey === 'root' ? ['root'] : ['root', initialViewKey];
-        if (initialViewKey === 'root') {
-            isNarrationAutoplayEnabled = true;
-        }
 
         let lastPraSelection = null;
         let pendingTestcaseBridge = null;
@@ -9319,6 +13817,7 @@ A decision table combines these three outcomes into the eight possible states sh
         let dashboardCommandAudioStop = null;
         let dashboardCommandIntroToken = 0;
         let dashboardEntrySequenceEndsAt = 0;
+        let hasPresentedRootJourneyIntro = false;
         let isEditModeControlPinned = isEditMode || initialViewKey !== 'root';
         let isEditModeControlHidden = false;
         let editModeIntroFadeTimer = null;
@@ -9353,6 +13852,195 @@ A decision table combines these three outcomes into the eight possible states sh
                     }
                 ]
             };
+        }
+
+        function getPageRatingColor(sentiment, score) {
+            const colorSteps = sentiment === 'down'
+                ? ['#d9b9bf', '#e49aa6', '#ed7889', '#f35b71', '#ff405e']
+                : ['#b5dbce', '#8ed8bb', '#66d5a2', '#45dc8f', '#22e77a'];
+            return colorSteps[Math.min(4, Math.max(0, Number(score) - 1))];
+        }
+
+        function setPageRatingExpanded(isExpanded, options = {}) {
+            const expanded = Boolean(isExpanded);
+            pageRatingShell.classList.toggle('is-collapsed', !expanded);
+            pageRatingLauncher.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+            if (expanded && options.focus !== false) {
+                window.setTimeout(() => pageRatingUp.focus(), 350);
+            }
+        }
+
+        function updatePageRatingUi() {
+            const hasSentiment = activePageRatingSentiment === 'up' || activePageRatingSentiment === 'down';
+            const score = Math.min(5, Math.max(1, Math.round(Number(activePageRatingScore) || 3)));
+            activePageRatingScore = score;
+
+            pageRatingShell.classList.toggle('is-up', activePageRatingSentiment === 'up');
+            pageRatingShell.classList.toggle('is-down', activePageRatingSentiment === 'down');
+            pageRatingUp.classList.toggle('is-selected', activePageRatingSentiment === 'up');
+            pageRatingDown.classList.toggle('is-selected', activePageRatingSentiment === 'down');
+            pageRatingUp.setAttribute('aria-pressed', activePageRatingSentiment === 'up' ? 'true' : 'false');
+            pageRatingDown.setAttribute('aria-pressed', activePageRatingSentiment === 'down' ? 'true' : 'false');
+            pageRatingRange.disabled = !hasSentiment || pageRatingRequestInFlight;
+            pageRatingRange.value = String(score);
+            pageRatingSubmit.disabled = !hasSentiment || pageRatingRequestInFlight;
+            pageRatingShell.style.setProperty(
+                '--page-rating-color',
+                hasSentiment ? getPageRatingColor(activePageRatingSentiment, score) : 'rgba(167, 239, 255, 0.7)'
+            );
+
+            const isDown = activePageRatingSentiment === 'down';
+            pageRatingTopLimit.textContent = isDown ? '1' : '5';
+            pageRatingBottomLimit.textContent = isDown ? '5' : '1';
+            pageRatingRange.setAttribute(
+                'aria-label',
+                hasSentiment
+                    ? `${activePageRatingSentiment === 'up' ? 'Thumbs up' : 'Thumbs down'} strength ${score} of 5`
+                    : 'Choose thumbs up or thumbs down before setting rating strength'
+            );
+            pageRatingReadout.textContent = hasSentiment
+                ? `${activePageRatingSentiment === 'up' ? 'Thumbs up' : 'Thumbs down'} - ${score}/5`
+                : 'Choose a thumb';
+        }
+
+        function renderPageRatingForView(viewKey, view) {
+            const savedRating = pageRatingStates[viewKey] || null;
+            activePageRatingViewKey = viewKey;
+            activePageRatingViewTitle = String(view?.title || viewKey || 'Test overview').slice(0, 255);
+            activePageRatingSentiment = savedRating?.sentiment || '';
+            activePageRatingScore = savedRating?.score || 3;
+            pageRatingPageName.textContent = activePageRatingViewTitle;
+            pageRatingStatus.classList.remove('is-error');
+            pageRatingStatus.textContent = savedRating
+                ? 'Saved for this session. You can still adjust it.'
+                : '';
+            pageRatingSubmit.textContent = savedRating ? 'Update rating' : 'Save rating';
+            pageRatingShell.classList.remove('is-saving', 'is-saved');
+            updatePageRatingUi();
+            setPageRatingExpanded(false, { focus: false });
+        }
+
+        function choosePageRatingSentiment(sentiment) {
+            if (pageRatingRequestInFlight || (sentiment !== 'up' && sentiment !== 'down')) {
+                return;
+            }
+            activePageRatingSentiment = sentiment;
+            pageRatingStatus.classList.remove('is-error');
+            pageRatingStatus.textContent = pageRatingStates[activePageRatingViewKey]
+                ? 'Ready to update this page rating.'
+                : 'Choose a strength, then save.';
+            updatePageRatingUi();
+            playOverviewButtonSound(`${activePageRatingViewKey}-rating-${sentiment}`, sentiment === 'up' ? 'forward' : 'back');
+        }
+
+        async function submitPageRating() {
+            if (pageRatingRequestInFlight
+                || (activePageRatingSentiment !== 'up' && activePageRatingSentiment !== 'down')) {
+                return;
+            }
+
+            const submittingViewKey = activePageRatingViewKey;
+            const submittingViewTitle = activePageRatingViewTitle;
+            const submittingSentiment = activePageRatingSentiment;
+            const submittingScore = activePageRatingScore;
+            const signedScore = submittingSentiment === 'up' ? submittingScore : -submittingScore;
+            pageRatingRequestInFlight = true;
+            pageRatingShell.classList.add('is-saving');
+            pageRatingStatus.classList.remove('is-error');
+            pageRatingStatus.textContent = 'Saving your signal...';
+            updatePageRatingUi();
+
+            recordAnalyticsEvent('control_change', {
+                view_key: submittingViewKey,
+                element_kind: 'page_rating',
+                element_key: 'page-rating:submit',
+                element_label: `${submittingSentiment} ${submittingScore}/5`,
+                metadata: {
+                    rating_dimension: 'overall',
+                    rating_sentiment: submittingSentiment,
+                    rating_score: submittingScore,
+                    signed_score: signedScore
+                }
+            });
+
+            try {
+                let savedAt = new Date().toISOString();
+                if (analyticsCanSend) {
+                    const response = await window.fetch(PAGE_RATING_ENDPOINT, {
+                        method: 'POST',
+                        credentials: 'same-origin',
+                        keepalive: true,
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            schema_version: 1,
+                            rating: {
+                                session_id: analyticsSessionId,
+                                visitor_id: analyticsVisitorId,
+                                session_started_at: analyticsSessionStartedAt,
+                                application_key: ANALYTICS_APPLICATION_KEY,
+                                rating_dimension: 'overall',
+                                view_key: submittingViewKey,
+                                view_title: submittingViewTitle,
+                                page_path: window.location.pathname,
+                                page_value: getAnalyticsPageValue(),
+                                sentiment: submittingSentiment,
+                                score: submittingScore,
+                                device_type: getAnalyticsDeviceType(),
+                                viewport_width: Math.max(0, Math.round(window.innerWidth)),
+                                viewport_height: Math.max(0, Math.round(window.innerHeight)),
+                                client_occurred_at: new Date().toISOString(),
+                                metadata: {
+                                    page_file: getGa4PageFile(),
+                                    source: 'page_widget'
+                                }
+                            }
+                        })
+                    });
+                    const result = await response.json().catch(() => ({}));
+                    if (!response.ok || !result.ok) {
+                        throw new Error(result.error || `Rating endpoint returned HTTP ${response.status}.`);
+                    }
+                    savedAt = result.saved_at || savedAt;
+                }
+
+                pageRatingStates[submittingViewKey] = {
+                    sentiment: submittingSentiment,
+                    score: submittingScore,
+                    savedAt
+                };
+                savePageRatingStates();
+                sendGa4Event('page_rating_submit', {
+                    view_key: submittingViewKey,
+                    page_title: submittingViewTitle,
+                    page_value: getAnalyticsPageValue(),
+                    page_path: window.location.pathname,
+                    testoverview_page_file: getGa4PageFile(),
+                    rating_dimension: 'overall',
+                    rating_sentiment: submittingSentiment,
+                    rating_score: submittingScore,
+                    signed_score: signedScore,
+                    device_type: getAnalyticsDeviceType()
+                });
+
+                if (activePageRatingViewKey === submittingViewKey) {
+                    pageRatingStatus.textContent = analyticsCanSend
+                        ? 'Saved. You can still adjust it.'
+                        : 'Preview saved locally. The live PHP page stores it in MySQL.';
+                    pageRatingSubmit.textContent = 'Update rating';
+                    pageRatingShell.classList.remove('is-saved');
+                    void pageRatingShell.offsetWidth;
+                    pageRatingShell.classList.add('is-saved');
+                }
+            } catch (error) {
+                if (activePageRatingViewKey === submittingViewKey) {
+                    pageRatingStatus.classList.add('is-error');
+                    pageRatingStatus.textContent = analyticsText(error?.message, 180) || 'The rating could not be saved.';
+                }
+            } finally {
+                pageRatingRequestInFlight = false;
+                pageRatingShell.classList.remove('is-saving');
+                updatePageRatingUi();
+            }
         }
 
         function sanitizeHistoryForMode() {
@@ -9558,7 +14246,7 @@ A decision table combines these three outcomes into the eight possible states sh
             }
         }
 
-        function waitForNarrationVoices(timeoutMs = 2200) {
+        function waitForNarrationVoices(timeoutMs = 5000) {
             if (!supportsSpeechSynthesis) {
                 return Promise.resolve([]);
             }
@@ -9577,21 +14265,43 @@ A decision table combines these three outcomes into the eight possible states sh
             }
 
             narrationVoicesPromise = new Promise((resolve) => {
-                const finish = () => {
-                    const voices = window.speechSynthesis.getVoices();
+                let pollTimer = null;
+                let timeoutTimer = null;
+                let isFinished = false;
+
+                const finish = (voices) => {
+                    if (isFinished) return;
+                    isFinished = true;
+                    if (pollTimer) window.clearTimeout(pollTimer);
+                    if (timeoutTimer) window.clearTimeout(timeoutTimer);
+                    window.speechSynthesis.removeEventListener?.('voiceschanged', checkForVoices);
                     narrationVoicesPromise = null;
                     resolve(voices);
                 };
 
-                const timer = window.setTimeout(finish, timeoutMs);
+                const checkForVoices = () => {
+                    const voices = window.speechSynthesis.getVoices();
+                    if (voices.length) {
+                        finish(voices);
+                        return;
+                    }
+                    if (!pollTimer) {
+                        pollTimer = window.setTimeout(() => {
+                            pollTimer = null;
+                            checkForVoices();
+                        }, 120);
+                    }
+                };
+
+                timeoutTimer = window.setTimeout(() => {
+                    finish(window.speechSynthesis.getVoices());
+                }, timeoutMs);
                 if (typeof window.speechSynthesis.addEventListener === 'function') {
-                    window.speechSynthesis.addEventListener('voiceschanged', () => {
-                        window.clearTimeout(timer);
-                        finish();
-                    }, { once: true });
+                    window.speechSynthesis.addEventListener('voiceschanged', checkForVoices);
                 }
 
                 window.speechSynthesis.getVoices();
+                window.setTimeout(checkForVoices, 0);
             });
 
             return narrationVoicesPromise;
@@ -9603,16 +14313,19 @@ A decision table combines these three outcomes into the eight possible states sh
 
             const preferredVoiceNames = [
                 'Microsoft Aria Online (Natural)',
+                'Microsoft Ava Online (Natural)',
                 'Microsoft Jenny Online (Natural)',
                 'Microsoft Libby Online (Natural)',
+                'Microsoft Sonia Online (Natural)',
                 'Aria Online',
+                'Ava Online',
                 'Jenny Online',
                 'Libby Online',
                 'Aria',
-                'Jenny',
-                'Libby',
-                'Emma',
                 'Ava',
+                'Jenny',
+                'Emma',
+                'Libby',
                 'Sonia',
                 'Michelle',
                 'Zira',
@@ -9621,6 +14334,15 @@ A decision table combines these three outcomes into the eight possible states sh
                 'Google UK English Female',
                 'Google US English',
                 'Female'
+            ];
+            const femaleVoiceNames = [
+                'aria', 'ava', 'jenny', 'emma', 'libby', 'sonia', 'michelle', 'zira',
+                'hazel', 'susan', 'samantha', 'karen', 'moira', 'tessa', 'veena',
+                'fiona', 'victoria', 'female'
+            ];
+            const maleVoiceNames = [
+                'david', 'guy', 'mark', 'george', 'daniel', 'james', 'ryan',
+                'christopher', 'eric', 'male'
             ];
 
             const englishVoices = voices.filter((voice) => typeof voice.lang === 'string' && voice.lang.toLowerCase().startsWith('en'));
@@ -9632,22 +14354,20 @@ A decision table combines these three outcomes into the eight possible states sh
                 const name = (voice.name || '').toLowerCase();
                 let score = 0;
 
-                preferredVoiceNames.forEach((preferredName, index) => {
-                    if (name.includes(preferredName.toLowerCase())) {
-                        score += 400 - (index * 10);
-                    }
-                });
+                const preferredIndex = preferredVoiceNames.findIndex((preferredName) => (
+                    name.includes(preferredName.toLowerCase())
+                ));
+                if (preferredIndex >= 0) score += 620 - (preferredIndex * 14);
 
-                if (voice.lang === 'en-US') score += 60;
-                if (voice.lang === 'en-GB') score += 55;
+                if (voice.lang.toLowerCase() === 'en-us') score += 60;
+                if (voice.lang.toLowerCase() === 'en-gb') score += 55;
                 if (voice.default) score += 20;
                 if (name.includes('natural')) score += 140;
                 if (name.includes('online')) score += 100;
                 if (name.includes('neural')) score += 120;
                 if (name.includes('premium')) score += 60;
-                if (name.includes('female')) score += 120;
-                if (name.includes('male')) score -= 120;
-                if (name.includes('david') || name.includes('guy') || name.includes('mark')) score -= 60;
+                if (femaleVoiceNames.some((femaleName) => name.includes(femaleName))) score += 220;
+                if (maleVoiceNames.some((maleName) => name.includes(maleName))) score -= 280;
 
                 return score;
             };
@@ -9655,6 +14375,21 @@ A decision table combines these three outcomes into the eight possible states sh
             return englishVoices
                 .slice()
                 .sort((left, right) => scoreVoice(right) - scoreVoice(left))[0] || null;
+        }
+
+        function cacheEnglishNarrationVoice(voices = []) {
+            const selectedVoice = getEnglishNarrationVoice(voices);
+            if (selectedVoice) {
+                cachedNarrationVoice = selectedVoice;
+            }
+            return selectedVoice || cachedNarrationVoice;
+        }
+
+        function primeNarrationVoice() {
+            if (!supportsSpeechSynthesis) return;
+            waitForNarrationVoices().then((voices) => {
+                cacheEnglishNarrationVoice(voices);
+            }).catch(() => {});
         }
 
         function updateNarrationButton(view) {
@@ -9686,7 +14421,8 @@ A decision table combines these three outcomes into the eight possible states sh
                 return;
             }
 
-            const voice = getEnglishNarrationVoice(voices);
+            const voice = cacheEnglishNarrationVoice(voices);
+            narrationLastVoiceName = voice?.name || 'Browser default voice';
             const segments = splitNarrationText(text);
             if (!segments.length) {
                 continueNarrationPlayback = null;
@@ -9695,9 +14431,11 @@ A decision table combines these three outcomes into the eight possible states sh
                 return;
             }
 
-            const isNaturalVoice = Boolean(voice && /natural|online|neural/i.test(voice.name || ''));
-            const playbackRate = isNaturalVoice ? 0.98 : 0.9;
-            const playbackPitch = isNaturalVoice ? 1.03 : 1.08;
+            const voiceName = voice?.name || '';
+            const isNaturalVoice = /natural|online|neural/i.test(voiceName);
+            const isPreferredFemaleVoice = /aria|ava|jenny|emma|libby|sonia|michelle|zira|hazel|susan|samantha|female/i.test(voiceName);
+            const playbackRate = isNaturalVoice ? 0.98 : (isPreferredFemaleVoice ? 0.96 : 0.94);
+            const playbackPitch = isNaturalVoice ? 1.02 : (isPreferredFemaleVoice ? 1.04 : 1.06);
 
             let segmentIndex = 0;
             beginNarrationAnalytics(source, text);
@@ -10481,6 +15219,36 @@ A decision table combines these three outcomes into the eight possible states sh
             oscillator.stop(now + 0.075);
         }
 
+        function resetOverviewScrollPosition() {
+            const resetScroll = () => {
+                const scrollRoot = document.scrollingElement || document.documentElement;
+                if (scrollRoot) {
+                    scrollRoot.scrollTop = 0;
+                    scrollRoot.scrollLeft = 0;
+                }
+                document.body.scrollTop = 0;
+                document.body.scrollLeft = 0;
+                window.scrollTo(0, 0);
+            };
+
+            resetScroll();
+            window.requestAnimationFrame(resetScroll);
+        }
+
+        function scheduleSeoAiSummaryFade() {
+            if (!seoAiSummary) {
+                return;
+            }
+            if (seoAiSummaryFadeTimer) {
+                window.clearTimeout(seoAiSummaryFadeTimer);
+            }
+            seoAiSummary.classList.remove('is-faded');
+            seoAiSummaryFadeTimer = window.setTimeout(() => {
+                seoAiSummaryFadeTimer = null;
+                seoAiSummary.classList.add('is-faded');
+            }, AI_FIELD_NOTE_FADE_DELAY_MS);
+        }
+
         function openTestcaseBridge(item, sourceViewKey = getCurrentViewKey(), soundMode = 'forward') {
             if (!item || !item.target || !getViewDefinition(item.target)) return;
             pendingTestcaseBridge = {
@@ -10493,7 +15261,7 @@ A decision table combines these three outcomes into the eight possible states sh
                 playOverviewButtonSound(sourceViewKey, 'forward');
             }
             historyStack.push('testcase-bridge');
-            renderCurrentView();
+            renderCurrentView({ resetScroll: true });
         }
 
         function navigateToView(target, sourceViewKey = getCurrentViewKey(), soundMode = 'forward') {
@@ -10504,7 +15272,7 @@ A decision table combines these three outcomes into the eight possible states sh
                 playOverviewButtonSound(sourceViewKey, 'forward');
             }
             historyStack.push(target);
-            renderCurrentView();
+            renderCurrentView({ resetScroll: true });
         }
 
         function createMenuButton(item) {
@@ -10964,8 +15732,7 @@ A decision table combines these three outcomes into the eight possible states sh
             nextButton.type = 'button';
             nextButton.innerHTML = '<span class="choice-label">Next</span>';
             nextButton.addEventListener('click', () => {
-                const nextTarget = pendingTestcaseBridge?.target || 'root';
-                navigateToView(nextTarget, `${getCurrentViewKey()}-next`, 'forward');
+                navigateToView('integration-testing', `${getCurrentViewKey()}-next`, 'forward');
             });
             actions.appendChild(nextButton);
 
@@ -10992,6 +15759,935 @@ A decision table combines these three outcomes into the eight possible states sh
                     }, index * 420);
                 });
             }, 540);
+        }
+
+        function renderIntegrationTesting() {
+            const stage = document.createElement('div');
+            stage.className = 'integration-testing-stage';
+
+            const intro = document.createElement('p');
+            intro.className = 'integration-testing-intro';
+            intro.textContent = 'Integration testing checks whether features that work on their own still work when they share data, rules, and application flows.';
+
+            const release = document.createElement('section');
+            release.className = 'integration-release';
+            release.setAttribute('aria-label', 'Release 1.8 integration branch with three switchable features');
+            release.innerHTML = `
+                <header class="integration-release-head">
+                    <div class="integration-release-identity">
+                        <p class="integration-release-kicker">Shared integration branch</p>
+                        <h2 class="integration-release-title">One release, three features</h2>
+                    </div>
+                    <span class="integration-version"><small>Version</small><strong>1.8</strong></span>
+                </header>
+
+                <div class="integration-feature-grid">
+                    <article class="integration-feature" data-feature-index="0">
+                        <header class="integration-feature-head">
+                            <div>
+                                <h3 class="integration-feature-name">Feature 1</h3>
+                                <span class="integration-feature-purpose">Input rules</span>
+                            </div>
+                            <button class="integration-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch Feature 1 on or off" data-track-id="integration-testing:feature-1-toggle" data-track-label="Feature 1 toggle">
+                                <span class="integration-toggle-track" aria-hidden="true"></span>
+                                <span class="integration-toggle-state">Off</span>
+                            </button>
+                        </header>
+                        <div class="integration-feature-body">
+                            <div class="integration-decision-ghost" aria-label="A faded fragment of the previous decision table">
+                                <span>L1</span><span>L2</span><span>L3</span>
+                                <span>&#9675;</span><span>&#9675;</span><span>&#9675;</span>
+                                <span>&#9675;</span><span>&#9679;</span><span>&#9675;</span>
+                                <span>&#9679;</span><span>&#9675;</span><span>&#9679;</span>
+                                <span>&#9679;</span><span>&#9679;</span><span>&#9679;</span>
+                            </div>
+                            <div class="integration-input-grid">
+                                <label>Minimum<input type="text" value="18" aria-label="Feature 1 minimum"></label>
+                                <label>Maximum<input type="text" value="65" aria-label="Feature 1 maximum"></label>
+                                <label>Test value<input type="text" value="1.1" aria-label="Feature 1 test value"></label>
+                                <label>Expected<input type="text" value="invalid" aria-label="Feature 1 expected result"></label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="integration-feature" data-feature-index="1">
+                        <header class="integration-feature-head">
+                            <div>
+                                <h3 class="integration-feature-name">Feature 2</h3>
+                                <span class="integration-feature-purpose">Data mapping</span>
+                            </div>
+                            <button class="integration-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch Feature 2 on or off" data-track-id="integration-testing:feature-2-toggle" data-track-label="Feature 2 toggle">
+                                <span class="integration-toggle-track" aria-hidden="true"></span>
+                                <span class="integration-toggle-state">Off</span>
+                            </button>
+                        </header>
+                        <div class="integration-feature-body">
+                            <div class="integration-pipeline" aria-label="Feature 2 data mapping pipeline">
+                                <div class="integration-pipeline-step"><span>Receive rule result</span><code>number</code></div>
+                                <div class="integration-pipeline-step"><span>Normalize profile</span><code>string</code></div>
+                                <div class="integration-pipeline-step"><span>Build shared payload</span><code>JSON</code></div>
+                                <div class="integration-pipeline-step"><span>Publish state</span><code>valid?</code></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="integration-feature" data-feature-index="2">
+                        <header class="integration-feature-head">
+                            <div>
+                                <h3 class="integration-feature-name">Feature 3</h3>
+                                <span class="integration-feature-purpose">Result feedback</span>
+                            </div>
+                            <button class="integration-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch Feature 3 on or off" data-track-id="integration-testing:feature-3-toggle" data-track-label="Feature 3 toggle">
+                                <span class="integration-toggle-track" aria-hidden="true"></span>
+                                <span class="integration-toggle-state">Off</span>
+                            </button>
+                        </header>
+                        <div class="integration-feature-body">
+                            <div class="integration-output-preview">
+                                <div class="integration-output-screen">
+                                    <strong>Release message</strong>
+                                    <span>The combined result is ready to be shown to the user.</span>
+                                </div>
+                                <div class="integration-event-row" aria-label="Feature 3 application events">
+                                    <span>result.checked</span>
+                                    <span>state.changed</span>
+                                    <span>message.sent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="integration-branch" aria-label="All three features merge into the same release branch">
+                    <div class="integration-branch-node" data-feature-index="0"><span class="integration-branch-label">feature/input-rules</span></div>
+                    <div class="integration-branch-node" data-feature-index="1"><span class="integration-branch-label">feature/data-map</span></div>
+                    <div class="integration-branch-node" data-feature-index="2"><span class="integration-branch-label">feature/feedback</span></div>
+                </div>
+                <div class="integration-branch-core">release/1.8 - shared branch</div>
+
+                <section class="integration-outcome is-idle" aria-live="polite">
+                    <span class="integration-outcome-icon" aria-hidden="true">--</span>
+                    <div class="integration-outcome-copy">
+                        <h3 class="integration-outcome-title">No integration flow running</h3>
+                        <p class="integration-outcome-text">Switch on a feature to test it on release branch 1.8.</p>
+                        <div class="integration-outcome-issues"></div>
+                    </div>
+                </section>
+            `;
+
+            const featureStates = [false, false, false];
+            const featureNames = ['Feature 1', 'Feature 2', 'Feature 3'];
+            const pairOutcomes = {
+                '0-1': {
+                    title: 'A data contract breaks at the boundary',
+                    text: 'Both features pass alone, but Feature 2 converts the numeric rule result into text before the shared payload is evaluated.',
+                    issues: ['number becomes string', '1.1 slips through the mapping']
+                },
+                '0-2': {
+                    title: 'The correct rule triggers the wrong message',
+                    text: 'Feature 1 rejects the value correctly, but Feature 3 interprets the result as a successful release message.',
+                    issues: ['invalid becomes success', 'wrong user feedback']
+                },
+                '1-2': {
+                    title: 'The event arrives with the wrong state',
+                    text: 'The mapped payload reaches Feature 3, but the feedback event reads the old state instead of the normalized state.',
+                    issues: ['stale application state', 'message sent too early']
+                }
+            };
+
+            const cards = Array.from(release.querySelectorAll('.integration-feature'));
+            const toggles = Array.from(release.querySelectorAll('.integration-toggle'));
+            const branchNodes = Array.from(release.querySelectorAll('.integration-branch-node'));
+            const outcome = release.querySelector('.integration-outcome');
+            const outcomeIcon = release.querySelector('.integration-outcome-icon');
+            const outcomeTitle = release.querySelector('.integration-outcome-title');
+            const outcomeText = release.querySelector('.integration-outcome-text');
+            const outcomeIssues = release.querySelector('.integration-outcome-issues');
+            let outcomePulseTimer = null;
+
+            const updateOutcome = () => {
+                const activeIndexes = featureStates
+                    .map((isActive, index) => isActive ? index : -1)
+                    .filter((index) => index >= 0);
+                const activeCount = activeIndexes.length;
+                let stateClass = 'is-idle';
+                let icon = '--';
+                let title = 'No integration flow running';
+                let text = 'Switch on a feature to test it on release branch 1.8.';
+                let issues = [];
+
+                if (activeCount === 1) {
+                    stateClass = 'is-success';
+                    icon = 'OK';
+                    title = 'All good in isolation';
+                    text = `${featureNames[activeIndexes[0]]} passes every check on its own. No feature boundary has been crossed yet.`;
+                    issues = ['isolated test passed'];
+                } else if (activeCount === 2) {
+                    stateClass = 'is-warning';
+                    icon = '!';
+                    const pairOutcome = pairOutcomes[activeIndexes.join('-')];
+                    title = pairOutcome.title;
+                    text = pairOutcome.text;
+                    issues = pairOutcome.issues;
+                } else if (activeCount === 3) {
+                    stateClass = 'is-failure';
+                    icon = 'X';
+                    title = 'Three features, one branch, several surprises';
+                    text = 'The numeric result changes type, the shared state arrives late, and the user receives a success message for an invalid value.';
+                    issues = ['contract mismatch', 'stale state', 'incorrect feedback'];
+                }
+
+                release.dataset.activeFeatures = String(activeCount);
+                cards.forEach((card, index) => card.classList.toggle('is-active', featureStates[index]));
+                branchNodes.forEach((node, index) => node.classList.toggle('is-active', featureStates[index]));
+                toggles.forEach((toggle, index) => {
+                    toggle.setAttribute('aria-checked', featureStates[index] ? 'true' : 'false');
+                    const stateLabel = toggle.querySelector('.integration-toggle-state');
+                    if (stateLabel) stateLabel.textContent = featureStates[index] ? 'On' : 'Off';
+                });
+
+                outcome.classList.remove('is-idle', 'is-success', 'is-warning', 'is-failure', 'is-pulsing');
+                outcome.classList.add(stateClass);
+                outcomeIcon.textContent = icon;
+                outcomeTitle.textContent = title;
+                outcomeText.textContent = text;
+                outcomeIssues.replaceChildren(...issues.map((issue) => {
+                    const chip = document.createElement('span');
+                    chip.textContent = issue;
+                    return chip;
+                }));
+                void outcome.offsetWidth;
+                outcome.classList.add('is-pulsing');
+                if (outcomePulseTimer) window.clearTimeout(outcomePulseTimer);
+                outcomePulseTimer = window.setTimeout(() => {
+                    if (outcome.isConnected) outcome.classList.remove('is-pulsing');
+                }, 480);
+            };
+
+            toggles.forEach((toggle, index) => {
+                toggle.addEventListener('click', () => {
+                    featureStates[index] = !featureStates[index];
+                    playOverviewButtonSound(
+                        `${getCurrentViewKey()}-feature-${index + 1}-${featureStates[index] ? 'on' : 'off'}`,
+                        featureStates[index] ? 'forward' : 'back'
+                    );
+                    updateOutcome();
+                });
+            });
+
+            const actions = document.createElement('div');
+            actions.className = 'integration-testing-actions';
+            const nextButton = document.createElement('button');
+            nextButton.className = 'choice-button is-compact is-tone-blue is-centered';
+            nextButton.type = 'button';
+            nextButton.innerHTML = '<span class="choice-label">Next</span>';
+            nextButton.addEventListener('click', () => {
+                navigateToView('knowledge-exchange', `${getCurrentViewKey()}-next`, 'forward');
+            });
+            actions.appendChild(nextButton);
+
+            stage.appendChild(intro);
+            stage.appendChild(release);
+            stage.appendChild(actions);
+            overviewContent.appendChild(stage);
+        }
+
+        function renderKnowledgeExchange() {
+            const stage = document.createElement('div');
+            stage.className = 'knowledge-exchange-stage';
+
+            const intro = document.createElement('p');
+            intro.className = 'knowledge-exchange-intro';
+            intro.innerHTML = 'This kickoff starts when development is complete: the pull request is approved and the code has reached the Test environment, T. <strong>Now the most important integration may be the one between people.</strong>';
+
+            const lab = document.createElement('section');
+            lab.className = 'knowledge-exchange-lab';
+            lab.setAttribute('aria-label', 'Interactive developer and tester knowledge exchange');
+            lab.innerHTML = `
+                <header class="knowledge-exchange-lab-head">
+                    <div>
+                        <p class="knowledge-exchange-kicker">Knowledge exchange kickoff</p>
+                        <h2 class="knowledge-exchange-lab-title">Different perspectives. One shared model.</h2>
+                    </div>
+                    <span class="knowledge-exchange-duration"><small>Kickoff</small><strong>30 min</strong></span>
+                </header>
+
+                <div class="knowledge-exchange-handoff" aria-label="The moment from completed development to the knowledge exchange kickoff">
+                    <span class="knowledge-exchange-handoff-step is-complete">Code complete<small>Developer is finished</small></span>
+                    <span class="knowledge-exchange-handoff-step is-complete">PR approved<small>Changes accepted</small></span>
+                    <span class="knowledge-exchange-handoff-step is-complete">Deployed to Test (T)<small>Ready for testing</small></span>
+                    <span class="knowledge-exchange-handoff-step is-current">Kickoff<small>Exchange knowledge</small></span>
+                </div>
+
+                <div class="knowledge-exchange-nodes" aria-label="Choose the knowledge perspectives">
+                    <button class="knowledge-exchange-node is-developer" type="button" data-perspective="developer" aria-pressed="false" data-track-id="knowledge-exchange:developer" data-track-label="Developer perspective">
+                        <span class="knowledge-exchange-node-icon" aria-hidden="true">&lt;/&gt;</span>
+                        <span class="knowledge-exchange-node-title">Developer</span>
+                        <span class="knowledge-exchange-node-hint">Reveal the how</span>
+                    </button>
+                    <button class="knowledge-exchange-node is-shared" type="button" data-perspective="shared" aria-pressed="false" data-track-id="knowledge-exchange:shared-understanding" data-track-label="Shared understanding">
+                        <span class="knowledge-exchange-node-icon" aria-hidden="true">&#8644;</span>
+                        <span class="knowledge-exchange-node-title">Shared understanding</span>
+                        <span class="knowledge-exchange-node-hint">Build one model</span>
+                    </button>
+                    <button class="knowledge-exchange-node is-tester" type="button" data-perspective="tester" aria-pressed="false" data-track-id="knowledge-exchange:tester" data-track-label="Tester perspective">
+                        <span class="knowledge-exchange-node-icon" aria-hidden="true">?</span>
+                        <span class="knowledge-exchange-node-title">Tester</span>
+                        <span class="knowledge-exchange-node-hint">Explore the risk</span>
+                    </button>
+                </div>
+
+                <div class="knowledge-exchange-sequence" aria-label="Activation order">
+                    <span class="knowledge-exchange-sequence-slot" data-sequence-index="0">Step 1</span>
+                    <span class="knowledge-exchange-sequence-arrow" aria-hidden="true">&#8594;</span>
+                    <span class="knowledge-exchange-sequence-slot" data-sequence-index="1">Step 2</span>
+                    <span class="knowledge-exchange-sequence-arrow" aria-hidden="true">&#8594;</span>
+                    <span class="knowledge-exchange-sequence-slot" data-sequence-index="2">Step 3</span>
+                </div>
+
+                <div class="knowledge-exchange-insights" aria-live="polite">
+                    <article class="knowledge-exchange-insight is-developer" data-insight="developer">
+                        <h3>Reveal the how</h3>
+                        <p>The developer makes technical context visible: what changed, how it connects, and which decisions shaped the solution.</p>
+                        <div class="knowledge-exchange-chip-list"><span>Architecture</span><span>Dependencies</span><span>Data and decisions</span><span>Limits and assumptions</span></div>
+                    </article>
+                    <article class="knowledge-exchange-insight is-shared" data-insight="shared">
+                        <h3>Build the shared model</h3>
+                        <p>Use the same language, compare concrete examples, expose assumptions, and give every unanswered question an owner.</p>
+                        <div class="knowledge-exchange-chip-list"><span>Same terminology</span><span>Concrete examples</span><span>Visible assumptions</span><span>Clear ownership</span></div>
+                    </article>
+                    <article class="knowledge-exchange-insight is-tester" data-insight="tester">
+                        <h3>Explore the risk</h3>
+                        <p>The tester turns technical context into questions about behaviour, boundaries, failure modes, and unexpected combinations.</p>
+                        <div class="knowledge-exchange-chip-list"><span>User behaviour</span><span>Edge cases</span><span>Failure modes</span><span>Test data</span></div>
+                    </article>
+                </div>
+
+                <section class="knowledge-exchange-calendar">
+                    <span class="knowledge-exchange-calendar-icon" aria-hidden="true">31</span>
+                    <div class="knowledge-exchange-calendar-copy">
+                        <strong>Schedule the kickoff</strong>
+                        <span>Reserve the knowledge exchange when the PR is approved and the code is available on Test.</span>
+                    </div>
+                    <button class="knowledge-exchange-calendar-button" type="button" aria-pressed="false" data-track-id="knowledge-exchange:schedule-agenda" data-track-label="Schedule knowledge exchange in agenda">Schedule in agenda</button>
+                </section>
+
+                <section class="knowledge-exchange-finale" aria-live="polite">
+                    <span class="knowledge-exchange-finale-icon" aria-hidden="true">1+1</span>
+                    <div class="knowledge-exchange-finale-copy">
+                        <h3>Connect the perspectives</h3>
+                        <p>Activate developer, tester, and shared understanding. The order is part of the experiment.</p>
+                    </div>
+                    <button class="knowledge-exchange-replay" type="button" data-track-id="knowledge-exchange:replay" data-track-label="Replay knowledge exchange">Replay exchange</button>
+                </section>
+                <div class="knowledge-fireworks" aria-hidden="true"></div>
+            `;
+
+            const perspectiveConfig = {
+                developer: { label: 'Developer', color: '#75d8ff' },
+                shared: { label: 'Shared understanding', color: '#ffe59a' },
+                tester: { label: 'Tester', color: '#7eebbd' }
+            };
+            const activationOrder = [];
+            const nodes = Array.from(lab.querySelectorAll('.knowledge-exchange-node'));
+            const sequenceSlots = Array.from(lab.querySelectorAll('.knowledge-exchange-sequence-slot'));
+            const insights = Array.from(lab.querySelectorAll('.knowledge-exchange-insight'));
+            const calendar = lab.querySelector('.knowledge-exchange-calendar');
+            const calendarButton = lab.querySelector('.knowledge-exchange-calendar-button');
+            const calendarCopy = lab.querySelector('.knowledge-exchange-calendar-copy span');
+            const finale = lab.querySelector('.knowledge-exchange-finale');
+            const finaleIcon = lab.querySelector('.knowledge-exchange-finale-icon');
+            const finaleTitle = lab.querySelector('.knowledge-exchange-finale-copy h3');
+            const finaleText = lab.querySelector('.knowledge-exchange-finale-copy p');
+            const replayButton = lab.querySelector('.knowledge-exchange-replay');
+            const fireworks = lab.querySelector('.knowledge-fireworks');
+            let fireworkClearTimer = null;
+            let celebrationClearTimer = null;
+
+            const launchFireworks = (isFullKickoff = true) => {
+                if (fireworkClearTimer) window.clearTimeout(fireworkClearTimer);
+                if (celebrationClearTimer) window.clearTimeout(celebrationClearTimer);
+                fireworks.replaceChildren();
+                lab.classList.remove('is-celebrating');
+                if (isFullKickoff) {
+                    void lab.offsetWidth;
+                    lab.classList.add('is-celebrating');
+                }
+                const bursts = isFullKickoff
+                    ? [
+                        { x: 13, y: 52, delay: 0 },
+                        { x: 33, y: 31, delay: 0.3 },
+                        { x: 50, y: 58, delay: 0.56 },
+                        { x: 67, y: 29, delay: 0.2 },
+                        { x: 87, y: 53, delay: 0.46 }
+                    ]
+                    : [
+                        { x: 34, y: 48, delay: 0 },
+                        { x: 66, y: 48, delay: 0.2 }
+                    ];
+                const colors = ['#ffe59a', '#75d8ff', '#7eebbd', '#ff91ad', '#ffffff'];
+                bursts.forEach((burst, burstIndex) => {
+                    const particleCount = isFullKickoff ? 20 : 14;
+                    const ring = document.createElement('i');
+                    ring.className = 'knowledge-firework-ring';
+                    ring.style.setProperty('--firework-x', `${burst.x}%`);
+                    ring.style.setProperty('--firework-y', `${burst.y}%`);
+                    ring.style.setProperty('--firework-delay', `${burst.delay}s`);
+                    ring.style.setProperty('--firework-color', colors[burstIndex % colors.length]);
+                    fireworks.appendChild(ring);
+                    for (let index = 0; index < particleCount; index += 1) {
+                        const angle = (Math.PI * 2 * index) / particleCount;
+                        const distance = (isFullKickoff ? 76 : 54) + ((index % 5) * (isFullKickoff ? 14 : 8));
+                        const particle = document.createElement('i');
+                        particle.className = 'knowledge-firework-particle';
+                        particle.style.setProperty('--firework-x', `${burst.x}%`);
+                        particle.style.setProperty('--firework-y', `${burst.y}%`);
+                        particle.style.setProperty('--firework-dx', `${Math.cos(angle) * distance}px`);
+                        particle.style.setProperty('--firework-dy', `${Math.sin(angle) * distance}px`);
+                        particle.style.setProperty('--firework-delay', `${burst.delay + ((index % 2) * 0.025)}s`);
+                        particle.style.setProperty('--firework-color', colors[(index + burstIndex) % colors.length]);
+                        fireworks.appendChild(particle);
+                    }
+                });
+                fireworkClearTimer = window.setTimeout(() => {
+                    if (fireworks.isConnected) fireworks.replaceChildren();
+                }, isFullKickoff ? 4100 : 3300);
+                celebrationClearTimer = window.setTimeout(() => {
+                    if (lab.isConnected) lab.classList.remove('is-celebrating');
+                }, 3800);
+            };
+
+            const renderFinale = () => {
+                finale.classList.remove('is-complete', 'is-connected', 'is-synergy');
+                if (activationOrder.length < 3) {
+                    finaleIcon.textContent = `${activationOrder.length}/3`;
+                    finaleTitle.textContent = activationOrder.length ? 'The shared model is forming' : 'Connect the perspectives';
+                    finaleText.textContent = activationOrder.length
+                        ? 'Another perspective can still reveal assumptions that are currently hidden.'
+                        : 'Activate developer, tester, and shared understanding. The order is part of the experiment.';
+                    return;
+                }
+
+                const sharedUnderstandingClosedTheLoop = activationOrder[2] === 'shared';
+                finale.classList.add('is-complete', sharedUnderstandingClosedTheLoop ? 'is-synergy' : 'is-connected');
+                if (sharedUnderstandingClosedTheLoop) {
+                    finaleIcon.textContent = '*';
+                    finaleTitle.textContent = 'Synergy unlocked';
+                    finaleText.textContent = 'Technical context and testing perspective have converged into one shared model. Different perspectives now create better test ideas together.';
+                    launchFireworks(true);
+                    playOverviewButtonSound('knowledge-exchange-synergy-one', 'forward');
+                    window.setTimeout(() => {
+                        if (lab.isConnected) playOverviewButtonSound('knowledge-exchange-synergy-two', 'forward');
+                    }, 180);
+                } else {
+                    finaleIcon.textContent = 'OK';
+                    finaleTitle.textContent = 'Knowledge connected';
+                    finaleText.textContent = 'The perspectives are present. Click Shared understanding once more to close the kickoff and unlock the full celebration.';
+                    launchFireworks(false);
+                }
+
+                recordAnalyticsEvent('control_change', {
+                    view_key: getCurrentViewKey(),
+                    element_kind: 'knowledge_exchange',
+                    element_key: 'knowledge-exchange:sequence-complete',
+                    element_label: activationOrder.join(' > '),
+                    metadata: {
+                        activation_order: activationOrder.slice(),
+                        synergy_unlocked: sharedUnderstandingClosedTheLoop
+                    }
+                });
+            };
+
+            nodes.forEach((node) => {
+                node.addEventListener('click', () => {
+                    const perspective = node.dataset.perspective;
+                    const config = perspectiveConfig[perspective];
+                    if (!config) return;
+
+                    node.classList.remove('is-activated-now');
+                    void node.offsetWidth;
+                    node.classList.add('is-activated-now');
+                    window.setTimeout(() => {
+                        if (node.isConnected) node.classList.remove('is-activated-now');
+                    }, 620);
+
+                    if (!activationOrder.includes(perspective)) {
+                        const sequenceIndex = activationOrder.length;
+                        activationOrder.push(perspective);
+                        node.classList.add('is-active');
+                        node.setAttribute('aria-pressed', 'true');
+                        const slot = sequenceSlots[sequenceIndex];
+                        slot.textContent = config.label;
+                        slot.style.setProperty('--slot-color', config.color);
+                        slot.classList.add('is-filled');
+                        const insight = insights.find((item) => item.dataset.insight === perspective);
+                        insight?.classList.add('is-visible');
+                        playOverviewButtonSound(`knowledge-exchange-${perspective}`, 'forward');
+                        renderFinale();
+                    } else {
+                        playOverviewButtonSound(`knowledge-exchange-${perspective}-again`, 'forward');
+                        if (perspective === 'shared' && activationOrder.length === 3 && activationOrder[2] !== 'shared') {
+                            activationOrder.splice(activationOrder.indexOf('shared'), 1);
+                            activationOrder.push('shared');
+                            sequenceSlots.forEach((slot, index) => {
+                                const orderedPerspective = activationOrder[index];
+                                const orderedConfig = perspectiveConfig[orderedPerspective];
+                                slot.textContent = orderedConfig.label;
+                                slot.style.setProperty('--slot-color', orderedConfig.color);
+                                slot.classList.add('is-filled');
+                            });
+                            renderFinale();
+                        }
+                    }
+                });
+            });
+
+            calendarButton.addEventListener('click', () => {
+                const isProtected = !calendar.classList.contains('is-protected');
+                calendar.classList.toggle('is-protected', isProtected);
+                calendarButton.setAttribute('aria-pressed', isProtected ? 'true' : 'false');
+                calendarButton.textContent = isProtected ? 'Scheduled in agenda' : 'Schedule in agenda';
+                calendarCopy.textContent = isProtected
+                    ? 'The kickoff is planned for the moment the approved code is available on the Test environment.'
+                    : 'Reserve the knowledge exchange when the PR is approved and the code is available on Test.';
+                playOverviewButtonSound(`knowledge-exchange-calendar-${isProtected ? 'protected' : 'open'}`, isProtected ? 'forward' : 'back');
+            });
+
+            replayButton.addEventListener('click', () => {
+                activationOrder.splice(0);
+                nodes.forEach((node) => {
+                    node.classList.remove('is-active', 'is-activated-now');
+                    node.setAttribute('aria-pressed', 'false');
+                });
+                insights.forEach((insight) => insight.classList.remove('is-visible'));
+                sequenceSlots.forEach((slot, index) => {
+                    slot.classList.remove('is-filled');
+                    slot.style.removeProperty('--slot-color');
+                    slot.textContent = `Step ${index + 1}`;
+                });
+                fireworks.replaceChildren();
+                lab.classList.remove('is-celebrating');
+                renderFinale();
+                playOverviewButtonSound('knowledge-exchange-replay', 'back');
+                nodes[0]?.focus();
+            });
+
+            const actions = document.createElement('div');
+            actions.className = 'knowledge-exchange-actions';
+            const nextButton = document.createElement('button');
+            nextButton.className = 'choice-button is-compact is-tone-blue is-centered';
+            nextButton.type = 'button';
+            nextButton.innerHTML = '<span class="choice-label">Next</span>';
+            nextButton.addEventListener('click', () => {
+                navigateToView('retest-investigation', `${getCurrentViewKey()}-next`, 'forward');
+            });
+            actions.appendChild(nextButton);
+
+            stage.appendChild(intro);
+            stage.appendChild(lab);
+            stage.appendChild(actions);
+            overviewContent.appendChild(stage);
+        }
+
+        function renderRetestInvestigation() {
+            const stage = document.createElement('div');
+            stage.className = 'retest-investigation-stage';
+
+            const intro = document.createElement('p');
+            intro.className = 'retest-investigation-intro';
+            intro.innerHTML = 'A re-test is not simply a repeated test case. <strong>It is a structured search for the condition that makes the outcome change.</strong>';
+
+            const workbench = document.createElement('section');
+            workbench.className = 'retest-investigation-workbench';
+            workbench.setAttribute('aria-label', 'Interactive re-test and root cause investigation');
+            workbench.innerHTML = `
+                <section class="retest-request" aria-label="Developer re-test request">
+                    <span class="retest-request-avatar" aria-hidden="true">&lt;/&gt;</span>
+                    <div class="retest-request-copy">
+                        <p class="retest-request-kicker">Incoming request from development</p>
+                        <blockquote>"Can you re-test this? I really need to understand what causes this error. Please test this flow again."</blockquote>
+                    </div>
+                    <span class="retest-request-status"><strong>Re-test</strong><small>Cause unknown</small></span>
+                </section>
+
+                <section class="retest-section" aria-labelledby="retestLensTitle">
+                    <header class="retest-section-head">
+                        <div>
+                            <p class="retest-section-kicker">Step 1 - testing intent</p>
+                            <h2 id="retestLensTitle" class="retest-section-title">Choose the professional hat</h2>
+                        </div>
+                        <p class="retest-section-note">The hat represents the objective of the investigation. A professional tester can switch lenses when the evidence requires it.</p>
+                    </header>
+                    <div class="retest-hat-grid" role="group" aria-label="Choose one testing intent">
+                        <button class="retest-hat-card" type="button" data-intent="verify" aria-pressed="false" data-track-id="retest:intent-verify" data-track-label="Proof that it works">
+                            <svg class="retest-hat-visual" viewBox="0 0 96 76" aria-hidden="true" focusable="false">
+                                <circle class="is-head" cx="48" cy="51" r="18"></circle>
+                                <path class="is-main" d="M24 34 Q48 13 72 34 L67 45 H29 Z"></path>
+                                <path class="is-main" d="M18 45 Q48 54 78 45 L75 51 Q48 58 21 51 Z"></path>
+                                <path class="is-accent" d="M48 25 L51 31 L58 32 L53 37 L54 44 L48 41 L42 44 L43 37 L38 32 L45 31 Z"></path>
+                            </svg>
+                            <span class="retest-hat-role">The Inspector</span>
+                            <span class="retest-hat-title">Proof that it works</span>
+                            <span class="retest-hat-copy">Verify expected behaviour against an agreed requirement or model.</span>
+                        </button>
+                        <button class="retest-hat-card" type="button" data-intent="expose" aria-pressed="false" data-track-id="retest:intent-expose" data-track-label="Proof that it does not work">
+                            <svg class="retest-hat-visual" viewBox="0 0 96 76" aria-hidden="true" focusable="false">
+                                <circle class="is-head" cx="48" cy="51" r="18"></circle>
+                                <path class="is-main" d="M30 20 Q48 13 66 20 L70 43 Q48 48 26 43 Z"></path>
+                                <path class="is-main" d="M13 42 Q48 51 83 42 Q79 51 48 53 Q17 51 13 42 Z"></path>
+                                <path class="is-accent" d="M28 35 Q48 40 69 34"></path>
+                            </svg>
+                            <span class="retest-hat-role">The Detective</span>
+                            <span class="retest-hat-title">Proof that it does not work</span>
+                            <span class="retest-hat-copy">Build reproducible evidence that demonstrates a defect or broken expectation.</span>
+                        </button>
+                        <button class="retest-hat-card" type="button" data-intent="explain-success" aria-pressed="false" data-track-id="retest:intent-explain-success" data-track-label="Find out why it works">
+                            <svg class="retest-hat-visual" viewBox="0 0 96 76" aria-hidden="true" focusable="false">
+                                <circle class="is-head" cx="48" cy="51" r="18"></circle>
+                                <path class="is-main" d="M24 35 Q28 13 48 12 Q68 13 72 35 Q48 43 24 35 Z"></path>
+                                <path class="is-accent" d="M28 34 H68 M36 38 A9 7 0 1 0 36 52 A9 7 0 1 0 36 38 M60 38 A9 7 0 1 0 60 52 A9 7 0 1 0 60 38 M45 43 H51"></path>
+                            </svg>
+                            <span class="retest-hat-role">The Laboratory Analyst</span>
+                            <span class="retest-hat-title">Find out why it works</span>
+                            <span class="retest-hat-copy">Use controlled variation to explain behaviour that succeeded unexpectedly.</span>
+                        </button>
+                        <button class="retest-hat-card" type="button" data-intent="explain-failure" aria-pressed="false" data-track-id="retest:intent-explain-failure" data-track-label="Find out why it does not work">
+                            <svg class="retest-hat-visual" viewBox="0 0 96 76" aria-hidden="true" focusable="false">
+                                <circle class="is-head" cx="48" cy="51" r="18"></circle>
+                                <path class="is-main" d="M26 39 Q28 12 48 10 Q68 12 70 39 Q48 46 26 39 Z"></path>
+                                <path class="is-main" d="M14 40 Q48 49 82 40 L77 49 Q48 55 19 49 Z"></path>
+                                <path class="is-accent" d="M48 12 V39 M35 20 Q48 25 61 20"></path>
+                            </svg>
+                            <span class="retest-hat-role">The Explorer</span>
+                            <span class="retest-hat-title">Find out why it does not work</span>
+                            <span class="retest-hat-copy">Navigate uncertainty, compare conditions, and narrow the possible causes.</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="retest-section" aria-labelledby="retestKnowledgeTitle">
+                    <header class="retest-section-head">
+                        <div>
+                            <p class="retest-section-kicker">Step 2 - available knowledge</p>
+                            <h2 id="retestKnowledgeTitle" class="retest-section-title">Choose the knowledge source</h2>
+                        </div>
+                        <p class="retest-section-note">Documented facts and professional experience are different resources. Neither automatically replaces the other.</p>
+                    </header>
+                    <div class="retest-knowledge-grid" role="group" aria-label="Choose a knowledge source">
+                        <button class="retest-knowledge-card" type="button" data-knowledge="explicit" aria-pressed="false" data-track-id="retest:knowledge-explicit" data-track-label="Explicit knowledge">
+                            <span class="retest-knowledge-label">Explicit knowledge</span>
+                            <span class="retest-knowledge-copy">Requirements, logs, diagrams, documentation, known test cases, and recorded decisions.</span>
+                        </button>
+                        <button class="retest-knowledge-card" type="button" data-knowledge="tacit" aria-pressed="false" data-track-id="retest:knowledge-tacit" data-track-label="Tacit knowledge">
+                            <span class="retest-knowledge-label">Tacit knowledge</span>
+                            <span class="retest-knowledge-copy">Experience, intuition, team history, domain context, and recognition of unusual signals.</span>
+                        </button>
+                        <button class="retest-knowledge-card" type="button" data-knowledge="combined" aria-pressed="false" data-track-id="retest:knowledge-combined" data-track-label="Explicit and tacit knowledge combined">
+                            <span class="retest-knowledge-label">Use both</span>
+                            <span class="retest-knowledge-copy">Combine traceable evidence with contextual judgement to create stronger hypotheses.</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="retest-section" aria-labelledby="retestTechniqueTitle">
+                    <header class="retest-section-head">
+                        <div>
+                            <p class="retest-section-kicker">Step 3 - investigation instruments</p>
+                            <h2 id="retestTechniqueTitle" class="retest-section-title">Select one or more techniques</h2>
+                        </div>
+                        <p class="retest-section-note">A technique structures the search. Multiple techniques can expose different dimensions of the same failure.</p>
+                    </header>
+                    <div class="retest-technique-list" role="group" aria-label="Select test techniques">
+                        <button class="retest-technique-chip" type="button" data-technique="Boundary Value Analysis" aria-pressed="false">Boundary Value Analysis</button>
+                        <button class="retest-technique-chip" type="button" data-technique="Equivalence Partitioning" aria-pressed="false">Equivalence Partitioning</button>
+                        <button class="retest-technique-chip" type="button" data-technique="Decision Table" aria-pressed="false">Decision Table</button>
+                        <button class="retest-technique-chip" type="button" data-technique="State Transition" aria-pressed="false">State Transition</button>
+                        <button class="retest-technique-chip" type="button" data-technique="Exploratory Testing" aria-pressed="false">Exploratory Testing</button>
+                    </div>
+                </section>
+
+                <section class="retest-toolkit-summary" aria-live="polite">
+                    <span class="retest-toolkit-number" aria-hidden="true">KIT</span>
+                    <span class="retest-toolkit-copy">Choose one professional hat, one knowledge source, and at least one technique.</span>
+                    <button class="retest-start-button" type="button" disabled data-track-id="retest:start-investigation" data-track-label="Start re-test investigation">Start investigation</button>
+                </section>
+
+                <section class="retest-run-board" data-progress="0" aria-label="Animated re-test journey">
+                    <div class="retest-run-grid">
+                        <div class="retest-route" aria-label="Investigation stages">
+                            <span class="retest-route-step" data-step="1"><span>01</span>Reproduce</span>
+                            <span class="retest-route-step" data-step="2"><span>02</span>Compare</span>
+                            <span class="retest-route-step" data-step="3"><span>03</span>Observe</span>
+                            <span class="retest-route-step" data-step="4"><span>04</span>Vary</span>
+                            <span class="retest-route-step" data-step="5"><span>05</span>Connect</span>
+                        </div>
+                        <div class="retest-scanner" aria-live="polite">
+                            <span class="retest-scanner-kicker">Difference scanner</span>
+                            <strong class="retest-scanner-value">Awaiting toolkit</strong>
+                            <span class="retest-scanner-state">No investigation running</span>
+                        </div>
+                    </div>
+                    <div class="retest-result" aria-live="polite">
+                        <article class="retest-result-card">
+                            <span class="retest-result-icon" aria-hidden="true">&#10003;</span>
+                            <div>
+                                <p class="retest-result-kicker">Decisive difference found</p>
+                                <h3 class="retest-result-title">Evidence pending</h3>
+                                <p class="retest-result-copy"></p>
+                                <p class="retest-result-principle">The difference is evidence. Confirm it before presenting it as the root cause.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="retest-learning" aria-labelledby="retestLearningTitle">
+                    <p class="retest-learning-kicker">Learning architecture - level 05: synthesis</p>
+                    <h2 id="retestLearningTitle" class="retest-learning-title">Complexity increases by design</h2>
+                    <p class="retest-learning-copy">We hope you have noticed that this experience teaches software testing processes progressively. Each page builds on concepts introduced earlier. Complexity increases step by step, while terminology, context, and conceptual understanding develop at the same pace. On this page, earlier lessons about requirements, mindsets, knowledge, techniques, integration, and collaboration are deliberately brought together in one investigation.</p>
+                    <div class="retest-learning-steps" aria-label="Progressive software testing learning path">
+                        <span class="retest-learning-step"><small>Level 01</small><strong>Requirements and risk</strong></span>
+                        <span class="retest-learning-step"><small>Level 02</small><strong>Environment and mindset</strong></span>
+                        <span class="retest-learning-step"><small>Level 03</small><strong>Knowledge and techniques</strong></span>
+                        <span class="retest-learning-step"><small>Level 04</small><strong>Integration and exchange</strong></span>
+                        <span class="retest-learning-step"><small>Level 05</small><strong>Root cause reasoning</strong></span>
+                    </div>
+                </section>
+            `;
+
+            const intentConfig = {
+                verify: { role: 'The Inspector', label: 'Proof that it works' },
+                expose: { role: 'The Detective', label: 'Proof that it does not work' },
+                'explain-success': { role: 'The Laboratory Analyst', label: 'Find out why it works' },
+                'explain-failure': { role: 'The Explorer', label: 'Find out why it does not work' }
+            };
+            const knowledgeConfig = {
+                explicit: { label: 'Explicit knowledge' },
+                tacit: { label: 'Tacit knowledge' },
+                combined: { label: 'Explicit and tacit knowledge' }
+            };
+            const possibleDifferences = [
+                {
+                    signal: 'Test data age',
+                    title: 'Historic test data',
+                    copy: 'The affected account contained data created before the latest validation rule was introduced. A newly created account did not reproduce the error.'
+                },
+                {
+                    signal: 'Feature flag',
+                    title: 'Configuration mismatch',
+                    copy: 'The Test environment and the developer environment were executing different feature-flag combinations. The same flow therefore reached a different code path.'
+                },
+                {
+                    signal: 'Transaction timing',
+                    title: 'Timing and commit order',
+                    copy: 'The second request arrived before the first transaction had committed. The failure depended on timing rather than on the input value alone.'
+                },
+                {
+                    signal: 'User role',
+                    title: 'Permission combination',
+                    copy: 'The failing user inherited a role combination that was absent from the original test account. Authorisation changed the available path through the flow.'
+                },
+                {
+                    signal: 'Cache state',
+                    title: 'Obsolete cached response',
+                    copy: 'A cached response preserved the previous contract after deployment. Clearing the cache changed the outcome without changing the test case.'
+                },
+                {
+                    signal: 'API version',
+                    title: 'Dependency version',
+                    copy: 'One dependent service still returned the previous response schema. The error appeared only when that service participated in the flow.'
+                },
+                {
+                    signal: 'Environment value',
+                    title: 'Environment-specific setting',
+                    copy: 'The Test environment used a configuration value that differed from the developer environment. That single setting changed the validation behaviour.'
+                },
+                {
+                    signal: 'Execution order',
+                    title: 'Sequence-dependent state',
+                    copy: 'The failure appeared only when the same actions were executed in a different order. An earlier step left state behind for the next step.'
+                }
+            ];
+            const scannerSignals = ['Test data', 'Timing', 'User role', 'Environment', 'Feature flag', 'Cache state', 'API version', 'Execution order', 'Dependencies'];
+            const intentButtons = Array.from(workbench.querySelectorAll('.retest-hat-card'));
+            const knowledgeButtons = Array.from(workbench.querySelectorAll('.retest-knowledge-card'));
+            const techniqueButtons = Array.from(workbench.querySelectorAll('.retest-technique-chip'));
+            const toolkitCopy = workbench.querySelector('.retest-toolkit-copy');
+            const startButton = workbench.querySelector('.retest-start-button');
+            const runBoard = workbench.querySelector('.retest-run-board');
+            const routeSteps = Array.from(workbench.querySelectorAll('.retest-route-step'));
+            const scannerValue = workbench.querySelector('.retest-scanner-value');
+            const scannerState = workbench.querySelector('.retest-scanner-state');
+            const result = workbench.querySelector('.retest-result');
+            const resultTitle = workbench.querySelector('.retest-result-title');
+            const resultCopy = workbench.querySelector('.retest-result-copy');
+            let selectedIntent = '';
+            let selectedKnowledge = '';
+            let selectedTechniques = new Set();
+            let investigationRun = 0;
+            let investigationTimers = [];
+
+            const clearInvestigationTimers = () => {
+                investigationTimers.forEach((timer) => window.clearTimeout(timer));
+                investigationTimers = [];
+            };
+
+            const scheduleInvestigationTask = (task, delay) => {
+                const timer = window.setTimeout(() => {
+                    if (stage.isConnected) task();
+                }, delay);
+                investigationTimers.push(timer);
+            };
+
+            const updateToolkit = () => {
+                const intent = intentConfig[selectedIntent];
+                const knowledge = knowledgeConfig[selectedKnowledge];
+                const techniques = Array.from(selectedTechniques);
+                const isReady = Boolean(intent && knowledge && techniques.length);
+                startButton.disabled = !isReady;
+                if (!isReady) {
+                    const missing = [];
+                    if (!intent) missing.push('a professional hat');
+                    if (!knowledge) missing.push('a knowledge source');
+                    if (!techniques.length) missing.push('at least one technique');
+                    toolkitCopy.textContent = `Still needed: ${missing.join(', ')}.`;
+                    return;
+                }
+                toolkitCopy.innerHTML = `<strong>${intent.role}</strong> using <strong>${knowledge.label}</strong> with ${techniques.join(' + ')}.`;
+            };
+
+            intentButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    selectedIntent = button.dataset.intent || '';
+                    intentButtons.forEach((item) => {
+                        const isSelected = item === button;
+                        item.classList.toggle('is-selected', isSelected);
+                        item.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+                    });
+                    playOverviewButtonSound(`retest-intent-${selectedIntent}`, 'forward');
+                    updateToolkit();
+                });
+            });
+
+            knowledgeButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    selectedKnowledge = button.dataset.knowledge || '';
+                    knowledgeButtons.forEach((item) => {
+                        const isSelected = item === button;
+                        item.classList.toggle('is-selected', isSelected);
+                        item.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+                    });
+                    playOverviewButtonSound(`retest-knowledge-${selectedKnowledge}`, 'forward');
+                    updateToolkit();
+                });
+            });
+
+            techniqueButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const technique = button.dataset.technique || '';
+                    if (selectedTechniques.has(technique)) {
+                        selectedTechniques.delete(technique);
+                    } else {
+                        selectedTechniques.add(technique);
+                    }
+                    const isSelected = selectedTechniques.has(technique);
+                    button.classList.toggle('is-selected', isSelected);
+                    button.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+                    playOverviewButtonSound(`retest-technique-${isSelected ? 'add' : 'remove'}`, isSelected ? 'forward' : 'back');
+                    updateToolkit();
+                });
+            });
+
+            const actions = document.createElement('div');
+            actions.className = 'retest-investigation-actions';
+            const nextButton = document.createElement('button');
+            nextButton.className = 'choice-button is-compact is-tone-blue is-centered';
+            nextButton.type = 'button';
+            nextButton.disabled = true;
+            nextButton.innerHTML = '<span class="choice-label">Next</span>';
+            nextButton.addEventListener('click', () => {
+                const nextTarget = pendingTestcaseBridge?.target || 'root';
+                navigateToView(nextTarget, `${getCurrentViewKey()}-next`, 'forward');
+            });
+            actions.appendChild(nextButton);
+
+            const finishInvestigation = () => {
+                if (!stage.isConnected) return;
+                const signature = `${selectedIntent}|${selectedKnowledge}|${Array.from(selectedTechniques).join('|')}|${investigationRun}`;
+                const signatureValue = Array.from(signature).reduce((total, character) => total + character.charCodeAt(0), 0);
+                const difference = possibleDifferences[signatureValue % possibleDifferences.length];
+                runBoard.dataset.progress = '5';
+                runBoard.classList.remove('is-running');
+                routeSteps.forEach((step) => step.classList.add('is-active'));
+                scannerValue.textContent = difference.signal;
+                scannerState.textContent = 'Difference isolated - confirmation required';
+                resultTitle.textContent = difference.title;
+                resultCopy.textContent = difference.copy;
+                result.classList.add('is-visible');
+                startButton.disabled = false;
+                startButton.textContent = 'Run another investigation';
+                nextButton.disabled = false;
+                playOverviewVictorySound('retest-investigation-difference-found');
+                recordAnalyticsEvent('retest_investigation_complete', {
+                    view_key: getCurrentViewKey(),
+                    element_kind: 'simulation',
+                    element_key: 'retest:investigation-complete',
+                    element_label: difference.title,
+                    metadata: {
+                        intent: selectedIntent,
+                        knowledge: selectedKnowledge,
+                        techniques: Array.from(selectedTechniques),
+                        decisive_difference: difference.signal
+                    }
+                });
+            };
+
+            startButton.addEventListener('click', () => {
+                if (startButton.disabled || !selectedIntent || !selectedKnowledge || !selectedTechniques.size) return;
+                clearInvestigationTimers();
+                investigationRun += 1;
+                result.classList.remove('is-visible');
+                nextButton.disabled = true;
+                runBoard.dataset.progress = '0';
+                runBoard.classList.add('is-running');
+                routeSteps.forEach((step) => step.classList.remove('is-active'));
+                scannerValue.textContent = 'Establishing baseline';
+                scannerState.textContent = 'Comparing known and changed conditions';
+                startButton.disabled = true;
+                startButton.textContent = 'Investigation running';
+                playOverviewButtonSound('retest-investigation-start', 'forward');
+
+                const reducedMotion = typeof window.matchMedia === 'function'
+                    && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                if (reducedMotion) {
+                    scheduleInvestigationTask(finishInvestigation, 80);
+                    return;
+                }
+
+                routeSteps.forEach((step, index) => {
+                    scheduleInvestigationTask(() => {
+                        step.classList.add('is-active');
+                        runBoard.dataset.progress = String(index + 1);
+                    }, 320 + index * 680);
+                });
+
+                const scanDelays = [120, 130, 145, 165, 190, 225, 270, 330, 410, 510, 620];
+                let elapsed = 0;
+                scanDelays.forEach((delay, index) => {
+                    elapsed += delay;
+                    scheduleInvestigationTask(() => {
+                        scannerValue.classList.remove('is-changing');
+                        void scannerValue.offsetWidth;
+                        scannerValue.textContent = scannerSignals[index % scannerSignals.length];
+                        scannerValue.classList.add('is-changing');
+                    }, elapsed);
+                });
+                scheduleInvestigationTask(finishInvestigation, 3880);
+            });
+
+            stage.appendChild(intro);
+            stage.appendChild(workbench);
+            stage.appendChild(actions);
+            overviewContent.appendChild(stage);
         }
 
         function renderKnowledgeOverlapSection(config) {
@@ -12145,6 +17841,7 @@ A decision table combines these three outcomes into the eight possible states sh
             if (
                 viewKey === 'testcase-bridge'
                 || viewKey === 'technique-interaction-table'
+                || viewKey === 'integration-testing'
                 || viewKey === 'requirement-reason-map'
             ) {
                 return 'Maps and transitions';
@@ -12290,10 +17987,52 @@ A decision table combines these three outcomes into the eight possible states sh
                         { view_key: 'testcase-bridge', starts: 12, manual_starts: 4, autoplay_starts: 8, completions: 7, stops: 5, completion_rate: 58.3, average_listened_seconds: 72 }
                     ]
                 },
+                ratings: {
+                    available: true,
+                    scope: 'all_time',
+                    summary: {
+                        ratings: 42,
+                        thumbs_up: 31,
+                        thumbs_down: 11,
+                        average_signed_score: 2.17,
+                        average_strength: 3.74,
+                        rated_pages: 12,
+                        rating_visitors: 18,
+                        updates: 7
+                    },
+                    distribution: [
+                        { sentiment: 'up', score: 1, ratings: 2 },
+                        { sentiment: 'up', score: 2, ratings: 3 },
+                        { sentiment: 'up', score: 3, ratings: 6 },
+                        { sentiment: 'up', score: 4, ratings: 9 },
+                        { sentiment: 'up', score: 5, ratings: 11 },
+                        { sentiment: 'down', score: 1, ratings: 1 },
+                        { sentiment: 'down', score: 2, ratings: 1 },
+                        { sentiment: 'down', score: 3, ratings: 2 },
+                        { sentiment: 'down', score: 4, ratings: 3 },
+                        { sentiment: 'down', score: 5, ratings: 4 }
+                    ],
+                    pages: [
+                        { view_key: 'root', view_title: 'Requirement categories', ratings: 10, thumbs_up: 9, thumbs_down: 1, average_signed_score: 3.8, average_strength: 4.2, last_rated_at: '2026-07-06 14:43:12' },
+                        { view_key: 'dtap', view_title: 'DTAP', ratings: 8, thumbs_up: 5, thumbs_down: 3, average_signed_score: 1.25, average_strength: 3.75, last_rated_at: '2026-07-06 14:39:41' },
+                        { view_key: 'structured-chaos', view_title: 'Structured chaos', ratings: 7, thumbs_up: 6, thumbs_down: 1, average_signed_score: 3.14, average_strength: 4.0, last_rated_at: '2026-07-06 14:31:55' },
+                        { view_key: 'technique-interaction-table', view_title: 'Connected test techniques', ratings: 6, thumbs_up: 4, thumbs_down: 2, average_signed_score: 1.5, average_strength: 3.5, last_rated_at: '2026-07-06 14:27:18' }
+                    ],
+                    visitors: [
+                        { visitor: '4ce18b7a', ratings: 6, rated_pages: 6, thumbs_up: 5, thumbs_down: 1, average_signed_score: 2.83, average_strength: 3.83, last_rated_at: '2026-07-06 14:43:12' },
+                        { visitor: 'a12f09d4', ratings: 5, rated_pages: 5, thumbs_up: 3, thumbs_down: 2, average_signed_score: 0.8, average_strength: 4.0, last_rated_at: '2026-07-06 14:39:41' },
+                        { visitor: 'df7824ab', ratings: 4, rated_pages: 4, thumbs_up: 4, thumbs_down: 0, average_signed_score: 4.25, average_strength: 4.25, last_rated_at: '2026-07-06 14:31:55' }
+                    ],
+                    recent: [
+                        { view_key: 'root', view_title: 'Requirement categories', sentiment: 'up', score: 5, signed_score: 5, visitor: '4ce18b7a', session: '7f23c2a1', device: 'desktop', ip_address: includeIpAddresses ? '203.0.113.42' : undefined, rated_at: '2026-07-06 14:43:12', revision_count: 1 },
+                        { view_key: 'dtap', view_title: 'DTAP', sentiment: 'down', score: 3, signed_score: -3, visitor: 'a12f09d4', session: 'b44a291e', device: 'mobile', ip_address: includeIpAddresses ? '2001:db8::24' : undefined, rated_at: '2026-07-06 14:39:41', revision_count: 2 },
+                        { view_key: 'structured-chaos', view_title: 'Structured chaos', sentiment: 'up', score: 4, signed_score: 4, visitor: 'df7824ab', session: '19d8ea52', device: 'desktop', ip_address: includeIpAddresses ? '198.51.100.18' : undefined, rated_at: '2026-07-06 14:31:55', revision_count: 1 }
+                    ]
+                },
                 recent_sessions: [
-                    { session: '7f23c2a1', ip_address: includeIpAddresses ? '203.0.113.42' : undefined, started_at: '2026-07-06 14:32:10', device: 'desktop', entry_page: '/testoverview.php', entry_view: 'root', last_view: 'tacit-vs-explicit', duration_seconds: 724, clicks: 14, path_length: 9 },
-                    { session: 'b44a291e', ip_address: includeIpAddresses ? '2001:db8::24' : undefined, started_at: '2026-07-06 14:18:44', device: 'mobile', entry_page: '/index.php', entry_view: 'root', last_view: 'dtap', duration_seconds: 288, clicks: 7, path_length: 5 },
-                    { session: '19d8ea52', ip_address: includeIpAddresses ? '198.51.100.18' : undefined, started_at: '2026-07-06 13:56:03', device: 'desktop', entry_page: '/testoverview.php', entry_view: 'technique-interaction-table', last_view: 'technique-interaction-table', duration_seconds: 419, clicks: 9, path_length: 1 }
+                    { session: '7f23c2a1', ip_address: includeIpAddresses ? '203.0.113.42' : undefined, started_at: '2026-07-06 14:32:10', last_seen_at: '2026-07-06 14:44:14', device: 'desktop', entry_page: '/testoverview.php', entry_view: 'root', last_view: 'tacit-vs-explicit', duration_seconds: 724, clicks: 14, path_length: 9 },
+                    { session: 'b44a291e', ip_address: includeIpAddresses ? '2001:db8::24' : undefined, started_at: '2026-07-06 14:18:44', last_seen_at: '2026-07-06 14:23:32', device: 'mobile', entry_page: '/index.php', entry_view: 'root', last_view: 'dtap', duration_seconds: 288, clicks: 7, path_length: 5 },
+                    { session: '19d8ea52', ip_address: includeIpAddresses ? '198.51.100.18' : undefined, started_at: '2026-07-06 13:56:03', last_seen_at: '2026-07-06 14:03:02', device: 'desktop', entry_page: '/testoverview.php', entry_view: 'technique-interaction-table', last_view: 'technique-interaction-table', duration_seconds: 419, clicks: 9, path_length: 1 }
                 ],
                 external_link_clicks: {
                     totals: [
@@ -12302,7 +18041,7 @@ A decision table combines these three outcomes into the eight possible states sh
                     ],
                     recent: [
                         { cta_label: 'More about me', element_key: 'field-guide:more-about-me', element_href: 'https://www.linkedin.com/in/ing-valentijn-p-b696371/', view_key: 'root', page_path: '/index.php', clicked_at: '2026-07-06 14:41:18', server_received_at: '2026-07-06 14:41:19', session: '7f23c2a1', ip_address: includeIpAddresses ? '203.0.113.42' : undefined, device: 'desktop' },
-                        { cta_label: 'Try the next level', element_key: 'field-guide:try-next-level', element_href: 'https://breaksoftwaretesting.com', view_key: 'root', page_path: '/testoverview.php', clicked_at: '2026-07-06 14:38:02', server_received_at: '2026-07-06 14:38:03', session: 'b44a291e', ip_address: includeIpAddresses ? '2001:db8::24' : undefined, device: 'mobile' }
+                        { cta_label: 'Try the next level', element_key: 'field-guide:try-next-level', element_href: 'https://softwaretestingbreak.com', view_key: 'root', page_path: '/testoverview.php', clicked_at: '2026-07-06 14:38:02', server_received_at: '2026-07-06 14:38:03', session: 'b44a291e', ip_address: includeIpAddresses ? '2001:db8::24' : undefined, device: 'mobile' }
                     ]
                 },
                 timeline
@@ -12378,6 +18117,23 @@ A decision table combines these three outcomes into the eight possible states sh
             const initialAutoplayOnRate = initialAutoplayTotal > 0
                 ? (Number(audio.initial_autoplay_on || 0) / initialAutoplayTotal) * 100
                 : 0;
+            const ratings = data.ratings || {};
+            const ratingsAvailable = ratings.available === true;
+            const ratingSummary = ratings.summary || {};
+            const ratingTotal = Math.max(0, Number(ratingSummary.ratings || 0));
+            const ratingUpTotal = Math.max(0, Number(ratingSummary.thumbs_up || 0));
+            const ratingDownTotal = Math.max(0, Number(ratingSummary.thumbs_down || 0));
+            const ratingUpShare = ratingTotal > 0 ? (ratingUpTotal / ratingTotal) * 100 : 0;
+            const ratingAverage = Number(ratingSummary.average_signed_score || 0);
+            const formatSignedRating = (value) => {
+                const number = Number(value) || 0;
+                return `${number > 0 ? '+' : ''}${formatDashboardNumber(number, 2)}`;
+            };
+            const ratingScoreMarkup = (value) => {
+                const number = Number(value) || 0;
+                const color = number < 0 ? '#ff5872' : (number > 0 ? '#58e29b' : '#b8d7de');
+                return `<span class="analytics-dashboard-rating-score" style="--rating-score-color:${color}">${escapeDashboardHtml(formatSignedRating(number))}</span>`;
+            };
             const topClicksMarkup = (data.top_clicks || []).length
                 ? data.top_clicks.map((item, index) => `
                     <div class="analytics-dashboard-rank">
@@ -12398,6 +18154,10 @@ A decision table combines these three outcomes into the eight possible states sh
                 ? data.recent_sessions.map((item) => `
                     <tr>
                         <td>${escapeDashboardHtml(item.session)}</td>
+                        <td class="analytics-dashboard-journey-when">
+                            <strong>Started ${escapeDashboardHtml(formatDashboardTimestamp(item.started_at) || 'unknown')}</strong>
+                            <span>Last active ${escapeDashboardHtml(formatDashboardTimestamp(item.last_seen_at) || 'unknown')}</span>
+                        </td>
                         ${showIpAddresses ? `<td>${escapeDashboardHtml(item.ip_address || 'unknown')}</td>` : ''}
                         <td>${escapeDashboardHtml(item.device)}</td>
                         <td>${escapeDashboardHtml(item.entry_page)}</td>
@@ -12408,7 +18168,7 @@ A decision table combines these three outcomes into the eight possible states sh
                         <td>${formatDashboardNumber(item.path_length)}</td>
                     </tr>
                 `).join('')
-                : `<tr><td colspan="${showIpAddresses ? 9 : 8}">No sessions recorded in this period yet.</td></tr>`;
+                : `<tr><td colspan="${showIpAddresses ? 10 : 9}">No sessions recorded in this period yet.</td></tr>`;
             const externalLinkClicks = data.external_link_clicks || {};
             const externalTotals = Array.isArray(externalLinkClicks.totals) ? externalLinkClicks.totals : [];
             const externalTotalLabels = ['More about me', 'Try the next level'];
@@ -12449,6 +18209,60 @@ A decision table combines these three outcomes into the eight possible states sh
                     </tr>
                 `).join('')
                 : '<tr><td colspan="7">No page-level audio activity recorded yet.</td></tr>';
+            const ratingDistribution = Array.isArray(ratings.distribution) ? ratings.distribution : [];
+            const ratingDistributionMaximum = Math.max(1, ...ratingDistribution.map((item) => Number(item.ratings) || 0));
+            const ratingDistributionMarkup = [5, 4, 3, 2, 1].map((score) => {
+                const up = Number(ratingDistribution.find((item) => item.sentiment === 'up' && Number(item.score) === score)?.ratings || 0);
+                const down = Number(ratingDistribution.find((item) => item.sentiment === 'down' && Number(item.score) === score)?.ratings || 0);
+                return `
+                    <div class="analytics-dashboard-rating-distribution-row">
+                        <span>&minus;${score} &middot; ${formatDashboardNumber(down)}</span>
+                        <span class="analytics-dashboard-rating-distribution-track" style="--down-width:${(down / ratingDistributionMaximum) * 50}%;--up-width:${(up / ratingDistributionMaximum) * 50}%"><i></i><i></i></span>
+                        <span>${formatDashboardNumber(up)} &middot; +${score}</span>
+                    </div>
+                `;
+            }).join('');
+            const ratingPageRows = (ratings.pages || []).length
+                ? ratings.pages.map((item) => `
+                    <tr>
+                        <td>${escapeDashboardHtml(item.view_title || item.view_key)}</td>
+                        <td>${escapeDashboardHtml(item.view_key)}</td>
+                        <td>${formatDashboardNumber(item.ratings)}</td>
+                        <td>${formatDashboardNumber(item.thumbs_up)} / ${formatDashboardNumber(item.thumbs_down)}</td>
+                        <td>${ratingScoreMarkup(item.average_signed_score)}</td>
+                        <td>${formatDashboardNumber(item.average_strength, 2)}/5</td>
+                        <td>${escapeDashboardHtml(formatDashboardTimestamp(item.last_rated_at))}</td>
+                    </tr>
+                `).join('')
+                : '<tr><td colspan="7">No page ratings recorded in this period yet.</td></tr>';
+            const ratingVisitorRows = (ratings.visitors || []).length
+                ? ratings.visitors.map((item) => `
+                    <tr>
+                        <td>${escapeDashboardHtml(item.visitor || 'unknown')}</td>
+                        <td>${formatDashboardNumber(item.ratings)}</td>
+                        <td>${formatDashboardNumber(item.rated_pages)}</td>
+                        <td>${formatDashboardNumber(item.thumbs_up)} / ${formatDashboardNumber(item.thumbs_down)}</td>
+                        <td>${ratingScoreMarkup(item.average_signed_score)}</td>
+                        <td>${formatDashboardNumber(item.average_strength, 2)}/5</td>
+                        <td>${escapeDashboardHtml(formatDashboardTimestamp(item.last_rated_at))}</td>
+                    </tr>
+                `).join('')
+                : '<tr><td colspan="7">No visitor rating profiles recorded in this period yet.</td></tr>';
+            const ratingRecentRows = (ratings.recent || []).length
+                ? ratings.recent.map((item) => `
+                    <tr>
+                        <td>${escapeDashboardHtml(formatDashboardTimestamp(item.rated_at))}</td>
+                        <td>${escapeDashboardHtml(item.view_title || item.view_key)}</td>
+                        <td>${ratingScoreMarkup(item.signed_score)}</td>
+                        <td>${escapeDashboardHtml(item.sentiment)} ${formatDashboardNumber(item.score)}/5</td>
+                        <td>${escapeDashboardHtml(item.visitor || 'unknown')}</td>
+                        <td>${escapeDashboardHtml(item.session || 'unknown')}</td>
+                        ${showIpAddresses ? `<td>${escapeDashboardHtml(item.ip_address || 'unknown')}</td>` : ''}
+                        <td>${escapeDashboardHtml(item.device || 'unknown')}</td>
+                        <td>${formatDashboardNumber(item.revision_count || 1)}</td>
+                    </tr>
+                `).join('')
+                : `<tr><td colspan="${showIpAddresses ? 9 : 8}">No recent ratings recorded in this period yet.</td></tr>`;
             const timelineMarkup = timeline.map((item) => {
                 const sessionsHeight = Math.max(2, ((Number(item.sessions) || 0) / timelineMaximum) * 100);
                 const clicksHeight = Math.max(2, ((Number(item.clicks) || 0) / timelineMaximum) * 100);
@@ -12558,11 +18372,73 @@ A decision table combines these three outcomes into the eight possible states sh
                         </div>
                     </details>
 
+                    <details class="analytics-dashboard-audio analytics-dashboard-ratings">
+                        <summary class="analytics-dashboard-audio-summary">
+                            <span class="analytics-dashboard-rating-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M2 21h4V9H2v12Zm20-10.8c0-1.1-.9-2-2-2h-6.3l.9-4.4.03-.3c0-.4-.17-.8-.44-1.1L13.1 1.3 6.5 7.9C6.2 8.2 6 8.7 6 9.2V19c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7c.1-.2.2-.5.2-.8v-1.8Z"/></svg>
+                            </span>
+                            <span><strong class="analytics-dashboard-audio-title">Page rating intelligence</strong><span class="analytics-dashboard-audio-copy">All-time sentiment, score strength, page averages and anonymous visitor patterns</span></span>
+                            <span class="analytics-dashboard-audio-preview">${formatDashboardNumber(ratingTotal)} all-time ratings &middot; average ${escapeDashboardHtml(formatSignedRating(ratingAverage))}</span>
+                            <span class="analytics-dashboard-audio-chevron" aria-hidden="true">&#8964;</span>
+                        </summary>
+                        <div class="analytics-dashboard-audio-body">
+                            ${ratingsAvailable ? `
+                                <section class="analytics-dashboard-audio-grid">
+                                    <article class="analytics-dashboard-audio-metric"><strong class="analytics-dashboard-audio-value">${formatDashboardNumber(ratingTotal)}</strong><span class="analytics-dashboard-audio-label">All-time ratings</span></article>
+                                    <article class="analytics-dashboard-audio-metric"><strong class="analytics-dashboard-audio-value">${formatDashboardNumber(ratingUpShare, 1)}%</strong><span class="analytics-dashboard-audio-label">Thumbs-up share</span></article>
+                                    <article class="analytics-dashboard-audio-metric"><strong class="analytics-dashboard-audio-value">${escapeDashboardHtml(formatSignedRating(ratingAverage))}</strong><span class="analytics-dashboard-audio-label">Average signed score</span></article>
+                                    <article class="analytics-dashboard-audio-metric"><strong class="analytics-dashboard-audio-value">${formatDashboardNumber(ratingSummary.average_strength, 2)}/5</strong><span class="analytics-dashboard-audio-label">Average intensity</span></article>
+                                    <article class="analytics-dashboard-audio-metric"><strong class="analytics-dashboard-audio-value">${formatDashboardNumber(ratingSummary.rated_pages)}</strong><span class="analytics-dashboard-audio-label">Pages rated</span></article>
+                                    <article class="analytics-dashboard-audio-metric"><strong class="analytics-dashboard-audio-value">${formatDashboardNumber(ratingSummary.rating_visitors)}</strong><span class="analytics-dashboard-audio-label">Visitors who rated</span></article>
+                                </section>
+                                <section class="analytics-dashboard-audio-columns">
+                                    <article class="analytics-dashboard-audio-card">
+                                        <h4 class="analytics-dashboard-audio-card-title">Sentiment balance</h4>
+                                        <div class="analytics-dashboard-rating-balance" style="--rating-up:${ratingUpShare}%"><span></span></div>
+                                        <div class="analytics-dashboard-rating-balance-labels"><span>${formatDashboardNumber(ratingDownTotal)} down</span><span>${formatDashboardNumber(ratingUpTotal)} up</span></div>
+                                        <div class="analytics-dashboard-audio-state"><span>Ratings updated after saving</span><strong>${formatDashboardNumber(ratingSummary.updates)}</strong></div>
+                                    </article>
+                                    <article class="analytics-dashboard-audio-card">
+                                        <h4 class="analytics-dashboard-audio-card-title">Strength distribution</h4>
+                                        <div class="analytics-dashboard-rating-distribution">${ratingDistributionMarkup}</div>
+                                    </article>
+                                </section>
+                                <article class="analytics-dashboard-audio-card">
+                                    <h4 class="analytics-dashboard-audio-card-title">Average per page</h4>
+                                    <div class="analytics-dashboard-audio-table-scroll">
+                                        <table class="analytics-dashboard-audio-table">
+                                            <thead><tr><th>Page</th><th>View key</th><th>Ratings</th><th>Up / down</th><th>Average</th><th>Intensity</th><th>Last rating</th></tr></thead>
+                                            <tbody>${ratingPageRows}</tbody>
+                                        </table>
+                                    </div>
+                                </article>
+                                <article class="analytics-dashboard-audio-card">
+                                    <h4 class="analytics-dashboard-audio-card-title">Average per anonymous visitor</h4>
+                                    <div class="analytics-dashboard-audio-table-scroll">
+                                        <table class="analytics-dashboard-audio-table">
+                                            <thead><tr><th>Visitor</th><th>Ratings</th><th>Pages</th><th>Up / down</th><th>Average</th><th>Intensity</th><th>Last rating</th></tr></thead>
+                                            <tbody>${ratingVisitorRows}</tbody>
+                                        </table>
+                                    </div>
+                                </article>
+                                <article class="analytics-dashboard-audio-card">
+                                    <h4 class="analytics-dashboard-audio-card-title">Recent rating audit</h4>
+                                    <div class="analytics-dashboard-audio-table-scroll">
+                                        <table class="analytics-dashboard-audio-table ${showIpAddresses ? 'is-ip-visible' : ''}">
+                                            <thead><tr><th>When</th><th>Page</th><th>Signed</th><th>Rating</th><th>Visitor</th><th>Session</th>${showIpAddresses ? '<th>IP address</th>' : ''}<th>Device</th><th>Revision</th></tr></thead>
+                                            <tbody>${ratingRecentRows}</tbody>
+                                        </table>
+                                    </div>
+                                </article>
+                            ` : '<p class="analytics-dashboard-rating-unavailable">Page rating analytics are ready, but the database table is not available on this environment yet. Import <strong>create_test_overview_page_ratings.sql</strong> to activate this panel.</p>'}
+                        </div>
+                    </details>
+
                     <section class="analytics-dashboard-panel">
                         <h3 class="analytics-dashboard-panel-title">Recent journeys</h3>
                         <div class="analytics-dashboard-table-scroll">
-                            <table class="analytics-dashboard-table ${showIpAddresses ? 'is-ip-visible' : ''}">
-                                <thead><tr><th>Session</th>${showIpAddresses ? '<th>IP address</th>' : ''}<th>Device</th><th>Entry page</th><th>Entry view</th><th>Last view</th><th>Time</th><th>Clicks</th><th>Path</th></tr></thead>
+                            <table class="analytics-dashboard-table is-journeys ${showIpAddresses ? 'is-ip-visible' : ''}">
+                                <thead><tr><th>Session</th><th>When</th>${showIpAddresses ? '<th>IP address</th>' : ''}<th>Device</th><th>Entry page</th><th>Entry view</th><th>Last view</th><th>Time</th><th>Clicks</th><th>Path</th></tr></thead>
                                 <tbody>${sessionRows}</tbody>
                             </table>
                         </div>
@@ -12659,10 +18535,20 @@ A decision table combines these three outcomes into the eight possible states sh
                 stopDashboardCommandCentreIntro();
                 markCommandCentreIntroReady();
             };
+            const handleDashboardIntroClick = (event) => {
+                if (event.button !== 0
+                    || (!commandCentreIntroActive && !dashboardWindow.classList.contains('is-command-centre-booting'))) {
+                    return;
+                }
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                cancelCommandCentreIntro();
+            };
 
             const closeDashboard = () => {
                 document.removeEventListener('keydown', handleDashboardKeydown);
                 overlay.removeEventListener('pointermove', handleDashboardPointerMove);
+                overlay.removeEventListener('click', handleDashboardIntroClick, true);
                 if (ipRevealHoldTimer) window.clearTimeout(ipRevealHoldTimer);
                 clearCommandCentreReadyTimer();
                 stopDashboardCommandCentreIntro();
@@ -12677,9 +18563,7 @@ A decision table combines these three outcomes into the eight possible states sh
                 if (commandCentreIntroActive || dashboardWindow.classList.contains('is-command-centre-booting')) {
                     event.preventDefault();
                     cancelCommandCentreIntro();
-                    return;
                 }
-                closeDashboard();
             };
             const loadDashboard = async (period = activePeriod) => {
                 activePeriod = period;
@@ -12765,6 +18649,7 @@ A decision table combines these three outcomes into the eight possible states sh
                 if (event.key === 'Enter' || event.key === ' ') endIpRevealHold();
             });
             overlay.addEventListener('pointermove', handleDashboardPointerMove, { passive: true });
+            overlay.addEventListener('click', handleDashboardIntroClick, true);
             overlay.addEventListener('click', (event) => {
                 if (event.target === overlay) closeDashboard();
             });
@@ -12780,7 +18665,7 @@ A decision table combines these three outcomes into the eight possible states sh
             }
             try { activeToken = window.sessionStorage.getItem(ANALYTICS_DASHBOARD_TOKEN_STORAGE_KEY) || ''; } catch (error) {}
             if (activeToken) {
-                playIntroAfterNextSuccessfulLoad = true;
+                playIntroAfterNextSuccessfulLoad = false;
                 loadDashboard(activePeriod);
             } else {
                 renderAnalyticsDashboardAccess(stage, '', submitToken);
@@ -12793,6 +18678,8 @@ A decision table combines these three outcomes into the eight possible states sh
             let hasIntroductionGuideBeenUsed = false;
             let introductionGuideFadeTimer = null;
             let commandCentreHoldTimer = null;
+            let commandCentreHoldRevealTimer = null;
+            let commandCentreLaunchTimer = null;
             let commandCentreLongPressTriggered = false;
             const markIntroductionGuideUsed = () => {
                 hasIntroductionGuideBeenUsed = true;
@@ -12869,9 +18756,9 @@ A decision table combines these three outcomes into the eight possible states sh
                                         <span class="guide-link-label">More about me</span>
                                         <span class="guide-link-copy">Meet Valentijn and continue the conversation on LinkedIn.</span>
                                     </a>
-                                    <a class="guide-link-card" href="https://breaksoftwaretesting.com" target="_blank" rel="noopener noreferrer" data-track-id="field-guide:try-next-level" data-track-label="Try the next level" data-track-external="breaksoftwaretesting" data-ga4-cta="try_next_level">
+                                    <a class="guide-link-card" href="https://softwaretestingbreak.com" target="_blank" rel="noopener noreferrer" data-track-id="field-guide:try-next-level" data-track-label="Try the next level" data-track-external="softwaretestingbreak" data-ga4-cta="try_next_level">
                                         <span class="guide-link-label">Try the next level</span>
-                                        <span class="guide-link-copy">Like this experiment? Go deeper at breaksoftwaretesting.com.</span>
+                                        <span class="guide-link-copy">Like this experiment? Go deeper at softwaretestingbreak.com.</span>
                                     </a>
                                 </div>
                             </section>
@@ -12908,19 +18795,35 @@ A decision table combines these three outcomes into the eight possible states sh
 
             const beginCommandCentreHold = (event) => {
                 if (event.type === 'pointerdown' && event.button !== 0) return;
-                if (commandCentreHoldTimer || commandCentreLongPressTriggered) return;
+                if (commandCentreHoldTimer || commandCentreHoldRevealTimer || commandCentreLaunchTimer || commandCentreLongPressTriggered) return;
                 markIntroductionGuideUsed();
                 getOverviewAudioContext();
-                launcher.classList.add('is-command-centre-holding');
+                commandCentreHoldRevealTimer = window.setTimeout(() => {
+                    commandCentreHoldRevealTimer = null;
+                    launcher.classList.add('is-command-centre-holding');
+                }, ANALYTICS_DASHBOARD_HOLD_REVEAL_MS);
                 commandCentreHoldTimer = window.setTimeout(() => {
                     commandCentreHoldTimer = null;
                     commandCentreLongPressTriggered = true;
+                    if (commandCentreHoldRevealTimer) {
+                        window.clearTimeout(commandCentreHoldRevealTimer);
+                        commandCentreHoldRevealTimer = null;
+                    }
                     launcher.classList.remove('is-command-centre-holding');
+                    launcher.classList.add('is-command-centre-launching');
                     playDashboardBootLaserSequence();
-                    openAnalyticsDashboard({
-                        playPreviewIntro: true,
-                        returnFocusTarget: launcher
-                    });
+                    const launchDelay = typeof window.matchMedia === 'function'
+                        && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+                        ? 0
+                        : ANALYTICS_DASHBOARD_LAUNCH_SPIN_MS;
+                    commandCentreLaunchTimer = window.setTimeout(() => {
+                        commandCentreLaunchTimer = null;
+                        launcher.classList.remove('is-command-centre-launching');
+                        openAnalyticsDashboard({
+                            playPreviewIntro: true,
+                            returnFocusTarget: launcher
+                        });
+                    }, launchDelay);
                 }, ANALYTICS_DASHBOARD_HOLD_MS);
             };
 
@@ -12929,10 +18832,14 @@ A decision table combines these three outcomes into the eight possible states sh
                     window.clearTimeout(commandCentreHoldTimer);
                     commandCentreHoldTimer = null;
                 }
+                if (commandCentreHoldRevealTimer) {
+                    window.clearTimeout(commandCentreHoldRevealTimer);
+                    commandCentreHoldRevealTimer = null;
+                }
                 launcher.classList.remove('is-command-centre-holding');
                 window.setTimeout(() => {
                     commandCentreLongPressTriggered = false;
-                }, commandCentreLongPressTriggered ? 1000 : 0);
+                }, commandCentreLongPressTriggered ? ANALYTICS_DASHBOARD_LAUNCH_SPIN_MS + 400 : 0);
             };
 
             launcher.addEventListener('pointerdown', beginCommandCentreHold);
@@ -13161,11 +19068,22 @@ A decision table combines these three outcomes into the eight possible states sh
             renderDiveDeeperPanel(viewKey, view);
         }
 
-        function renderCurrentView() {
+        function renderCurrentView(options = {}) {
+            if (options.resetScroll === true) {
+                resetOverviewScrollPosition();
+                scheduleSeoAiSummaryFade();
+            }
+            resetBackToStartControl();
             sanitizeHistoryForMode();
             updateEditModeToggleUi();
             const currentKey = getCurrentViewKey();
             const view = getViewDefinition(currentKey) || overviewTree.root;
+            if (currentKey === 'root') {
+                document.body.classList.toggle('has-seen-root-intro', hasPresentedRootJourneyIntro);
+                hasPresentedRootJourneyIntro = true;
+            }
+            document.body.dataset.overviewView = currentKey;
+            renderPageRatingForView(currentKey, view);
             syncDeepLinkUrl(currentKey);
             recordGa4VirtualPageView(currentKey);
             recordAnalyticsView(currentKey);
@@ -13193,6 +19111,10 @@ A decision table combines these three outcomes into the eight possible states sh
                 viewBreadcrumb.textContent = view.breadcrumb || '';
             }
             backButton.hidden = historyStack.length <= 1;
+            backButton.setAttribute(
+                'aria-label',
+                'Go back one level. Hold for two seconds to return to the first page.'
+            );
             overviewContent.innerHTML = '';
 
             if (currentKey === 'knowledge-root' && lastPraSelection) {
@@ -13273,6 +19195,27 @@ A decision table combines these three outcomes into the eight possible states sh
                 return;
             }
 
+            if (view.type === 'integration-testing') {
+                renderIntegrationTesting(view);
+                renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
+                return;
+            }
+
+            if (view.type === 'knowledge-exchange') {
+                renderKnowledgeExchange(view);
+                renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
+                return;
+            }
+
+            if (view.type === 'retest-investigation') {
+                renderRetestInvestigation(view);
+                renderViewAddOns(currentKey, view);
+                maybeAutoplayNarration(view, currentKey);
+                return;
+            }
+
             if (view.type === 'structured-chaos') {
                 renderStructuredChaos(view);
                 renderViewAddOns(currentKey, view);
@@ -13288,11 +19231,113 @@ A decision table combines these three outcomes into the eight possible states sh
             maybeAutoplayNarration(view, currentKey);
         }
 
-        backButton.addEventListener('click', () => {
+        function resetBackToStartControl() {
+            if (backToStartHoldTimer) {
+                window.clearTimeout(backToStartHoldTimer);
+                backToStartHoldTimer = null;
+            }
+            if (backToStartLaunchTimer) {
+                window.clearTimeout(backToStartLaunchTimer);
+                backToStartLaunchTimer = null;
+            }
+            backToStartLongPressTriggered = false;
+            backButton.classList.remove('is-home-holding', 'is-home-launching');
+        }
+
+        function beginBackToStartHold(event) {
+            if (historyStack.length <= 1 || backToStartHoldTimer || backToStartLaunchTimer) {
+                return;
+            }
+            if (event.type === 'pointerdown' && event.button !== 0) {
+                return;
+            }
+
+            getOverviewAudioContext();
+            backToStartLongPressTriggered = false;
+            backButton.classList.add('is-home-holding');
+            backButton.setAttribute('aria-label', 'Keep holding to return to the first page');
+
+            if (event.type === 'pointerdown' && typeof backButton.setPointerCapture === 'function') {
+                try {
+                    backButton.setPointerCapture(event.pointerId);
+                } catch (error) {
+                    // Pointer capture is optional; the hold still works without it.
+                }
+            }
+
+            backToStartHoldTimer = window.setTimeout(() => {
+                backToStartHoldTimer = null;
+                backToStartLongPressTriggered = true;
+                backButton.classList.remove('is-home-holding');
+                backButton.classList.add('is-home-launching');
+                backButton.setAttribute('aria-label', 'Returning to the first page');
+                playOverviewVictorySound('back-to-first-page');
+                recordAnalyticsEvent('control_change', {
+                    view_key: getCurrentViewKey(),
+                    element_kind: 'navigation',
+                    element_key: 'back:hold-to-start',
+                    element_label: 'Return to first page',
+                    metadata: { hold_ms: BACK_TO_START_HOLD_MS }
+                });
+
+                backToStartLaunchTimer = window.setTimeout(() => {
+                    backToStartLaunchTimer = null;
+                    hasPresentedRootJourneyIntro = true;
+                    historyStack.splice(0, historyStack.length, 'root');
+                    renderCurrentView({ resetScroll: true });
+                }, BACK_TO_START_LAUNCH_MS);
+            }, BACK_TO_START_HOLD_MS);
+        }
+
+        function endBackToStartHold() {
+            if (backToStartHoldTimer) {
+                window.clearTimeout(backToStartHoldTimer);
+                backToStartHoldTimer = null;
+            }
+            backButton.classList.remove('is-home-holding');
+            if (!backToStartLaunchTimer) {
+                backButton.setAttribute(
+                    'aria-label',
+                    'Go back one level. Hold for two seconds to return to the first page.'
+                );
+            }
+            if (backToStartLongPressTriggered) {
+                window.setTimeout(() => {
+                    backToStartLongPressTriggered = false;
+                }, 0);
+            }
+        }
+
+        backButton.addEventListener('pointerdown', beginBackToStartHold);
+        backButton.addEventListener('pointerup', endBackToStartHold);
+        backButton.addEventListener('pointercancel', endBackToStartHold);
+        backButton.addEventListener('lostpointercapture', endBackToStartHold);
+        backButton.addEventListener('keydown', (event) => {
+            if (event.key !== 'Enter' && event.key !== ' ') return;
+            event.preventDefault();
+            beginBackToStartHold(event);
+        });
+        backButton.addEventListener('keyup', (event) => {
+            if (event.key !== 'Enter' && event.key !== ' ') return;
+            event.preventDefault();
+            endBackToStartHold();
+            if (!backToStartLongPressTriggered) {
+                backButton.click();
+            }
+        });
+        backButton.addEventListener('contextmenu', (event) => {
+            if (backToStartHoldTimer || backToStartLaunchTimer) event.preventDefault();
+        });
+
+        backButton.addEventListener('click', (event) => {
+            if (backToStartLongPressTriggered || backToStartLaunchTimer) {
+                event.preventDefault();
+                return;
+            }
             if (historyStack.length <= 1) return;
             playOverviewButtonSound(getCurrentViewKey(), 'back');
             historyStack.pop();
-            renderCurrentView();
+            renderCurrentView({ resetScroll: true });
         });
 
         narrationButton.addEventListener('click', () => {
@@ -13339,6 +19384,23 @@ A decision table combines these three outcomes into the eight possible states sh
             playOverviewButtonSound(`${getCurrentViewKey()}-autoplay-off`, 'back');
         });
 
+        pageRatingLauncher.addEventListener('click', () => setPageRatingExpanded(true));
+        pageRatingCollapse.addEventListener('click', () => {
+            setPageRatingExpanded(false, { focus: false });
+            pageRatingLauncher.focus();
+        });
+        pageRatingUp.addEventListener('click', () => choosePageRatingSentiment('up'));
+        pageRatingDown.addEventListener('click', () => choosePageRatingSentiment('down'));
+        pageRatingRange.addEventListener('input', () => {
+            activePageRatingScore = Math.min(5, Math.max(1, Math.round(Number(pageRatingRange.value) || 3)));
+            pageRatingStatus.classList.remove('is-error');
+            pageRatingStatus.textContent = pageRatingStates[activePageRatingViewKey]
+                ? 'Ready to update this page rating.'
+                : 'Ready to save.';
+            updatePageRatingUi();
+        });
+        pageRatingSubmit.addEventListener('click', submitPageRating);
+
         editModeToggle.addEventListener('click', () => {
             pinEditModeControl();
             isEditMode = !isEditMode;
@@ -13355,6 +19417,7 @@ A decision table combines these three outcomes into the eight possible states sh
         window.addEventListener('beforeunload', () => stopNarration('page_exit'));
         if (supportsSpeechSynthesis) {
             window.speechSynthesis.addEventListener?.('voiceschanged', () => {
+                cacheEnglishNarrationVoice(window.speechSynthesis.getVoices());
                 if (narrationState !== 'idle') {
                     return;
                 }
@@ -13364,6 +19427,22 @@ A decision table combines these three outcomes into the eight possible states sh
         }
 
         updateAutoplayToggleUi();
+        primeNarrationVoice();
+        window.testOverviewNarrationDiagnostics = Object.freeze({
+            getSelectedVoice: () => {
+                const voice = cacheEnglishNarrationVoice(window.speechSynthesis?.getVoices?.() || []);
+                return voice ? { name: voice.name, lang: voice.lang } : null;
+            },
+            getLastVoiceName: () => narrationLastVoiceName,
+            getAvailableVoices: () => (window.speechSynthesis?.getVoices?.() || []).map((voice) => ({
+                name: voice.name,
+                lang: voice.lang,
+                default: voice.default
+            }))
+        });
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
         applyPageTheme(currentDtapThemeKey);
         scheduleEditModeControlIntroFade();
         initialiseAnalyticsTracking();
@@ -13371,7 +19450,7 @@ A decision table combines these three outcomes into the eight possible states sh
             view_key: getCurrentViewKey(),
             audio_autoplay_enabled: isNarrationAutoplayEnabled
         });
-        renderCurrentView();
+        renderCurrentView({ resetScroll: true });
         const previewSearchParams = new URLSearchParams(window.location.search);
         if (window.location.pathname.toLowerCase().endsWith('.html')
             && previewSearchParams.get('dashboard') === 'preview') {
